@@ -3,17 +3,16 @@
 // ===============================
 
 let map = L.map('map').setView([62, 15], 5);
-let markers = [];
 let selectedMarker = null;
+let allFeatures = [];
+let geoLayer = null;
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
 
-let clubs = [];
-
 // ===============================
-// CUSTOM ICONS (9 vs 18 hål)
+// CUSTOM ICONS
 // ===============================
 
 let icon9 = L.icon({
@@ -27,79 +26,65 @@ let icon18 = L.icon({
 });
 
 // ===============================
-// LOAD DATA
+// LOAD GEOJSON
 // ===============================
 
-fetch('golfklubbar.json')
+fetch('golfklubbar.geojson')
     .then(response => response.json())
     .then(data => {
-        clubs = data;
-        updateMap(clubs);
-        updateCounter(clubs.length);
+
+        allFeatures = data.features;
+        renderGeoJSON(allFeatures);
+        updateCounter(allFeatures.length);
     });
 
 // ===============================
-// UPDATE MAP
+// RENDER GEOJSON
 // ===============================
 
-function updateMap(filteredClubs) {
+function renderGeoJSON(features) {
 
-    markers.forEach(marker => map.removeLayer(marker));
-    markers = [];
-
-    if (filteredClubs.length === 0) {
-        alert("Inga träffar hittades");
-        return;
+    if (geoLayer) {
+        map.removeLayer(geoLayer);
     }
 
-    let bounds = [];
+    geoLayer = L.geoJSON(features, {
 
-    filteredClubs.forEach(club => {
+        pointToLayer: function (feature, latlng) {
 
-        let icon = club.holes == 18 ? icon18 : icon9;
+            let holes = feature.properties.holes || 9;
+            let icon = holes == 18 ? icon18 : icon9;
 
-        let marker = L.marker([club.lat, club.lng], { icon: icon });
+            let marker = L.marker(latlng, { icon: icon });
 
-        // ===============================
-        // HOVER TOOLTIP (kort info)
-        // ===============================
+            // Hover tooltip
+            marker.bindTooltip(
+                `<strong>${feature.properties.name}</strong><br>
+                 ${feature.properties.municipality || ""}<br>
+                 ⛳ ${holes} hål<br>
+                 💰 ${feature.properties.price || "?"} kr`,
+                { direction: "top", offset: [0, -10], opacity: 0.9 }
+            );
 
-        marker.bindTooltip(
-            `<strong>${club.name}</strong><br>
-             ${club.municipality}<br>
-             ⛳ ${club.holes} hål<br>
-             💰 ${club.price} kr`,
-            {
-                direction: "top",
-                offset: [0, -10],
-                opacity: 0.9
-            }
-        );
+            // Click → info panel
+            marker.on('click', function () {
 
-        // ===============================
-        // CLICK → INFO PANEL
-        // ===============================
+                showClubInfo(feature.properties);
 
-        marker.on('click', function() {
+                if (selectedMarker) {
+                    selectedMarker.setOpacity(1);
+                }
 
-            showClubInfo(club);
+                marker.setOpacity(0.6);
+                selectedMarker = marker;
+            });
 
-            if (selectedMarker) {
-                selectedMarker.setOpacity(1);
-            }
+            return marker;
+        }
 
-            marker.setOpacity(0.6);
-            selectedMarker = marker;
-        });
+    }).addTo(map);
 
-        marker.addTo(map);
-
-        markers.push(marker);
-        bounds.push([club.lat, club.lng]);
-    });
-
-    map.fitBounds(bounds);
-    updateCounter(filteredClubs.length);
+    map.fitBounds(geoLayer.getBounds());
 }
 
 // ===============================
@@ -112,10 +97,10 @@ function showClubInfo(club) {
 
     panel.innerHTML = `
         <h3>${club.name}</h3>
-        <p>📍 ${club.municipality}</p>
-        <p>⛳ ${club.holes} hål</p>
-        <p>💰 ${club.price} kr</p>
-        <p><a href="${club.website}" target="_blank">Besök hemsida</a></p>
+        <p>📍 ${club.municipality || ""}</p>
+        <p>⛳ ${club.holes || "?"} hål</p>
+        <p>💰 ${club.price || "Ej angivet"} kr</p>
+        ${club.website ? `<p><a href="${club.website}" target="_blank">Besök hemsida</a></p>` : ""}
     `;
 }
 
@@ -129,20 +114,23 @@ function applyFilters() {
     let maxPrice = document.getElementById('priceFilter').value;
     let holes = document.getElementById('holesFilter').value;
 
-    let filtered = clubs.filter(club => {
+    let filtered = allFeatures.filter(feature => {
+
+        let p = feature.properties;
 
         let matchesSearch =
-            club.name.toLowerCase().includes(searchText) ||
-            club.municipality.toLowerCase().includes(searchText) ||
-            (club.region && club.region.toLowerCase().includes(searchText));
+            (p.name && p.name.toLowerCase().includes(searchText)) ||
+            (p.municipality && p.municipality.toLowerCase().includes(searchText)) ||
+            (p.region && p.region.toLowerCase().includes(searchText));
 
-        let matchesPrice = maxPrice ? club.price <= maxPrice : true;
-        let matchesHoles = holes ? club.holes == holes : true;
+        let matchesPrice = maxPrice ? (p.price && p.price <= maxPrice) : true;
+        let matchesHoles = holes ? p.holes == holes : true;
 
         return matchesSearch && matchesPrice && matchesHoles;
     });
 
-    updateMap(filtered);
+    renderGeoJSON(filtered);
+    updateCounter(filtered.length);
 }
 
 // ===============================
