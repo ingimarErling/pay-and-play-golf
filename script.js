@@ -88,6 +88,8 @@ function updateMap(filteredClubs) {
 
 function showClubInfo(club) {
 
+    console.log("CLICKED:", club.name);
+    
     let panel = document.getElementById("infoPanel");
 
     panel.innerHTML = `
