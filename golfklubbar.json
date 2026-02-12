@@ -20,16 +20,6 @@
     "website": "https://arlandastadgolf.se"
   },
   {
-    "name": "Tjusta Golfklubb",
-    "municipality": "Sigtuna",
-    "region": "Stockholm",
-    "lat": 59.6205,
-    "lng": 17.9253,
-    "holes": 9,
-    "price": 300,
-    "website": "https://tjustagolf.se"
-  },
-  {
     "name": "Rotebro Golf",
     "municipality": "Sollentuna",
     "region": "Stockholm",
@@ -70,7 +60,7 @@
     "website": "https://norravagk.se"
   },
   {
-    "name": "Huvudstadens Golfklubb (Barkarby)",
+    "name": "Huvudstadens Golfklubb",
     "municipality": "Järfälla",
     "region": "Stockholm",
     "lat": 59.4149,
@@ -110,6 +100,16 @@
     "website": "https://hasselbygolf.se"
   },
   {
+    "name": "Johannesbergs Golf",
+    "municipality": "Rimbo",
+    "region": "Stockholm",
+    "lat": 59.7445,
+    "lng": 18.3451,
+    "holes": 18,
+    "price": 395,
+    "website": "https://johannesbergsgolf.se"
+  },
+  {
     "name": "Gripsholms Golfklubb",
     "municipality": "Mariefred",
     "region": "Södermanland",
@@ -130,13 +130,163 @@
     "website": "https://vidbynasgolf.se"
   },
   {
-    "name": "Johannesbergs Golf",
-    "municipality": "Rimbo",
-    "region": "Stockholm",
-    "lat": 59.7445,
-    "lng": 18.3451,
+    "name": "Björkängens Golfklubb",
+    "municipality": "Halmstad",
+    "region": "Halland",
+    "lat": 56.7286,
+    "lng": 12.6912,
     "holes": 18,
     "price": 395,
-    "website": "https://johannesbergsgolf.se"
+    "website": "https://bjorkangensgk.se"
+  },
+  {
+    "name": "Öijared Golf",
+    "municipality": "Lerum",
+    "region": "Västra Götaland",
+    "lat": 57.8801,
+    "lng": 12.2708,
+    "holes": 27,
+    "price": 495,
+    "website": "https://oijared.se"
+  },
+  {
+    "name": "Mölndals Golfklubb",
+    "municipality": "Mölndal",
+    "region": "Västra Götaland",
+    "lat": 57.6547,
+    "lng": 12.0269,
+    "holes": 18,
+    "price": 395,
+    "website": "https://molndalsgk.se"
+  },
+  {
+    "name": "Lyckorna Golfklubb",
+    "municipality": "Kungsbacka",
+    "region": "Halland",
+    "lat": 57.4972,
+    "lng": 12.0314,
+    "holes": 18,
+    "price": 395,
+    "website": "https://lyckornagk.se"
+  },
+  {
+    "name": "Trollhättans Golfklubb",
+    "municipality": "Trollhättan",
+    "region": "Västra Götaland",
+    "lat": 58.2821,
+    "lng": 12.2936,
+    "holes": 18,
+    "price": 380,
+    "website": "https://trollhattansgk.se"
+  },
+  {
+    "name": "Växjö Golfklubb",
+    "municipality": "Växjö",
+    "region": "Kronoberg",
+    "lat": 56.8817,
+    "lng": 14.8057,
+    "holes": 18,
+    "price": 380,
+    "website": "https://vaxjogk.se"
+  },
+  {
+    "name": "Örebro Golfklubb",
+    "municipality": "Örebro",
+    "region": "Örebro län",
+    "lat": 59.2725,
+    "lng": 15.2134,
+    "holes": 18,
+    "price": 400,
+    "website": "https://orebrogk.se"
+  },
+  {
+    "name": "Frösåker Golf",
+    "municipality": "Partille",
+    "region": "Västra Götaland",
+    "lat": 57.8022,
+    "lng": 12.0513,
+    "holes": 18,
+    "price": 380,
+    "website": "https://frosakergolf.se"
+  },
+  {
+    "name": "Halmstad Golfklubb",
+    "municipality": "Halmstad",
+    "region": "Halland",
+    "lat": 56.6756,
+    "lng": 12.8545,
+    "holes": 18,
+    "price": 420,
+    "website": "https://halmstads-gk.se"
+  },
+  {
+    "name": "Sollentuna Golfklubb",
+    "municipality": "Sollentuna",
+    "region": "Stockholm",
+    "lat": 59.4311,
+    "lng": 17.9417,
+    "holes": 18,
+    "price": 360,
+    "website": "https://sollentunagk.se"
+  },
+  {
+    "name": "Borlänge Golfklubb",
+    "municipality": "Borlänge",
+    "region": "Dalarna",
+    "lat": 60.4860,
+    "lng": 15.4325,
+    "holes": 18,
+    "price": 350,
+    "website": "https://borlangegk.se"
+  },
+  {
+    "name": "Falun-Borlänge GK (Pay & Play)",
+    "municipality": "Falun",
+    "region": "Dalarna",
+    "lat": 60.6121,
+    "lng": 15.6300,
+    "holes": 18,
+    "price": 380,
+    "website": "https://falunborlangegk.se"
+  },
+  {
+    "name": "Gävle Golfklubb",
+    "municipality": "Gävle",
+    "region": "Gävleborg",
+    "lat": 60.6831,
+    "lng": 17.1702,
+    "holes": 18,
+    "price": 370,
+    "website": "https://gavlegk.se"
+  },
+  {
+    "name": "Ljunghusens Golfklubb",
+    "municipality": "Vellinge",
+    "region": "Skåne",
+    "lat": 55.3682,
+    "lng": 12.9088,
+    "holes": 36,
+    "price": 550,
+    "website": "https://ljunghusensgk.se"
+  },
+  {
+    "name": "Barsebäck Golf & Country Club",
+    "municipality": "Kävlinge",
+    "region": "Skåne",
+    "lat": 55.7509,
+    "lng": 12.8572,
+    "holes": 36,
+    "price": 595,
+    "website": "https://barsebäcksgk.se"
+  },
+  {
+    "name": "Hills Golf Club",
+    "municipality": "Mölndal",
+    "region": "Västra Götaland",
+    "lat": 57.6501,
+    "lng": 12.0263,
+    "holes": 18,
+    "price": 420,
+    "website": "https://hillsgolf.se"
   }
 ]
