@@ -1,180 +1,143 @@
-// ===============================
-// INIT MAP
-// ===============================
+/* ===============================
+   BAS
+=============================== */
 
-let map = L.map('map').setView([62, 15], 5);
-let selectedMarker = null;
-let allFeatures = [];
-let geoLayer = null;
+html, body {
+    height: 100%;
+}
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f7f6;
+    display: flex;
+    flex-direction: column;
+}
 
-// ===============================
-// CUSTOM ICONS
-// ===============================
+/* ===============================
+   RUBRIK
+=============================== */
 
-let icon9 = L.icon({
-    iconUrl: "https://maps.google.com/mapfiles/ms/icons/green-dot.png",
-    iconSize: [32, 32]
-});
+h1 {
+    text-align: center;
+    margin: 15px 0;
+}
 
-let icon18 = L.icon({
-    iconUrl: "https://maps.google.com/mapfiles/ms/icons/red-dot.png",
-    iconSize: [32, 32]
-});
+/* ===============================
+   FILTERBAR
+=============================== */
 
-// ===============================
-// LOAD GEOJSON
-// ===============================
+.filters {
+    padding: 12px;
+    text-align: center;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+}
 
-fetch('golfklubbar.geojson')
-    .then(response => response.json())
-    .then(data => {
+.filters input,
+.filters select,
+.filters button {
+    margin: 5px;
+    padding: 6px 10px;
+    font-size: 14px;
+}
 
-        allFeatures = data.features;
-        renderGeoJSON(allFeatures);
-        updateCounter(allFeatures.length);
-    });
+/* ===============================
+   HUVUDLAYOUT
+=============================== */
 
-// ===============================
-// RENDER GEOJSON
-// ===============================
+.mainLayout {
+    display: flex;
+    flex: 1;                  /* fyller hela höjden */
+    overflow: hidden;
+}
 
-function renderGeoJSON(features) {
+/* ===============================
+   KARTA
+=============================== */
 
-    if (geoLayer) {
-        map.removeLayer(geoLayer);
+#map {
+    flex: 3;                  /* mer plats för karta */
+}
+
+/* ===============================
+   INFOPANEL
+=============================== */
+
+#infoPanel {
+    flex: 1;
+    max-width: 320px;         /* smalare panel */
+    padding: 20px;
+    background: #ffffff;
+    border-left: 3px solid #2e7d32;
+    box-shadow: -2px 0 6px rgba(0,0,0,0.05);
+    overflow-y: auto;
+}
+
+#infoPanel h3 {
+    margin-top: 0;
+    color: #2e7d32;
+    font-size: 18px;
+}
+
+#infoPanel p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+#infoPanel a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#infoPanel a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   RESULT COUNTER
+=============================== */
+
+#resultCounter {
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    background: #e8f5e9;
+    border-bottom: 1px solid #c8e6c9;
+}
+
+/* ===============================
+   FOOTER
+=============================== */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #e8f5e9;
+    font-size: 14px;
+    border-top: 1px solid #c8e6c9;
+}
+
+/* ===============================
+   MOBIL
+=============================== */
+
+@media (max-width: 768px) {
+
+    .mainLayout {
+        flex-direction: column;
     }
 
-    geoLayer = L.geoJSON(features, {
-
-        pointToLayer: function (feature, latlng) {
-
-            let holes = feature.properties.holes || 9;
-            let icon = holes == 18 ? icon18 : icon9;
-
-            let marker = L.marker(latlng, { icon: icon });
-
-            // Hover tooltip
-            marker.bindTooltip(
-                `<strong>${feature.properties.name}</strong><br>
-                 ${feature.properties.municipality || ""}<br>
-                 ⛳ ${holes} hål<br>
-                 💰 ${feature.properties.price || "?"} kr`,
-                { direction: "top", offset: [0, -10], opacity: 0.9 }
-            );
-
-            // Click → info panel
-            marker.on('click', function () {
-
-                showClubInfo(feature.properties);
-
-                if (selectedMarker) {
-                    selectedMarker.setOpacity(1);
-                }
-
-                marker.setOpacity(0.6);
-                selectedMarker = marker;
-            });
-
-            return marker;
-        }
-
-    }).addTo(map);
-
-    map.fitBounds(geoLayer.getBounds());
-}
-
-// ===============================
-// INFO PANEL
-// ===============================
-
-function showClubInfo(club) {
-
-    let panel = document.getElementById("infoPanel");
-
-    panel.innerHTML = `
-        <h3>${club.name}</h3>
-        <p>📍 ${club.municipality || ""}</p>
-        <p>⛳ ${club.holes || "?"} hål</p>
-        <p>💰 ${club.price || "Ej angivet"} kr</p>
-        ${club.website ? `<p><a href="${club.website}" target="_blank">Besök hemsida</a></p>` : ""}
-    `;
-}
-
-// ===============================
-// FILTER FUNCTION
-// ===============================
-
-function applyFilters() {
-
-    let searchText = document.getElementById('searchInput').value.toLowerCase();
-    let maxPrice = document.getElementById('priceFilter').value;
-    let holes = document.getElementById('holesFilter').value;
-
-    let filtered = allFeatures.filter(feature => {
-
-        let p = feature.properties;
-
-        let matchesSearch =
-            (p.name && p.name.toLowerCase().includes(searchText)) ||
-            (p.municipality && p.municipality.toLowerCase().includes(searchText)) ||
-            (p.region && p.region.toLowerCase().includes(searchText));
-
-        let matchesPrice = maxPrice ? (p.price && p.price <= maxPrice) : true;
-        let matchesHoles = holes ? p.holes == holes : true;
-
-        return matchesSearch && matchesPrice && matchesHoles;
-    });
-
-    renderGeoJSON(filtered);
-    updateCounter(filtered.length);
-}
-
-// ===============================
-// ENTER SUPPORT
-// ===============================
-
-["searchInput", "priceFilter"].forEach(id => {
-    document.getElementById(id).addEventListener("keypress", function(e) {
-        if (e.key === "Enter") {
-            applyFilters();
-        }
-    });
-});
-
-// ===============================
-// RESULT COUNTER
-// ===============================
-
-function updateCounter(count) {
-
-    let counter = document.getElementById("resultCounter");
-
-    if (!counter) {
-        counter = document.createElement("div");
-        counter.id = "resultCounter";
-        counter.style.textAlign = "center";
-        counter.style.padding = "8px";
-        counter.style.fontWeight = "bold";
-        document.body.insertBefore(counter, document.querySelector(".mainLayout"));
+    #map {
+        height: 50vh;
     }
 
-    counter.innerHTML = `Antal träffar: ${count}`;
+    #infoPanel {
+        max-width: 100%;
+        border-left: none;
+        border-top: 3px solid #2e7d32;
+        box-shadow: none;
+    }
 }
-
-// ===============================
-// GLOBAL VISITOR COUNTER
-// ===============================
-
-fetch("https://api.countapi.xyz/hit/pay-and-play-golf-sweden/visits")
-    .then(res => res.json())
-    .then(res => {
-        let visitCounter = document.createElement("div");
-        visitCounter.style.textAlign = "center";
-        visitCounter.style.padding = "10px";
-        visitCounter.innerHTML = "Totala besök: " + res.value;
-        document.body.appendChild(visitCounter);
-    });
