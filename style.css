@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background: #f5f7f6;
 }
 
 h1 {
@@ -9,41 +10,83 @@ h1 {
     margin: 20px 0;
 }
 
+/* FILTERBAR */
 .filters {
     padding: 15px;
     text-align: center;
-    background: #f4f4f4;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
 }
 
 .filters input,
 .filters select,
 .filters button {
     margin: 5px;
-    padding: 6px;
+    padding: 6px 10px;
     font-size: 14px;
 }
 
+/* HUVUDLAYOUT */
 .mainLayout {
     display: flex;
-    height: 75vh;
+    height: calc(100vh - 140px);
 }
 
+/* KARTA */
 #map {
     flex: 2;
+    height: 100%;
 }
 
+/* INFOPANEL */
 #infoPanel {
     flex: 1;
-    padding: 20px;
+    padding: 25px;
     background: #ffffff;
-    border-left: 1px solid #ddd;
+    border-left: 4px solid #2e7d32;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.05);
     overflow-y: auto;
 }
 
-/* Mobilanpassning */
+/* Rubrik i panel */
+#infoPanel h3 {
+    margin-top: 0;
+    color: #2e7d32;
+    font-size: 20px;
+}
+
+/* Text */
+#infoPanel p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+/* Länk */
+#infoPanel a {
+    color: #1565c0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#infoPanel a:hover {
+    text-decoration: underline;
+}
+
+/* RESULT COUNTER */
+#resultCounter {
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    background: #e8f5e9;
+    border-bottom: 1px solid #c8e6c9;
+}
+
+/* MOBILANPASSNING */
 @media (max-width: 768px) {
+
     .mainLayout {
         flex-direction: column;
+        height: auto;
     }
 
     #map {
@@ -51,8 +94,8 @@ h1 {
     }
 
     #infoPanel {
-        height: auto;
         border-left: none;
-        border-top: 1px solid #ddd;
+        border-top: 3px solid #2e7d32;
+        box-shadow: none;
     }
 }
