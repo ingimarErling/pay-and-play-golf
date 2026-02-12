@@ -22,3 +22,11 @@ h1 {
 #map {
     height: 80vh;
 }
+
+#infoPanel {
+    padding: 15px;
+    background: #ffffff;
+    border-top: 1px solid #ddd;
+    min-height: 120px;
+}
+
