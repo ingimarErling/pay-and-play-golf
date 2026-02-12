@@ -60,8 +60,28 @@ function updateMap(filteredClubs) {
 
         let marker = L.marker([club.lat, club.lng], { icon: icon });
 
-        // Klick visar info i panel
+        // ===============================
+        // HOVER TOOLTIP (kort info)
+        // ===============================
+
+        marker.bindTooltip(
+            `<strong>${club.name}</strong><br>
+             ${club.municipality}<br>
+             ⛳ ${club.holes} hål<br>
+             💰 ${club.price} kr`,
+            {
+                direction: "top",
+                offset: [0, -10],
+                opacity: 0.9
+            }
+        );
+
+        // ===============================
+        // CLICK → INFO PANEL
+        // ===============================
+
         marker.on('click', function() {
+
             showClubInfo(club);
 
             if (selectedMarker) {
@@ -88,8 +108,6 @@ function updateMap(filteredClubs) {
 
 function showClubInfo(club) {
 
-    console.log("CLICKED:", club.name);
-    
     let panel = document.getElementById("infoPanel");
 
     panel.innerHTML = `
@@ -151,9 +169,9 @@ function updateCounter(count) {
         counter = document.createElement("div");
         counter.id = "resultCounter";
         counter.style.textAlign = "center";
-        counter.style.padding = "10px";
+        counter.style.padding = "8px";
         counter.style.fontWeight = "bold";
-        document.body.insertBefore(counter, document.getElementById("map"));
+        document.body.insertBefore(counter, document.querySelector(".mainLayout"));
     }
 
     counter.innerHTML = `Antal träffar: ${count}`;
