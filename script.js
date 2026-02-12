@@ -26,16 +26,40 @@ let icon18 = L.icon({
 });
 
 // ===============================
-// LOAD GEOJSON
+// LOAD GEOJSON (ROBUST VERSION)
 // ===============================
 
 fetch('golfklubbar.geojson')
     .then(response => response.json())
     .then(data => {
 
-        allFeatures = data.features;
+        /*
+        =====================================================
+        CLEAN DATA
+        Filtrerar bort:
+        - features utan name
+        - features utan geometry
+        - features utan koordinater
+        - features som inte är Points
+        =====================================================
+        */
+
+        allFeatures = data.features.filter(feature =>
+            feature &&
+            feature.type === "Feature" &&
+            feature.geometry &&
+            feature.geometry.type === "Point" &&
+            feature.geometry.coordinates &&
+            feature.properties &&
+            feature.properties.name &&
+            feature.properties.name.trim() !== ""
+        );
+
         renderGeoJSON(allFeatures);
         updateCounter(allFeatures.length);
+    })
+    .catch(error => {
+        console.error("GeoJSON load error:", error);
     });
 
 // ===============================
@@ -48,28 +72,34 @@ function renderGeoJSON(features) {
         map.removeLayer(geoLayer);
     }
 
+    if (features.length === 0) {
+        updateCounter(0);
+        return;
+    }
+
     geoLayer = L.geoJSON(features, {
 
         pointToLayer: function (feature, latlng) {
 
-            let holes = feature.properties.holes || 9;
+            let p = feature.properties;
+            let holes = p.holes || 9;
             let icon = holes == 18 ? icon18 : icon9;
 
             let marker = L.marker(latlng, { icon: icon });
 
-            // Hover tooltip
+            // Hover tooltip (kort info)
             marker.bindTooltip(
-                `<strong>${feature.properties.name}</strong><br>
-                 ${feature.properties.municipality || ""}<br>
+                `<strong>${p.name}</strong><br>
+                 ${p.municipality || ""}<br>
                  ⛳ ${holes} hål<br>
-                 💰 ${feature.properties.price || "?"} kr`,
+                 💰 ${p.price || "?"} kr`,
                 { direction: "top", offset: [0, -10], opacity: 0.9 }
             );
 
             // Click → info panel
             marker.on('click', function () {
 
-                showClubInfo(feature.properties);
+                showClubInfo(p);
 
                 if (selectedMarker) {
                     selectedMarker.setOpacity(1);
@@ -174,7 +204,8 @@ fetch("https://api.countapi.xyz/hit/pay-and-play-golf-sweden/visits")
     .then(res => {
         let visitCounter = document.createElement("div");
         visitCounter.style.textAlign = "center";
-        visitCounter.style.padding = "10px";
+        visitCounter.style.padding = "6px";
+        visitCounter.style.fontSize = "13px";
         visitCounter.innerHTML = "Totala besök: " + res.value;
         document.body.appendChild(visitCounter);
     });
