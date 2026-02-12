@@ -12,6 +12,20 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 let clubs = [];
 
 // ===============================
+// CUSTOM ICONS (9 vs 18 hål)
+// ===============================
+
+let icon9 = L.icon({
+    iconUrl: "https://maps.google.com/mapfiles/ms/icons/green-dot.png",
+    iconSize: [32, 32]
+});
+
+let icon18 = L.icon({
+    iconUrl: "https://maps.google.com/mapfiles/ms/icons/red-dot.png",
+    iconSize: [32, 32]
+});
+
+// ===============================
 // LOAD DATA
 // ===============================
 
@@ -20,6 +34,7 @@ fetch('golfklubbar.json')
     .then(data => {
         clubs = data;
         updateMap(clubs);
+        updateCounter(clubs.length);
     });
 
 // ===============================
@@ -28,7 +43,6 @@ fetch('golfklubbar.json')
 
 function updateMap(filteredClubs) {
 
-    // Ta bort gamla markers
     markers.forEach(marker => map.removeLayer(marker));
     markers = [];
 
@@ -40,22 +54,41 @@ function updateMap(filteredClubs) {
     let bounds = [];
 
     filteredClubs.forEach(club => {
-        let marker = L.marker([club.lat, club.lng])
-            .bindPopup(`
-                <strong>${club.name}</strong><br>
-                ${club.municipality}<br>
-                ${club.holes} hål<br>
-                ${club.price} kr<br>
-                <a href="${club.website}" target="_blank">Hemsida</a>
-            `)
-            .addTo(map);
+
+        let icon = club.holes == 18 ? icon18 : icon9;
+
+        let marker = L.marker([club.lat, club.lng], { icon: icon });
+
+        let popupContent = `
+            <div style="min-width:200px">
+                <strong style="font-size:16px">${club.name}</strong><br>
+                📍 ${club.municipality}<br>
+                ⛳ ${club.holes} hål<br>
+                💰 ${club.price} kr<br>
+                <a href="${club.website}" target="_blank">Besök hemsida</a>
+            </div>
+        `;
+
+        marker.bindPopup(popupContent);
+
+        // Hover popup
+        marker.on('mouseover', function() {
+            this.openPopup();
+        });
+
+        marker.on('mouseout', function() {
+            this.closePopup();
+        });
+
+        marker.addTo(map);
 
         markers.push(marker);
         bounds.push([club.lat, club.lng]);
     });
 
-    // Auto-zoom till träffar
     map.fitBounds(bounds);
+
+    updateCounter(filteredClubs.length);
 }
 
 // ===============================
@@ -72,7 +105,8 @@ function applyFilters() {
 
         let matchesSearch =
             club.name.toLowerCase().includes(searchText) ||
-            club.municipality.toLowerCase().includes(searchText);
+            club.municipality.toLowerCase().includes(searchText) ||
+            (club.region && club.region.toLowerCase().includes(searchText));
 
         let matchesPrice = maxPrice ? club.price <= maxPrice : true;
         let matchesHoles = holes ? club.holes == holes : true;
@@ -84,34 +118,47 @@ function applyFilters() {
 }
 
 // ===============================
-// ENTER KEY SUPPORT
+// ENTER SUPPORT
 // ===============================
 
-document.getElementById("searchInput")
-    .addEventListener("keypress", function(e) {
+["searchInput", "priceFilter"].forEach(id => {
+    document.getElementById(id).addEventListener("keypress", function(e) {
         if (e.key === "Enter") {
             applyFilters();
         }
     });
-
-document.getElementById("priceFilter")
-    .addEventListener("keypress", function(e) {
-        if (e.key === "Enter") {
-            applyFilters();
-        }
-    });
+});
 
 // ===============================
-// SIMPLE GLOBAL VISITOR COUNTER
+// RESULT COUNTER
 // ===============================
 
-// Detta använder CountAPI (gratis, enkel, ingen tracking)
-fetch("https://api.countapi.xyz/hit/pay-and-play.org/visits")
+function updateCounter(count) {
+
+    let counter = document.getElementById("resultCounter");
+
+    if (!counter) {
+        counter = document.createElement("div");
+        counter.id = "resultCounter";
+        counter.style.textAlign = "center";
+        counter.style.padding = "10px";
+        counter.style.fontWeight = "bold";
+        document.body.insertBefore(counter, document.getElementById("map"));
+    }
+
+    counter.innerHTML = `Antal träffar: ${count}`;
+}
+
+// ===============================
+// GLOBAL VISITOR COUNTER
+// ===============================
+
+fetch("https://api.countapi.xyz/hit/pay-and-play-golf-sweden/visits")
     .then(res => res.json())
     .then(res => {
-        let counterElement = document.createElement("div");
-        counterElement.style.textAlign = "center";
-        counterElement.style.padding = "10px";
-        counterElement.innerHTML = "Besökare: " + res.value;
-        document.body.appendChild(counterElement);
+        let visitCounter = document.createElement("div");
+        visitCounter.style.textAlign = "center";
+        visitCounter.style.padding = "10px";
+        visitCounter.innerHTML = "Totala besök: " + res.value;
+        document.body.appendChild(visitCounter);
     });
