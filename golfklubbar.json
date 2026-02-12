@@ -2,6 +2,7 @@
   {
     "name": "Ågesta Golfklubb",
     "municipality": "Huddinge",
+    "region": "Stockholm",
     "lat": 59.2331,
     "lng": 18.0862,
     "holes": 9,
@@ -11,6 +12,7 @@
   {
     "name": "Arlandastad Golf",
     "municipality": "Sigtuna",
+    "region": "Stockholm",
     "lat": 59.6356,
     "lng": 17.9424,
     "holes": 18,
@@ -18,12 +20,123 @@
     "website": "https://arlandastadgolf.se"
   },
   {
-    "name": "Tjusta Golf",
+    "name": "Tjusta Golfklubb",
     "municipality": "Sigtuna",
+    "region": "Stockholm",
     "lat": 59.6205,
     "lng": 17.9253,
     "holes": 9,
     "price": 300,
     "website": "https://tjustagolf.se"
+  },
+  {
+    "name": "Rotebro Golf",
+    "municipality": "Sollentuna",
+    "region": "Stockholm",
+    "lat": 59.4836,
+    "lng": 17.9487,
+    "holes": 9,
+    "price": 320,
+    "website": "https://rotebrogolf.se"
+  },
+  {
+    "name": "Kyssinge Golf",
+    "municipality": "Upplands-Bro",
+    "region": "Stockholm",
+    "lat": 59.5373,
+    "lng": 17.5752,
+    "holes": 9,
+    "price": 350,
+    "website": "https://kyssingegolf.se"
+  },
+  {
+    "name": "Salems Golfklubb",
+    "municipality": "Salem",
+    "region": "Stockholm",
+    "lat": 59.1963,
+    "lng": 17.7656,
+    "holes": 9,
+    "price": 300,
+    "website": "https://salemsgk.se"
+  },
+  {
+    "name": "Norråva Golfklubb",
+    "municipality": "Vallentuna",
+    "region": "Stockholm",
+    "lat": 59.5985,
+    "lng": 18.0974,
+    "holes": 9,
+    "price": 300,
+    "website": "https://norravagk.se"
+  },
+  {
+    "name": "Huvudstadens Golfklubb (Barkarby)",
+    "municipality": "Järfälla",
+    "region": "Stockholm",
+    "lat": 59.4149,
+    "lng": 17.8537,
+    "holes": 9,
+    "price": 350,
+    "website": "https://hgk.se"
+  },
+  {
+    "name": "Lidingö Golfklubb (Pay & Play-slinga)",
+    "municipality": "Lidingö",
+    "region": "Stockholm",
+    "lat": 59.3787,
+    "lng": 18.1775,
+    "holes": 9,
+    "price": 400,
+    "website": "https://lidingogk.se"
+  },
+  {
+    "name": "Viksjö Golfklubb",
+    "municipality": "Järfälla",
+    "region": "Stockholm",
+    "lat": 59.4025,
+    "lng": 17.8022,
+    "holes": 9,
+    "price": 350,
+    "website": "https://viksjogk.se"
+  },
+  {
+    "name": "Hässelby Golf",
+    "municipality": "Stockholm",
+    "region": "Stockholm",
+    "lat": 59.3862,
+    "lng": 17.8313,
+    "holes": 9,
+    "price": 250,
+    "website": "https://hasselbygolf.se"
+  },
+  {
+    "name": "Gripsholms Golfklubb",
+    "municipality": "Mariefred",
+    "region": "Södermanland",
+    "lat": 59.2527,
+    "lng": 17.2036,
+    "holes": 18,
+    "price": 450,
+    "website": "https://gripsholmsgk.se"
+  },
+  {
+    "name": "Vidbynäs Golf",
+    "municipality": "Nykvarn",
+    "region": "Södermanland",
+    "lat": 59.1761,
+    "lng": 17.3532,
+    "holes": 18,
+    "price": 450,
+    "website": "https://vidbynasgolf.se"
+  },
+  {
+    "name": "Johannesbergs Golf",
+    "municipality": "Rimbo",
+    "region": "Stockholm",
+    "lat": 59.7445,
+    "lng": 18.3451,
+    "holes": 18,
+    "price": 395,
+    "website": "https://johannesbergsgolf.se"
   }
 ]
