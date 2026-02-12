@@ -1,1 +1,38 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Pay & Play Golf Sverige</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
 
+<h1>Pay & Play Golf i Sverige</h1>
+
+<div class="filters">
+    <input type="text" id="searchInput" placeholder="Sök kommun eller klubb...">
+
+    <label>
+        Maxpris:
+        <input type="number" id="priceFilter" placeholder="t.ex. 400">
+    </label>
+
+    <label>
+        <select id="holesFilter">
+            <option value="">Alla hål</option>
+            <option value="9">9 hål</option>
+            <option value="18">18 hål</option>
+        </select>
+    </label>
+
+    <button onclick="applyFilters()">Sök</button>
+</div>
+
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
