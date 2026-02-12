@@ -6,27 +6,53 @@ body {
 
 h1 {
     text-align: center;
+    margin: 20px 0;
 }
 
 .filters {
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     background: #f4f4f4;
 }
 
-.filters input, .filters select {
+.filters input,
+.filters select,
+.filters button {
     margin: 5px;
-    padding: 5px;
+    padding: 6px;
+    font-size: 14px;
+}
+
+.mainLayout {
+    display: flex;
+    height: 75vh;
 }
 
 #map {
-    height: 80vh;
+    flex: 2;
 }
 
 #infoPanel {
-    padding: 15px;
+    flex: 1;
+    padding: 20px;
     background: #ffffff;
-    border-top: 1px solid #ddd;
-    min-height: 120px;
+    border-left: 1px solid #ddd;
+    overflow-y: auto;
 }
 
+/* Mobilanpassning */
+@media (max-width: 768px) {
+    .mainLayout {
+        flex-direction: column;
+    }
+
+    #map {
+        height: 50vh;
+    }
+
+    #infoPanel {
+        height: auto;
+        border-left: none;
+        border-top: 1px solid #ddd;
+    }
+}
