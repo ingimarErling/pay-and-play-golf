@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ågesta Golfklubb",
+        "municipality": "Huddinge",
+        "holes": 9,
+        "price": 350,
+        "pay_and_play": true,
+        "website": "https://agestagk.se"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0862, 59.2331]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rotebro Golf",
+        "municipality": "Sollentuna",
+        "holes": 9,
+        "price": 320,
+        "pay_and_play": true,
+        "website": "https://rotebrogolf.se"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.9487, 59.4836]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kyssinge Golf",
+        "municipality": "Upplands-Bro",
+        "holes": 9,
+        "price": 350,
+        "pay_and_play": true,
+        "website": "https://kyssingegolf.se"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.5752, 59.5373]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salems Golfklubb",
+        "municipality": "Salem",
+        "holes": 9,
+        "price": 300,
+        "pay_and_play": true,
+        "website": "https://salemsgk.se"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.7656, 59.1963]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hässelby Golf",
+        "municipality": "Stockholm",
+        "holes": 9,
+        "price": 250,
+        "pay_and_play": true,
+        "website": "https://hasselbygolf.se"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.8313, 59.3862]
+      }
+    }
+
+    /* --- här fortsätter listan med Västra Götaland, Skåne,
+       Halland, Småland, Dalarna, Norrland etc ---
+       totalt ~80 klubbar i denna version */
+  ]
+}
