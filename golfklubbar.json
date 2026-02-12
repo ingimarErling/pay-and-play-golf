@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Ågesta Golfklubb",
+    "municipality": "Huddinge",
+    "lat": 59.2331,
+    "lng": 18.0862,
+    "holes": 9,
+    "price": 350,
+    "website": "https://agestagk.se"
+  },
+  {
+    "name": "Arlandastad Golf",
+    "municipality": "Sigtuna",
+    "lat": 59.6356,
+    "lng": 17.9424,
+    "holes": 18,
+    "price": 495,
+    "website": "https://arlandastadgolf.se"
+  },
+  {
+    "name": "Tjusta Golf",
+    "municipality": "Sigtuna",
+    "lat": 59.6205,
+    "lng": 17.9253,
+    "holes": 9,
+    "price": 300,
+    "website": "https://tjustagolf.se"
+  }
+]
