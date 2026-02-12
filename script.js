@@ -4,6 +4,7 @@
 
 let map = L.map('map').setView([62, 15], 5);
 let markers = [];
+let selectedMarker = null;
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
@@ -59,25 +60,16 @@ function updateMap(filteredClubs) {
 
         let marker = L.marker([club.lat, club.lng], { icon: icon });
 
-        let popupContent = `
-            <div style="min-width:200px">
-                <strong style="font-size:16px">${club.name}</strong><br>
-                📍 ${club.municipality}<br>
-                ⛳ ${club.holes} hål<br>
-                💰 ${club.price} kr<br>
-                <a href="${club.website}" target="_blank">Besök hemsida</a>
-            </div>
-        `;
+        // Klick visar info i panel
+        marker.on('click', function() {
+            showClubInfo(club);
 
-        marker.bindPopup(popupContent);
+            if (selectedMarker) {
+                selectedMarker.setOpacity(1);
+            }
 
-        // Hover popup
-        marker.on('mouseover', function() {
-            this.openPopup();
-        });
-
-        marker.on('mouseout', function() {
-            this.closePopup();
+            marker.setOpacity(0.6);
+            selectedMarker = marker;
         });
 
         marker.addTo(map);
@@ -87,8 +79,24 @@ function updateMap(filteredClubs) {
     });
 
     map.fitBounds(bounds);
-
     updateCounter(filteredClubs.length);
+}
+
+// ===============================
+// INFO PANEL
+// ===============================
+
+function showClubInfo(club) {
+
+    let panel = document.getElementById("infoPanel");
+
+    panel.innerHTML = `
+        <h3>${club.name}</h3>
+        <p>📍 ${club.municipality}</p>
+        <p>⛳ ${club.holes} hål</p>
+        <p>💰 ${club.price} kr</p>
+        <p><a href="${club.website}" target="_blank">Besök hemsida</a></p>
+    `;
 }
 
 // ===============================
