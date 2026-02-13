@@ -1,0 +1,158 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Landeryds Golfklubb (Pay & Play)",
+        "municipality": "Linköping",
+        "region": "Östergötland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://landeryd.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.6884, 58.3927]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Linköpings Golfklubb (9-håls)",
+        "municipality": "Linköping",
+        "region": "Östergötland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://linkopingsgk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.6293, 58.4158]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Norrköpings Golfklubb (Pay & Play)",
+        "municipality": "Norrköping",
+        "region": "Östergötland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://norrkopingsgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.1784, 58.5877]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Finspångs Golfklubb",
+        "municipality": "Finspång",
+        "region": "Östergötland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://finspangsgk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.7795, 58.7124]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Söderköpings Golfklubb (Pay & Play)",
+        "municipality": "Söderköping",
+        "region": "Östergötland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://soderkopingsgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.3052, 58.4761]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vadstena Golfklubb (9-håls)",
+        "municipality": "Vadstena",
+        "region": "Östergötland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://vadstenagk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [14.8972, 58.4519]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mjölby Golfklubb (Pay & Play)",
+        "municipality": "Mjölby",
+        "region": "Östergötland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://mjolbygk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.1438, 58.3245]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Åtvidabergs Golfklubb",
+        "municipality": "Åtvidaberg",
+        "region": "Östergötland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://atvidabergsgk.se",
+        "source": "Officiell Pay & Play info",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.0032, 58.1987]
+      }
+    }
+
+  ]
+}
