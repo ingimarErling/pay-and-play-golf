@@ -1,0 +1,158 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Växjö Golfklubb (Pay & Play)",
+        "municipality": "Växjö",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://vaxjogk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [14.8057, 56.8817]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kalmar Golfklubb (9-håls)",
+        "municipality": "Kalmar",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://kalmargk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.3456, 56.6745]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Västerviks Golfklubb (Pay & Play)",
+        "municipality": "Västervik",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://vasterviksgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.6364, 57.7595]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oskarshamns Golfklubb (9-håls)",
+        "municipality": "Oskarshamn",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://oskarshamnsgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [16.4621, 57.2647]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eksjö Golfklubb (Pay & Play)",
+        "municipality": "Eksjö",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://eksjogk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [14.9613, 57.6658]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tranås Golfklubb (9-håls)",
+        "municipality": "Tranås",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://tranasgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [14.9864, 58.0337]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vetlanda Golfklubb (Pay & Play)",
+        "municipality": "Vetlanda",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://vetlandagk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [15.0854, 57.4301]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Götaströms Golfklubb",
+        "municipality": "Vaggeryd",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://gotastromsgk.se",
+        "source": "Officiell Pay & Play info",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [14.1437, 57.4948]
+      }
+    }
+
+  ]
+}
