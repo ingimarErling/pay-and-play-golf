@@ -2,7 +2,10 @@
 // INIT MAP
 // ===============================
 
-let map = L.map('map').setView([62, 15], 5);
+const SWEDEN_CENTER = [62, 15];
+const SWEDEN_ZOOM = 5;
+
+let map = L.map('map').setView(SWEDEN_CENTER, SWEDEN_ZOOM);
 let selectedMarker = null;
 let allFeatures = [];
 let geoLayer = null;
@@ -10,6 +13,7 @@ let geoLayer = null;
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; OpenStreetMap contributors'
 }).addTo(map);
+
 
 // ===============================
 // CUSTOM ICONS
@@ -24,6 +28,7 @@ let icon18 = L.icon({
     iconUrl: "https://maps.google.com/mapfiles/ms/icons/red-dot.png",
     iconSize: [32, 32]
 });
+
 
 // ===============================
 // LOAD ALL REGION FILES
@@ -51,12 +56,7 @@ Promise.all(
 )
 .then(datasets => {
 
-    /*
-    =====================================================
-    CLEAN + MERGE DATA
-    =====================================================
-    */
-
+    // CLEAN + MERGE DATA
     allFeatures = datasets
         .flatMap(data => data.features)
         .filter(feature =>
@@ -70,7 +70,7 @@ Promise.all(
             feature.properties.name.trim() !== ""
         );
 
-    renderGeoJSON(allFeatures);
+    renderGeoJSON(allFeatures, true);
     updateCounter(allFeatures.length);
 })
 .catch(error => {
@@ -82,13 +82,13 @@ Promise.all(
 // RENDER GEOJSON
 // ===============================
 
-function renderGeoJSON(features) {
+function renderGeoJSON(features, fitToBounds = true) {
 
     if (geoLayer) {
         map.removeLayer(geoLayer);
     }
 
-    if (features.length === 0) {
+    if (!features || features.length === 0) {
         updateCounter(0);
         return;
     }
@@ -130,7 +130,9 @@ function renderGeoJSON(features) {
 
     }).addTo(map);
 
-    map.fitBounds(geoLayer.getBounds());
+    if (fitToBounds && geoLayer.getBounds().isValid()) {
+        map.fitBounds(geoLayer.getBounds());
+    }
 }
 
 
@@ -147,7 +149,7 @@ function showClubInfo(club) {
         <p>📍 ${club.municipality || ""}</p>
         <p>⛳ ${club.holes || "?"} hål</p>
         <p>💰 ${club.price || "Ej angivet"} kr</p>
-        ${club.website ? `<p><a href="${club.website}" target="_blank">Besök hemsida</a></p>` : ""}
+        ${club.website ? `<p><a href="${club.website}" target="_blank" rel="noopener">Besök hemsida</a></p>` : ""}
     `;
 }
 
@@ -158,7 +160,7 @@ function showClubInfo(club) {
 
 function applyFilters() {
 
-    let searchText = document.getElementById('searchInput').value.toLowerCase();
+    let searchText = document.getElementById('searchInput').value.toLowerCase().trim();
     let maxPrice = document.getElementById('priceFilter').value;
     let holes = document.getElementById('holesFilter').value;
 
@@ -167,12 +169,18 @@ function applyFilters() {
         let p = feature.properties;
 
         let matchesSearch =
+            !searchText ||
             (p.name && p.name.toLowerCase().includes(searchText)) ||
             (p.municipality && p.municipality.toLowerCase().includes(searchText)) ||
             (p.region && p.region.toLowerCase().includes(searchText));
 
-        let matchesPrice = maxPrice ? (p.price && p.price <= maxPrice) : true;
-        let matchesHoles = holes ? p.holes == holes : true;
+        let matchesPrice =
+            !maxPrice ||
+            (p.price && Number(p.price) <= Number(maxPrice));
+
+        let matchesHoles =
+            !holes ||
+            p.holes == holes;
 
         return matchesSearch && matchesPrice && matchesHoles;
     });
@@ -183,15 +191,35 @@ function applyFilters() {
 
 
 // ===============================
+// RESET MAP (VISA HELA SVERIGE)
+// ===============================
+
+function resetMap() {
+
+    document.getElementById('searchInput').value = "";
+    document.getElementById('priceFilter').value = "";
+    document.getElementById('holesFilter').value = "";
+
+    renderGeoJSON(allFeatures, false);
+    updateCounter(allFeatures.length);
+
+    map.setView(SWEDEN_CENTER, SWEDEN_ZOOM);
+}
+
+
+// ===============================
 // ENTER SUPPORT
 // ===============================
 
 ["searchInput", "priceFilter"].forEach(id => {
-    document.getElementById(id).addEventListener("keypress", function(e) {
-        if (e.key === "Enter") {
-            applyFilters();
-        }
-    });
+    let el = document.getElementById(id);
+    if (el) {
+        el.addEventListener("keypress", function(e) {
+            if (e.key === "Enter") {
+                applyFilters();
+            }
+        });
+    }
 });
 
 
