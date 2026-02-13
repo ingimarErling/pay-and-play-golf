@@ -1,0 +1,196 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rönnebäck Golfklubb",
+        "municipality": "Malmö",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://ronnebacksgk.se",
+        "source": "Officiell Pay & Play info",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.0775, 55.5754]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sofiedals Golfklubb",
+        "municipality": "Malmö",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://sofiedalsgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.0431, 55.6088]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tomelilla Golfklubb (Pay & Play)",
+        "municipality": "Tomelilla",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://tomelillagk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.9324, 55.5406]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Perstorps Golfklubb",
+        "municipality": "Perstorp",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://perstorpsgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.4048, 56.1410]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hässlegårdens Golfklubb",
+        "municipality": "Hässleholm",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://hasslegardensgk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.7436, 56.1651]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Skyrups Golfklubb (9-håls)",
+        "municipality": "Höör",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://skyrupsgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.5589, 55.9372]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ystad Golfklubb (Pay & Play)",
+        "municipality": "Ystad",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://ystadgk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.8383, 55.4337]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Båstad Golfklubb (9-håls Pay & Play)",
+        "municipality": "Båstad",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://bastadgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.8328, 56.4326]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Svalövs Golfklubb",
+        "municipality": "Svalöv",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://svalovsgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.1172, 55.9191]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vellinge Golfklubb (Pay & Play)",
+        "municipality": "Vellinge",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://vellingegk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.9905, 55.4749]
+      }
+    }
+
+  ]
+}
