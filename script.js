@@ -26,25 +26,40 @@ let icon18 = L.icon({
 });
 
 // ===============================
-// LOAD GEOJSON (ROBUST VERSION)
+// LOAD ALL REGION FILES
 // ===============================
 
-fetch('golfklubbar.geojson')
-    .then(response => response.json())
-    .then(data => {
+const regionFiles = [
+    "stockholm.geojson",
+    "vastra-gotaland.geojson",
+    "skane.geojson",
+    "smaland.geojson",
+    "ostergotland.geojson",
+    "halland.geojson",
+    "norrland.geojson"
+];
 
-        /*
-        =====================================================
-        CLEAN DATA
-        Filtrerar bort:
-        - features utan name
-        - features utan geometry
-        - features utan koordinater
-        - features som inte är Points
-        =====================================================
-        */
+Promise.all(
+    regionFiles.map(file =>
+        fetch(file)
+            .then(res => res.json())
+            .catch(err => {
+                console.error("Kunde inte ladda:", file, err);
+                return { features: [] };
+            })
+    )
+)
+.then(datasets => {
 
-        allFeatures = data.features.filter(feature =>
+    /*
+    =====================================================
+    CLEAN + MERGE DATA
+    =====================================================
+    */
+
+    allFeatures = datasets
+        .flatMap(data => data.features)
+        .filter(feature =>
             feature &&
             feature.type === "Feature" &&
             feature.geometry &&
@@ -55,12 +70,13 @@ fetch('golfklubbar.geojson')
             feature.properties.name.trim() !== ""
         );
 
-        renderGeoJSON(allFeatures);
-        updateCounter(allFeatures.length);
-    })
-    .catch(error => {
-        console.error("GeoJSON load error:", error);
-    });
+    renderGeoJSON(allFeatures);
+    updateCounter(allFeatures.length);
+})
+.catch(error => {
+    console.error("GeoJSON load error:", error);
+});
+
 
 // ===============================
 // RENDER GEOJSON
@@ -87,7 +103,7 @@ function renderGeoJSON(features) {
 
             let marker = L.marker(latlng, { icon: icon });
 
-            // Hover tooltip (kort info)
+            // Hover tooltip
             marker.bindTooltip(
                 `<strong>${p.name}</strong><br>
                  ${p.municipality || ""}<br>
@@ -117,6 +133,7 @@ function renderGeoJSON(features) {
     map.fitBounds(geoLayer.getBounds());
 }
 
+
 // ===============================
 // INFO PANEL
 // ===============================
@@ -133,6 +150,7 @@ function showClubInfo(club) {
         ${club.website ? `<p><a href="${club.website}" target="_blank">Besök hemsida</a></p>` : ""}
     `;
 }
+
 
 // ===============================
 // FILTER FUNCTION
@@ -163,6 +181,7 @@ function applyFilters() {
     updateCounter(filtered.length);
 }
 
+
 // ===============================
 // ENTER SUPPORT
 // ===============================
@@ -174,6 +193,7 @@ function applyFilters() {
         }
     });
 });
+
 
 // ===============================
 // RESULT COUNTER
@@ -195,6 +215,7 @@ function updateCounter(count) {
     counter.innerHTML = `Antal träffar: ${count}`;
 }
 
+
 // ===============================
 // GLOBAL VISITOR COUNTER
 // ===============================
@@ -202,10 +223,18 @@ function updateCounter(count) {
 fetch("https://api.countapi.xyz/hit/pay-and-play-golf-sweden/visits")
     .then(res => res.json())
     .then(res => {
-        let visitCounter = document.createElement("div");
-        visitCounter.style.textAlign = "center";
-        visitCounter.style.padding = "6px";
-        visitCounter.style.fontSize = "13px";
-        visitCounter.innerHTML = "Totala besök: " + res.value;
-        document.body.appendChild(visitCounter);
+
+        let footer = document.querySelector("footer");
+
+        if (footer) {
+            let visitCounter = document.createElement("div");
+            visitCounter.style.fontSize = "12px";
+            visitCounter.style.marginTop = "5px";
+            visitCounter.innerHTML = "Totala besök: " + res.value;
+            footer.appendChild(visitCounter);
+        }
+
+    })
+    .catch(err => {
+        console.log("Visitor counter error:", err);
     });
