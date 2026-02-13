@@ -8,7 +8,7 @@
 
     <!-- SEO -->
     <meta name="description" content="Sveriges största katalog över Pay & Play golfbanor. Hitta golf utan grönt kort i hela Sverige.">
-    <meta name="keywords" content="pay and play golf, golf utan grönt kort, golf sverige, golfbana stockholm">
+    <meta name="keywords" content="pay and play golf, golf utan grönt kort, golf sverige">
     <meta name="author" content="Erlingsson">
 
     <!-- Open Graph -->
@@ -51,6 +51,7 @@
     </label>
 
     <button onclick="applyFilters()">Sök</button>
+    <button class="reset-btn" onclick="resetMap()">Visa hela Sverige</button>
 </div>
 
 <div class="mainLayout">
@@ -60,7 +61,6 @@
         <h2>Välj en klubb</h2>
         <p>Klicka på en markering på kartan för mer information.</p>
 
-        <!-- Diskret SEO-text -->
         <div class="seo-inline">
             <h3>Golf utan grönt kort</h3>
             <p>
@@ -79,7 +79,6 @@
     </a>
 </footer>
 
-<!-- Scripts -->
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="script.js"></script>
 
