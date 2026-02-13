@@ -2,16 +2,39 @@
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title>Pay & Play Golf Sverige</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pay & Play Golf i Sverige | Golf utan grönt kort</title>
+
+    <!-- SEO -->
+    <meta name="description" content="Sveriges största katalog över Pay & Play golfbanor. Hitta golf utan grönt kort i hela Sverige.">
+    <meta name="keywords" content="pay and play golf, golf utan grönt kort, golf sverige, golfbana stockholm">
+    <meta name="author" content="Erlingsson">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pay & Play Golf i Sverige">
+    <meta property="og:description" content="Hitta alla pay and play golfbanor i Sverige.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pay-and-play.org">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://pay-and-play.org/">
+
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 </head>
+
 <body>
 
-<h1>Pay & Play Golf i Sverige</h1>
+<header>
+    <h1>Pay & Play Golf i Sverige</h1>
+    <p class="subtitle">
+        Hitta golfbanor utan grönt kort i hela Sverige.
+    </p>
+</header>
 
 <div class="filters">
-    <input type="text" id="searchInput" placeholder="Sök kommun eller klubb...">
+    <input type="text" id="searchInput" placeholder="Sök kommun eller klubb..." aria-label="Sök golfklubb">
 
     <label>
         Maxpris:
@@ -30,23 +53,33 @@
 </div>
 
 <div class="mainLayout">
-    <div id="map"></div>
+    <div id="map" role="region" aria-label="Karta över pay and play golfbanor"></div>
 
     <div id="infoPanel">
-        <h3>Välj en klubb</h3>
-        <p>Klicka på en markering på kartan.</p>
+        <h2>Välj en klubb</h2>
+        <p>Klicka på en markering på kartan för mer information.</p>
     </div>
 </div>
 
+<section class="seo-text">
+    <h2>Golf utan grönt kort i Sverige</h2>
+    <p>
+        På Pay & Play Golf Sverige hittar du golfbanor där du kan spela utan grönt kort.
+        Vår katalog uppdateras kontinuerligt och täcker hela landet – från Skåne till Norrland.
+    </p>
+</section>
+
 <footer>
-    Kontakt:
-    <a href="mailto:support@pay-and-play.org">
-        support@pay-and-play.org
-    </a>
+    <p>
+        © 2025 Erlingsson – Pay & Play Golf Sverige
+    </p>
+    <p>
+        Kontakt:
+        <a href="mailto:support@pay-and-play.org">
+            support@pay-and-play.org
+        </a>
+    </p>
 </footer>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-<script src="script.js"></script>
-
-</body>
-</html>
+<scrip
