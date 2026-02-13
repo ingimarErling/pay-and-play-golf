@@ -1,0 +1,250 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ågesta Golfklubb",
+        "municipality": "Huddinge",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://agestagk.se",
+        "source": "Golfklubbswebb + lokal info",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0862, 59.2331]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Salems Golfklubb",
+        "municipality": "Salem",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://salemsgk.se",
+        "source": "Golfklubbswebb + öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.7656, 59.1963]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hässelby Golf",
+        "municipality": "Stockholm",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://hasselbygolf.se",
+        "source": "Golfklubbswebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.8313, 59.3862]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rotebro Golf",
+        "municipality": "Sollentuna",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://rotebrogolf.se",
+        "source": "Golfklubbswebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.9487, 59.4836]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kyssinge Golf",
+        "municipality": "Upplands-Bro",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://kyssingegolf.se",
+        "source": "Golfklubbswebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.5752, 59.5373]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Norråva Golfklubb",
+        "municipality": "Vallentuna",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://norravagk.se",
+        "source": "Overpass + klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0974, 59.5985]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Huvudstadens Golfklubb",
+        "municipality": "Järfälla",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://hgk.se",
+        "source": "Overpass",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.8537, 59.4149]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Viksjö Golfklubb",
+        "municipality": "Järfälla",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://viksjogk.se",
+        "source": "Overpass",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.8022, 59.4025]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gripsholms Golfklubb",
+        "municipality": "Mariefred",
+        "region": "Sörmland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://gripsholmsgk.se",
+        "source": "Overpass",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.2036, 59.2527]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vidbynäs Golf",
+        "municipality": "Nykvarn",
+        "region": "Sörmland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://vidbynasgolf.se",
+        "source": "Overpass + klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.3532, 59.1761]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Österåkers Golfklubb",
+        "municipality": "Österåker",
+        "region": "Stockholm",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://osterakersgk.se",
+        "source": "Overpass",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.3458, 59.4752]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Årsta Golf",
+        "municipality": "Stockholm",
+        "region": "Stockholm",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://arstagonk.se",
+        "source": "Overpass",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0318, 59.3092]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Waxholms Golfklubb",
+        "municipality": "Vaxholm",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://waxholmsgk.se",
+        "source": "Overpass",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.3472, 59.3988]
+      }
+    },
