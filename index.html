@@ -4,24 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- 🔥 SEO TITLE (viktigt) -->
+    <!-- SEO TITLE -->
     <title>Pay & Play Golf i Sverige – Spela utan grönt kort</title>
 
-    <!-- 🔥 META DESCRIPTION (rankingsignal) -->
+    <!-- META -->
     <meta name="description" content="Hitta alla Pay & Play golfbanor i Sverige. Spela golf utan grönt kort i Stockholm, Skåne, Göteborg och hela landet. Uppdaterad katalog över golfbanor som inte kräver grönt kort.">
-
     <meta name="keywords" content="pay and play golf, golf utan grönt kort, golf sverige, pay and play stockholm, pay and play skåne">
     <meta name="author" content="Erlingsson">
     <meta name="robots" content="index, follow">
 
-    <!-- 🔥 Open Graph -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Pay & Play Golf i Sverige – Spela utan grönt kort">
     <meta property="og:description" content="Sveriges största katalog över golfbanor utan grönt kort. Hitta Pay & Play golf nära dig.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pay-and-play.org/">
     <meta property="og:locale" content="sv_SE">
 
-    <!-- Twitter Card -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Pay & Play Golf i Sverige">
     <meta name="twitter:description" content="Hitta golfbanor utan grönt kort i hela Sverige.">
@@ -29,13 +28,40 @@
     <!-- Canonical -->
     <link rel="canonical" href="https://pay-and-play.org/">
 
-    <!-- Performance boost -->
+    <!-- Performance -->
     <link rel="preconnect" href="https://unpkg.com">
-    <link rel="preconnect" href="https://{s}.tile.openstreetmap.org">
+    <link rel="preconnect" href="https://tile.openstreetmap.org">
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <!-- 🔥 STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "name": "Pay & Play Golf i Sverige",
+          "url": "https://pay-and-play.org/",
+          "inLanguage": "sv-SE",
+          "description": "Sveriges katalog över golfbanor utan grönt kort.",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://pay-and-play.org/?search={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        },
+        {
+          "@type": "Organization",
+          "name": "Pay & Play Golf Sverige",
+          "url": "https://pay-and-play.org/",
+          "logo": "https://pay-and-play.org/favicon.ico"
+        }
+      ]
+    }
+    </script>
 
 </head>
 
@@ -93,22 +119,6 @@
         support@pay-and-play.org
     </a>
 </footer>
-
-<!-- 🔥 Structured Data (Schema.org) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  "name": "Pay & Play Golf i Sverige",
-  "url": "https://pay-and-play.org/",
-  "inLanguage": "sv-SE",
-  "description": "Sveriges katalog över golfbanor utan grönt kort.",
-  "publisher": {
-    "@type": "Organization",
-    "name": "Pay & Play Golf Sverige"
-  }
-}
-</script>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="script.js"></script>
