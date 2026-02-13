@@ -1,0 +1,196 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Albatross Golfklubb",
+        "municipality": "Göteborg",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://albatrossgolf.se",
+        "source": "Officiell klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.9185, 57.7009]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sisjö Golfklubb",
+        "municipality": "Göteborg",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://sisjogolf.se",
+        "source": "Öppen Pay & Play info",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.9201, 57.6372]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Torslanda Golfklubb (Pay & Play)",
+        "municipality": "Göteborg",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://torslandagk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.7961, 57.7216]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Borås Golfklubb (9-håls)",
+        "municipality": "Borås",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://borasgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.9403, 57.7210]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lidköpings Golfklubb",
+        "municipality": "Lidköping",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://lidkopingsgk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [13.1510, 58.5066]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stannum Golf",
+        "municipality": "Lerum",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://stannumgolf.se",
+        "source": "Officiell Pay & Play info",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.3034, 57.7943]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Haverdals Golfklubb",
+        "municipality": "Halmstad",
+        "region": "Halland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://haverdalsgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.7084, 56.7150]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Strömstad Golfklubb (Pay & Play)",
+        "municipality": "Strömstad",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://stromstadgk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.1570, 58.9461]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Uddevalla Golfklubb (9-håls)",
+        "municipality": "Uddevalla",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://uddevallagk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.9387, 58.3519]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Varbergs Golfklubb (Pay & Play)",
+        "municipality": "Varberg",
+        "region": "Halland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://varbergsgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.2443, 57.1204]
+      }
+    }
+
+  ]
+}
