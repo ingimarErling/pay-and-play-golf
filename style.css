@@ -8,19 +8,30 @@ html, body {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
     background: #f5f7f6;
     display: flex;
     flex-direction: column;
+    color: #222;
 }
 
 /* ===============================
-   RUBRIK
+   HEADER
 =============================== */
 
-h1 {
+.site-header {
     text-align: center;
-    margin: 15px 0;
+    padding: 15px 10px 5px 10px;
+}
+
+.site-header h1 {
+    margin: 10px 0 5px 0;
+}
+
+.subtitle {
+    margin: 0;
+    color: #555;
+    font-size: 14px;
 }
 
 /* ===============================
@@ -42,6 +53,17 @@ h1 {
     font-size: 14px;
 }
 
+.filters button {
+    background: #2e7d32;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.filters button:hover {
+    background: #256628;
+}
+
 /* ===============================
    HUVUDLAYOUT
 =============================== */
@@ -49,7 +71,7 @@ h1 {
 .mainLayout {
     display: flex;
     flex: 1;
-    min-height: 0; /* viktigt för flex + overflow */
+    min-height: 0;
 }
 
 /* ===============================
@@ -58,7 +80,7 @@ h1 {
 
 #map {
     flex: 3;
-    height: 100%;   /* ← DETTA VAR PROBLEMET */
+    height: 100%;
 }
 
 /* ===============================
@@ -75,10 +97,23 @@ h1 {
     overflow-y: auto;
 }
 
-#infoPanel h3 {
+#infoPanel h2 {
     margin-top: 0;
     color: #2e7d32;
-    font-size: 18px;
+}
+
+.seo-inline {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 13px;
+    color: #666;
+}
+
+.seo-inline h3 {
+    font-size: 15px;
+    margin-bottom: 6px;
+    color: #2e7d32;
 }
 
 /* ===============================
@@ -101,8 +136,17 @@ footer {
     text-align: center;
     padding: 10px;
     background: #e8f5e9;
-    font-size: 14px;
+    font-size: 13px;
     border-top: 1px solid #c8e6c9;
+}
+
+footer a {
+    color: #2e7d32;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 /* ===============================
