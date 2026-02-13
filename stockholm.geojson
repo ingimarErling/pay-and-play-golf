@@ -248,3 +248,139 @@
         "coordinates": [18.3472, 59.3988]
       }
     },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arninge Golfklubb",
+        "municipality": "Täby",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://arningegk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0994, 59.4663]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Brollsta Golf",
+        "municipality": "Österåker",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://brollstagolf.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.2837, 59.5561]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Björkhagens Golfklubb",
+        "municipality": "Stockholm",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://bjorkhagensgk.se",
+        "source": "Officiell klubbinfo",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.1523, 59.2826]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bergshamra Golfklubb",
+        "municipality": "Solna",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://bergshamragk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.0262, 59.3807]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kungsängen Golf Club (9-hålsbana)",
+        "municipality": "Upplands-Bro",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://kungsangengolf.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.7806, 59.4923]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nynäshamns Golfklubb (Pay & Play)",
+        "municipality": "Nynäshamn",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://nynashamnsgk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [17.9714, 58.9005]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "HaningeStrand Golfklubb",
+        "municipality": "Haninge",
+        "region": "Stockholm",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://haningestrand.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [18.1001, 59.1085]
+      }
+    }
+  ]
+}
+
+
