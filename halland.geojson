@@ -1,0 +1,139 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Halmstad Golfarena (Pay & Play)",
+        "municipality": "Halmstad",
+        "region": "Halland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://halmstadgolfarena.se",
+        "source": "Officiell Pay & Play info",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.8385, 56.6876]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Holms Golfklubb (9-håls)",
+        "municipality": "Halmstad",
+        "region": "Halland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://holmsgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.7712, 56.7324]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Falkenbergs Golfklubb (Pay & Play)",
+        "municipality": "Falkenberg",
+        "region": "Halland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://falkenbergsgk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.5093, 56.9001]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Åkulla Golf & Country Club (9-håls)",
+        "municipality": "Varberg",
+        "region": "Halland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://akullagolf.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.3895, 57.1613]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ringenäs Golfklubb (Pay & Play)",
+        "municipality": "Halmstad",
+        "region": "Halland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://ringenasgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.6948, 56.7009]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tönnersjö Golfklubb (9-håls)",
+        "municipality": "Halmstad",
+        "region": "Halland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://tonnersjogk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.7456, 56.6753]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Haverdals Golfklubb (Pay & Play)",
+        "municipality": "Halmstad",
+        "region": "Halland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://haverdalsgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [12.7084, 56.7150]
+      }
+    }
+
+  ]
+}
