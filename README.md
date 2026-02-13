@@ -3,6 +3,11 @@
 ##
 https://search.google.com/search-console
 
+## lägg in 
+https://search.google.com/search-console/sitemaps
+
+Välj din property.
+
 ## 
 Vill du:
 
