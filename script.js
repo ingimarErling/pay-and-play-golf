@@ -16,6 +16,27 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 
 // ===============================
+// HOME BUTTON (Leaflet Control)
+// ===============================
+
+const homeControl = L.control({ position: 'topleft' });
+
+homeControl.onAdd = function () {
+    const div = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+    div.innerHTML = '<a href="#" title="Visa hela Sverige">🏠</a>';
+
+    div.onclick = function (e) {
+        e.preventDefault();
+        resetMap();
+    };
+
+    return div;
+};
+
+homeControl.addTo(map);
+
+
+// ===============================
 // CUSTOM ICONS
 // ===============================
 
@@ -56,7 +77,6 @@ Promise.all(
 )
 .then(datasets => {
 
-    // CLEAN + MERGE DATA
     allFeatures = datasets
         .flatMap(data => data.features)
         .filter(feature =>
@@ -103,7 +123,6 @@ function renderGeoJSON(features, fitToBounds = true) {
 
             let marker = L.marker(latlng, { icon: icon });
 
-            // Hover tooltip
             marker.bindTooltip(
                 `<strong>${p.name}</strong><br>
                  ${p.municipality || ""}<br>
@@ -112,7 +131,6 @@ function renderGeoJSON(features, fitToBounds = true) {
                 { direction: "top", offset: [0, -10], opacity: 0.9 }
             );
 
-            // Click → info panel
             marker.on('click', function () {
 
                 showClubInfo(p);
@@ -191,7 +209,7 @@ function applyFilters() {
 
 
 // ===============================
-// RESET MAP (VISA HELA SVERIGE)
+// RESET MAP
 // ===============================
 
 function resetMap() {
@@ -200,27 +218,26 @@ function resetMap() {
     document.getElementById('priceFilter').value = "";
     document.getElementById('holesFilter').value = "";
 
+    document.getElementById("infoPanel").innerHTML = `
+        <h2>Välj en klubb</h2>
+        <p>Klicka på en markering på kartan för mer information.</p>
+
+        <div class="seo-inline">
+            <h3>Golf utan grönt kort</h3>
+            <p>
+                På Pay & Play Golf Sverige hittar du golfbanor där du kan spela utan grönt kort.
+                Vår katalog täcker hela landet – från Skåne till Norrland.
+            </p>
+        </div>
+    `;
+
+    selectedMarker = null;
+
     renderGeoJSON(allFeatures, false);
     updateCounter(allFeatures.length);
 
     map.setView(SWEDEN_CENTER, SWEDEN_ZOOM);
 }
-
-
-// ===============================
-// ENTER SUPPORT
-// ===============================
-
-["searchInput", "priceFilter"].forEach(id => {
-    let el = document.getElementById(id);
-    if (el) {
-        el.addEventListener("keypress", function(e) {
-            if (e.key === "Enter") {
-                applyFilters();
-            }
-        });
-    }
-});
 
 
 // ===============================
@@ -245,7 +262,7 @@ function updateCounter(count) {
 
 
 // ===============================
-// GLOBAL VISITOR COUNTER
+// VISITOR COUNTER
 // ===============================
 
 fetch("https://api.countapi.xyz/hit/pay-and-play-golf-sweden/visits")
