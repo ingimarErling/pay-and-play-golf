@@ -3,8 +3,22 @@
 
   <url>
     <loc>https://pay-and-play.org/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/stockholm-pay-and-play.html</loc>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/skane-golf-utan-gront-kort.html</loc>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/golf-utan-gront-kort-goteborg.html</loc>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/9-hal-pay-and-play-sverige.html</loc>
   </url>
 
 </urlset>
