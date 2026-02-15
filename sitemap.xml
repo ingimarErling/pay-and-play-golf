@@ -1,24 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+  <!-- Startsida -->
   <url>
     <loc>https://pay-and-play.org/</loc>
+    <priority>1.0</priority>
   </url>
 
+  <!-- Regioner -->
   <url>
     <loc>https://pay-and-play.org/stockholm-pay-and-play.html</loc>
+    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://pay-and-play.org/skane-golf-utan-gront-kort.html</loc>
+    <priority>0.9</priority>
   </url>
 
   <url>
     <loc>https://pay-and-play.org/golf-utan-gront-kort-goteborg.html</loc>
+    <priority>0.9</priority>
   </url>
 
   <url>
+    <loc>https://pay-and-play.org/vastra-gotaland-pay-and-play.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/halland-pay-and-play.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/smaland-pay-and-play.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/norrland-pay-and-play.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/ostergotland-pay-and-play.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Special -->
+  <url>
     <loc>https://pay-and-play.org/9-hal-pay-and-play-sverige.html</loc>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Artiklar -->
+  <url>
+    <loc>https://pay-and-play.org/vad-kostar-pay-and-play-golf.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/behover-man-gront-kort.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/basta-pay-and-play-banor-2025.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/pay-and-play-vs-medlemskap.html</loc>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/vad_ar_en_brevladeklubb.html</loc>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Övrigt -->
+  <url>
+    <loc>https://pay-and-play.org/om-oss.html</loc>
+    <priority>0.5</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/privacy-policy.html</loc>
+    <priority>0.5</priority>
   </url>
 
 </urlset>
