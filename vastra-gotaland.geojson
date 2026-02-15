@@ -1,7 +1,6 @@
 {
   "type": "FeatureCollection",
   "features": [
-
     {
       "type": "Feature",
       "properties": {
@@ -17,10 +16,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [11.9185, 57.7009]
+        "coordinates": [
+          11.9185,
+          57.7009
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -36,10 +37,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [11.9201, 57.6372]
+        "coordinates": [
+          11.9201,
+          57.6372
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -55,10 +58,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [11.7961, 57.7216]
+        "coordinates": [
+          11.7961,
+          57.7216
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -68,16 +73,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://borasgk.se",
+        "website": "https://www.borasgolfklubb.se/",
         "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [12.9403, 57.7210]
+        "coordinates": [
+          12.9403,
+          57.721
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -93,10 +100,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [13.1510, 58.5066]
+        "coordinates": [
+          13.151,
+          58.5066
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -106,16 +115,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": true,
-        "website": "https://stannumgolf.se",
+        "website": "https://www.stannumgolf.se/",
         "source": "Officiell Pay & Play info",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [12.3034, 57.7943]
+        "coordinates": [
+          12.3034,
+          57.7943
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -131,10 +142,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [12.7084, 56.7150]
+        "coordinates": [
+          12.7084,
+          56.715
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -144,16 +157,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://stromstadgk.se",
+        "website": "https://stdgk.se/",
         "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [11.1570, 58.9461]
+        "coordinates": [
+          11.157,
+          58.9461
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -169,10 +184,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [11.9387, 58.3519]
+        "coordinates": [
+          11.9387,
+          58.3519
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -188,9 +205,11 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [12.2443, 57.1204]
+        "coordinates": [
+          12.2443,
+          57.1204
+        ]
       }
     }
-
   ]
 }

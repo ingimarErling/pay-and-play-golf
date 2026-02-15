@@ -1,7 +1,6 @@
 {
   "type": "FeatureCollection",
   "features": [
-
     {
       "type": "Feature",
       "properties": {
@@ -17,10 +16,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [15.6884, 58.3927]
+        "coordinates": [
+          15.6884,
+          58.3927
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -36,10 +37,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [15.6293, 58.4158]
+        "coordinates": [
+          15.6293,
+          58.4158
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -49,16 +52,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://norrkopingsgk.se",
+        "website": "https://www.golfnorrkoping.se/segora/norrkopings-golfklubb/",
         "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [16.1784, 58.5877]
+        "coordinates": [
+          16.1784,
+          58.5877
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -74,10 +79,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [15.7795, 58.7124]
+        "coordinates": [
+          15.7795,
+          58.7124
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -87,16 +94,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://soderkopingsgk.se",
+        "website": "https://www.nsgk.se/",
         "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [16.3052, 58.4761]
+        "coordinates": [
+          16.3052,
+          58.4761
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -112,10 +121,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [14.8972, 58.4519]
+        "coordinates": [
+          14.8972,
+          58.4519
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -131,10 +142,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [15.1438, 58.3245]
+        "coordinates": [
+          15.1438,
+          58.3245
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -150,9 +163,11 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [16.0032, 58.1987]
+        "coordinates": [
+          16.0032,
+          58.1987
+        ]
       }
     }
-
   ]
 }

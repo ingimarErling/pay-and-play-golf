@@ -1,7 +1,6 @@
 {
   "type": "FeatureCollection",
   "features": [
-
     {
       "type": "Feature",
       "properties": {
@@ -17,10 +16,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [18.0862, 59.2331]
+        "coordinates": [
+          18.0862,
+          59.2331
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -36,10 +37,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [17.7656, 59.1963]
+        "coordinates": [
+          17.7656,
+          59.1963
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -49,16 +52,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": true,
-        "website": "https://hasselbygolf.se",
+        "website": "https://hasselbygolfklubb.se/",
         "source": "Golfklubbswebb",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [17.8313, 59.3862]
+        "coordinates": [
+          17.8313,
+          59.3862
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -68,16 +73,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": true,
-        "website": "https://rotebrogolf.se",
+        "website": "https://www.rotebrogolf.com/",
         "source": "Golfklubbswebb",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [17.9487, 59.4836]
+        "coordinates": [
+          17.9487,
+          59.4836
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -87,16 +94,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": true,
-        "website": "https://kyssingegolf.se",
+        "website": null,
         "source": "Golfklubbswebb",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [17.5752, 59.5373]
+        "coordinates": [
+          17.5752,
+          59.5373
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -112,10 +121,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [18.0974, 59.5985]
+        "coordinates": [
+          18.0974,
+          59.5985
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -131,10 +142,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [17.8537, 59.4149]
+        "coordinates": [
+          17.8537,
+          59.4149
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -150,10 +163,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [17.8022, 59.4025]
+        "coordinates": [
+          17.8022,
+          59.4025
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -169,10 +184,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [17.2036, 59.2527]
+        "coordinates": [
+          17.2036,
+          59.2527
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -188,10 +205,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [17.3532, 59.1761]
+        "coordinates": [
+          17.3532,
+          59.1761
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -201,16 +220,18 @@
         "holes": 18,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://osterakersgk.se",
+        "website": "https://ostgk.se/",
         "source": "Overpass",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [18.3458, 59.4752]
+        "coordinates": [
+          18.3458,
+          59.4752
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -220,16 +241,18 @@
         "holes": 18,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://arstagonk.se",
+        "website": "https://arstagolf.se/",
         "source": "Overpass",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [18.0318, 59.3092]
+        "coordinates": [
+          18.0318,
+          59.3092
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -239,13 +262,16 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://waxholmsgk.se",
+        "website": "https://www.waxholmsgolfklubb.se/",
         "source": "Overpass",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [18.3472, 59.3988]
+        "coordinates": [
+          18.3472,
+          59.3988
+        ]
       }
     },
     {
@@ -263,10 +289,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [18.0994, 59.4663]
+        "coordinates": [
+          18.0994,
+          59.4663
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -276,16 +304,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://brollstagolf.se",
+        "website": null,
         "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [18.2837, 59.5561]
+        "coordinates": [
+          18.2837,
+          59.5561
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -295,16 +325,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": true,
-        "website": "https://bjorkhagensgk.se",
+        "website": "https://www.bjgk.se/",
         "source": "Officiell klubbinfo",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [18.1523, 59.2826]
+        "coordinates": [
+          18.1523,
+          59.2826
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -314,16 +346,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://bergshamragk.se",
+        "website": null,
         "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [18.0262, 59.3807]
+        "coordinates": [
+          18.0262,
+          59.3807
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -339,10 +373,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [17.7806, 59.4923]
+        "coordinates": [
+          17.7806,
+          59.4923
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -358,10 +394,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [17.9714, 58.9005]
+        "coordinates": [
+          17.9714,
+          58.9005
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -377,10 +415,11 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [18.1001, 59.1085]
+        "coordinates": [
+          18.1001,
+          59.1085
+        ]
       }
     }
   ]
 }
-
-

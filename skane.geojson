@@ -1,7 +1,6 @@
 {
   "type": "FeatureCollection",
   "features": [
-
     {
       "type": "Feature",
       "properties": {
@@ -11,16 +10,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": true,
-        "website": "https://ronnebacksgk.se",
+        "website": "https://hintongolf.se/",
         "source": "Officiell Pay & Play info",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [13.0775, 55.5754]
+        "coordinates": [
+          13.0775,
+          55.5754
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -36,10 +37,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [13.0431, 55.6088]
+        "coordinates": [
+          13.0431,
+          55.6088
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -55,10 +58,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [13.9324, 55.5406]
+        "coordinates": [
+          13.9324,
+          55.5406
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -74,10 +79,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [13.4048, 56.1410]
+        "coordinates": [
+          13.4048,
+          56.141
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -87,16 +94,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://hasslegardensgk.se",
+        "website": "https://hggk.se/",
         "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [13.7436, 56.1651]
+        "coordinates": [
+          13.7436,
+          56.1651
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -112,10 +121,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [13.5589, 55.9372]
+        "coordinates": [
+          13.5589,
+          55.9372
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -131,10 +142,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [13.8383, 55.4337]
+        "coordinates": [
+          13.8383,
+          55.4337
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -144,16 +157,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://bastadgk.se",
+        "website": "https://www.bgk.se/",
         "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [12.8328, 56.4326]
+        "coordinates": [
+          12.8328,
+          56.4326
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -163,16 +178,18 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://svalovsgk.se",
+        "website": null,
         "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [13.1172, 55.9191]
+        "coordinates": [
+          13.1172,
+          55.9191
+        ]
       }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -188,9 +205,11 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [12.9905, 55.4749]
+        "coordinates": [
+          12.9905,
+          55.4749
+        ]
       }
     }
-
   ]
 }
