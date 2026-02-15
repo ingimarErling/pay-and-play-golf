@@ -19,6 +19,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     color: #222;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* ===============================
@@ -27,17 +28,17 @@ body {
 
 .site-header {
     text-align: center;
-    padding: 20px 10px 10px;
+    padding: 24px 12px 16px;
 }
 
 .site-header h1 {
     margin: 0;
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .subtitle {
     margin-top: 6px;
-    font-size: 14px;
+    font-size: 15px;
     color: #555;
 }
 
@@ -48,7 +49,7 @@ body {
 .filter-bar {
     background: #ffffff;
     border-bottom: 1px solid #ddd;
-    padding: 12px 0;
+    padding: 14px 0;
 }
 
 .filter-inner {
@@ -60,11 +61,12 @@ body {
 .filter-inner input,
 .filter-inner select,
 .filter-inner button {
-    margin: 5px;
-    padding: 8px 12px;
-    font-size: 14px;
-    border-radius: 4px;
+    margin: 6px;
+    padding: 10px 14px;
+    font-size: 15px;
+    border-radius: 6px;
     border: 1px solid #ccc;
+    min-height: 44px; /* 👈 bättre touch-mål */
 }
 
 .btn-primary {
@@ -89,20 +91,20 @@ body {
 
 #resultCounter {
     text-align: center;
-    padding: 8px;
+    padding: 10px;
     font-weight: bold;
     background: #e8f5e9;
     border-bottom: 1px solid #c8e6c9;
 }
 
 /* ===============================
-   LAYOUT (FIXAD)
+   LAYOUT
 =============================== */
 
 .layout {
-    flex: 1;                /* 🔥 trycker ner footer */
+    flex: 1;
     display: flex;
-    min-height: 0;          /* 🔥 viktigt */
+    min-height: 0;
 }
 
 /* ===============================
@@ -120,8 +122,8 @@ body {
 
 #infoPanel {
     flex: 1;
-    max-width: 350px;
-    padding: 20px;
+    max-width: 360px;
+    padding: 22px;
     background: #ffffff;
     border-left: 3px solid #2e7d32;
     overflow-y: auto;
@@ -133,63 +135,36 @@ body {
 }
 
 /* ===============================
-   FOOTER
+   ANNONSBOX (för bättre mobil)
 =============================== */
 
-footer {
+.ad-container {
+    margin-top: 20px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
     text-align: center;
-    padding: 12px;
-    background: #e8f5e9;
-    font-size: 13px;
-    border-top: 1px solid #c8e6c9;
 }
 
-footer a {
-    color: #2e7d32;
-    text-decoration: none;
+.ad-container p {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 8px;
 }
 
-footer a:hover {
-    text-decoration: underline;
+.adsbygoogle {
+    max-width: 100%;
 }
 
 /* ===============================
-   RESPONSIVE
-=============================== */
-
-@media (max-width: 900px) {
-
-    .layout {
-        flex-direction: column;
-    }
-
-    #map {
-        height: 55vh;
-    }
-
-    #infoPanel {
-        max-width: 100%;
-        border-left: none;
-        border-top: 3px solid #2e7d32;
-    }
-
-    .filter-inner input,
-    .filter-inner select,
-    .filter-inner button {
-        width: 90%;
-        display: block;
-        margin: 6px auto;
-    }
-   /* ===============================
-   KOMPAKT FOOTER
+   FOOTER
 =============================== */
 
 .compact-footer {
-    background: #e8f5e9;
-    border-top: 1px solid #c8e6c9;
-    padding: 10px 15px;
-    font-size: 13px;
     text-align: center;
+    padding: 14px;
+    background: #e8f5e9;
+    font-size: 13px;
+    border-top: 1px solid #c8e6c9;
 }
 
 .compact-footer a {
@@ -204,10 +179,47 @@ footer a:hover {
 .footer-inner {
     max-width: 1100px;
     margin: 0 auto;
-    line-height: 1.5;
-}
-.footer-links {
-    opacity: 0.85;
+    line-height: 1.6;
 }
 
+.footer-links {
+    opacity: 0.9;
+}
+
+/* ===============================
+   RESPONSIVE (Mobil)
+=============================== */
+
+@media (max-width: 900px) {
+
+    .layout {
+        flex-direction: column;
+    }
+
+    #map {
+        height: 50vh; /* 👈 lite mer balanserad */
+    }
+
+    #infoPanel {
+        max-width: 100%;
+        border-left: none;
+        border-top: 3px solid #2e7d32;
+        padding: 20px;
+    }
+
+    .filter-inner input,
+    .filter-inner select,
+    .filter-inner button {
+        width: 92%;
+        display: block;
+        margin: 8px auto;
+    }
+
+    .site-header h1 {
+        font-size: 22px; /* 👈 bättre mobil */
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
 }
