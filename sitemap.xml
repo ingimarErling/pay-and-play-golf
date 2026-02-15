@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Startsida -->
+  <!-- ===================== -->
+  <!-- STARTSIDA -->
+  <!-- ===================== -->
+
   <url>
     <loc>https://pay-and-play.org/</loc>
     <lastmod>2026-02-15</lastmod>
@@ -9,7 +12,10 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- Regioner -->
+  <!-- ===================== -->
+  <!-- REGIONER -->
+  <!-- ===================== -->
+
   <url>
     <loc>https://pay-and-play.org/stockholm-pay-and-play.html</loc>
     <lastmod>2026-02-15</lastmod>
@@ -66,7 +72,10 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Special -->
+  <!-- ===================== -->
+  <!-- SPECIALSIDA -->
+  <!-- ===================== -->
+
   <url>
     <loc>https://pay-and-play.org/9-hal-pay-and-play-sverige.html</loc>
     <lastmod>2026-02-15</lastmod>
@@ -74,7 +83,10 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Artiklar -->
+  <!-- ===================== -->
+  <!-- INFORMATIONSSidor -->
+  <!-- ===================== -->
+
   <url>
     <loc>https://pay-and-play.org/vad-ar-pay-and-play.html</loc>
     <lastmod>2026-02-15</lastmod>
@@ -117,7 +129,56 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Övrigt -->
+  <!-- ===================== -->
+  <!-- GOLF GUIDE HUB -->
+  <!-- ===================== -->
+
+  <url>
+    <loc>https://pay-and-play.org/golf-guide/</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/golf-guide/golfregler-for-nyborjare.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/golf-guide/hur-fungerar-plikt-i-golf.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/golf-guide/vad-ar-handicap-i-golf.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/golf-guide/golf-vett-och-etikett.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://pay-and-play.org/golf-guide/golfens-historia-i-sverige.html</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- ===================== -->
+  <!-- ÖVRIGT -->
+  <!-- ===================== -->
+
   <url>
     <loc>https://pay-and-play.org/om-oss.html</loc>
     <lastmod>2026-02-15</lastmod>
