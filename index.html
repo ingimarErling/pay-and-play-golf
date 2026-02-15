@@ -4,71 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Title förbättrad -->
-    <title>Pay & Play Golf i Sverige 2025 – Spela utan grönt kort (9 & 18 hål)</title>
-
-    <!-- SEO Description förbättrad -->
-    <meta name="description" content="Hitta alla Pay & Play golfbanor i Sverige 2025. Spela golf utan grönt kort i Stockholm, Skåne, Göteborg och hela landet. Uppdaterad karta över 9 och 18 hålsbanor öppna för alla.">
-
+    <title>Pay & Play Golf i Sverige 2025 – Spela utan grönt kort</title>
+    <meta name="description" content="Hitta alla Pay & Play golfbanor i Sverige. Spela golf utan grönt kort i Stockholm, Skåne, Göteborg och hela landet.">
     <meta name="author" content="Erlingsson">
     <meta name="robots" content="index, follow">
 
-    <meta property="og:title" content="Pay & Play Golf i Sverige – Spela utan grönt kort">
+    <meta property="og:title" content="Pay & Play Golf i Sverige">
     <meta property="og:description" content="Sveriges största karta över golfbanor utan grönt kort.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://pay-and-play.org/">
     <meta property="og:locale" content="sv_SE">
 
-    <meta name="twitter:card" content="summary_large_image">
-
     <link rel="canonical" href="https://pay-and-play.org/">
-
-    <link rel="preconnect" href="https://unpkg.com">
-    <link rel="preconnect" href="https://tile.openstreetmap.org">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
-    <!-- ✅ Google AdSense -->
+    <!-- AdSense -->
     <script async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6036839968490609"
         crossorigin="anonymous">
     </script>
 
-    <!-- ===============================
-         SCHEMA.ORG STRUCTURED DATA
-    ================================= -->
-
+    <!-- Schema (påverkar ej layout) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "name": "Pay & Play Golf Sverige",
-          "url": "https://pay-and-play.org/",
-          "inLanguage": "sv-SE",
-          "description": "Karta över Pay & Play golfbanor i Sverige utan krav på grönt kort.",
-          "potentialAction": {
-            "@type": "SearchAction",
-            "target": "https://pay-and-play.org/?search={search_term_string}",
-            "query-input": "required name=search_term_string"
-          }
-        },
-        {
-          "@type": "Organization",
-          "name": "Pay & Play Golf Sverige",
-          "url": "https://pay-and-play.org/",
-          "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "customer support",
-            "email": "support@pay-and-play.org"
-          }
-        }
-      ]
+      "@type": "WebSite",
+      "name": "Pay & Play Golf Sverige",
+      "url": "https://pay-and-play.org/",
+      "inLanguage": "sv-SE"
     }
     </script>
-
 </head>
 
 <body>
@@ -106,7 +73,7 @@
 
 <main class="layout">
 
-    <div id="map" aria-label="Karta över pay and play golfbanor"></div>
+    <div id="map"></div>
 
     <aside id="infoPanel">
         <h2>Välj en klubb</h2>
@@ -115,57 +82,17 @@
 
 </main>
 
-<!-- ======================================
-     SEO CONTENT SECTION (påverkar ej layout)
-====================================== -->
-
-<section style="max-width:900px;margin:40px auto;padding:0 20px;line-height:1.8;">
-
-    <h2>Vad är Pay & Play golf?</h2>
-    <p>
-        Pay & Play innebär att du kan spela golf utan grönt kort och utan medlemskap.
-        Du betalar endast greenfee och kan boka tid direkt hos klubben.
-    </p>
-
-    <h2>Spela golf utan grönt kort i Sverige</h2>
-    <p>
-        I Sverige finns ett stort antal golfbanor som erbjuder Pay & Play.
-        Detta gör det möjligt för nybörjare, turister och fritidsspelare att spela golf
-        utan krav på medlemskap i en golfklubb.
-    </p>
-
-    <h2>Populära regioner</h2>
-    <p>
-        Se våra regionala guider:
-        <a href="stockholm-pay-and-play.html">Stockholm</a>,
-        <a href="skane-golf-utan-gront-kort.html">Skåne</a>,
-        <a href="golf-utan-gront-kort-goteborg.html">Göteborg</a>,
-        <a href="halland-pay-and-play.html">Halland</a>,
-        <a href="smaland-pay-and-play.html">Småland</a>,
-        <a href="norrland-pay-and-play.html">Norrland</a>.
-    </p>
-
-</section>
-
 <footer class="compact-footer">
     <div class="footer-inner">
         © 2025 Erlingsson – Pay & Play Golf Sverige |
         <a href="mailto:support@pay-and-play.org">support@pay-and-play.org</a> |
         <a href="om-oss.html">Om oss</a> |
         <a href="privacy-policy.html">Integritetspolicy</a> |
-        <span class="footer-links">
-            <a href="stockholm-pay-and-play.html">Stockholm</a> |
-            <a href="skane-golf-utan-gront-kort.html">Skåne</a> |
-            <a href="golf-utan-gront-kort-goteborg.html">Göteborg</a> |
-            <a href="9-hal-pay-and-play-sverige.html">9 hål</a>
-        </span>
+        <a href="vad-ar-pay-and-play.html">Vad är Pay & Play?</a>
     </div>
 </footer>
 
-<!-- ===============================
-     COOKIE BANNER
-================================ -->
-
+<!-- Cookie banner -->
 <div id="cookieBanner" style="
 position:fixed;
 bottom:0;
@@ -177,9 +104,8 @@ padding:15px;
 text-align:center;
 font-size:14px;
 display:none;
-z-index:9999;
-">
-    Denna webbplats använder cookies och Google AdSense för att visa annonser.
+z-index:9999;">
+    Denna webbplats använder cookies och Google AdSense.
     <a href="privacy-policy.html" style="color:#fff;text-decoration:underline;">
         Läs mer
     </a>
@@ -190,8 +116,7 @@ z-index:9999;
         background:#fff;
         color:#2e7d32;
         cursor:pointer;
-        border-radius:4px;
-    ">
+        border-radius:4px;">
         OK
     </button>
 </div>
