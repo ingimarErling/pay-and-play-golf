@@ -239,13 +239,14 @@ function showClubInfo(club) {
     `;
 
     //  Viktigt: trigga annonsen efter att den lagts in i DOM
-    if (window.adsbygoogle) {
-        try {
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        } catch (e) {
-            console.log("AdSense kunde inte laddas ännu.");
-        }
+    if (window.adsbygoogle && typeof adsbygoogle.push === "function") {
+    try {
+        adsbygoogle.push({});
+    } catch (e) {
+        console.log("AdSense redan laddad eller blockerad.");
     }
+  }
+
 }
 // ===============================
 // COOKIE BANNER
