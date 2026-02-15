@@ -247,4 +247,19 @@ function showClubInfo(club) {
         }
     }
 }
+// ===============================
+// COOKIE BANNER
+// ===============================
+
+function acceptCookies() {
+    localStorage.setItem("cookiesAccepted", "true");
+    document.getElementById("cookieBanner").style.display = "none";
+}
+
+window.addEventListener("load", function () {
+    if (!localStorage.getItem("cookiesAccepted")) {
+        document.getElementById("cookieBanner").style.display = "block";
+    }
+});
+
 
