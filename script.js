@@ -143,21 +143,7 @@ function renderGeoJSON(features, fitBounds = true) {
     }
 }
 
-// ===============================
-// INFO PANEL
-// ===============================
 
-function showClubInfo(club) {
-
-    const panel = document.getElementById("infoPanel");
-
-    panel.innerHTML = `
-        <h2>${club.name}</h2>
-        <p>📍 ${club.municipality || ""}</p>
-        <p>⛳ ${club.holes || "?"} hål</p>
-        ${club.website ? `<p><a href="${club.website}" target="_blank" rel="noopener">Besök hemsida</a></p>` : ""}
-    `;
-}
 
 // ===============================
 // FILTERS
@@ -219,9 +205,11 @@ function updateCounter(count) {
         `<strong>Antal träffar: ${count}</strong>`;
 }
 
+
 // ===============================
-// Reklam
+// INFO PANEL
 // ===============================
+
 function showClubInfo(club) {
 
     const panel = document.getElementById("infoPanel");
