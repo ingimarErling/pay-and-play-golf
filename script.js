@@ -218,3 +218,45 @@ function updateCounter(count) {
     document.getElementById("resultCounter").innerHTML =
         `<strong>Antal träffar: ${count}</strong>`;
 }
+
+// ===============================
+// Reklam
+// ===============================
+function showClubInfo(club) {
+
+    const panel = document.getElementById("infoPanel");
+
+    panel.innerHTML = `
+        <h2>${club.name}</h2>
+        <p>📍 ${club.municipality || ""}</p>
+        <p>⛳ ${club.holes || "?"} hål</p>
+        ${club.website ? `
+            <p>
+                <a href="${club.website}" target="_blank" rel="noopener">
+                    Besök hemsida
+                </a>
+            </p>
+        ` : ""}
+
+        <div class="ad-container" style="margin-top:20px;">
+            <p style="font-size:12px;color:#777;">Annons</p>
+
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6036839968490609"
+                 data-ad-slot="7765842047"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+        </div>
+    `;
+
+    //  Viktigt: trigga annonsen efter att den lagts in i DOM
+    if (window.adsbygoogle) {
+        try {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {
+            console.log("AdSense kunde inte laddas ännu.");
+        }
+    }
+}
+
