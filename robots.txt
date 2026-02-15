@@ -1,3 +1,5 @@
+# robots.txt for pay-and-play.org
+
 User-agent: *
 Allow: /
 
