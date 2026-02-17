@@ -1,6 +1,7 @@
 {
   "type": "FeatureCollection",
   "features": [
+
     {
       "type": "Feature",
       "properties": {
@@ -14,14 +15,9 @@
         "source": "Officiell Pay & Play info",
         "last_updated": "2026-02"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.0775,
-          55.5754
-        ]
-      }
+      "geometry": { "type": "Point", "coordinates": [13.0775, 55.5754] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -35,14 +31,9 @@
         "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.0431,
-          55.6088
-        ]
-      }
+      "geometry": { "type": "Point", "coordinates": [13.0431, 55.6088] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -56,14 +47,9 @@
         "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.9324,
-          55.5406
-        ]
-      }
+      "geometry": { "type": "Point", "coordinates": [13.9324, 55.5406] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -77,14 +63,9 @@
         "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.4048,
-          56.141
-        ]
-      }
+      "geometry": { "type": "Point", "coordinates": [13.4048, 56.1410] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -98,14 +79,9 @@
         "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.7436,
-          56.1651
-        ]
-      }
+      "geometry": { "type": "Point", "coordinates": [13.7436, 56.1651] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -119,14 +95,9 @@
         "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.5589,
-          55.9372
-        ]
-      }
+      "geometry": { "type": "Point", "coordinates": [13.5589, 55.9372] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -140,14 +111,9 @@
         "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.8383,
-          55.4337
-        ]
-      }
+      "geometry": { "type": "Point", "coordinates": [13.8383, 55.4337] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -161,14 +127,9 @@
         "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.8328,
-          56.4326
-        ]
-      }
+      "geometry": { "type": "Point", "coordinates": [12.8328, 56.4326] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -182,14 +143,9 @@
         "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.1172,
-          55.9191
-        ]
-      }
+      "geometry": { "type": "Point", "coordinates": [13.1172, 55.9191] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -203,13 +159,72 @@
         "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.9905,
-          55.4749
-        ]
-      }
+      "geometry": { "type": "Point", "coordinates": [12.9905, 55.4749] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Abbekås Golfklubb",
+        "municipality": "Skurup",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.abbekasgk.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.5984, 55.4013] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Allerums Golfklubb",
+        "municipality": "Helsingborg",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.allerumsgk.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [12.7073, 56.0906] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Araslöv Golfklubb",
+        "municipality": "Kristianstad",
+        "region": "Skåne",
+        "holes": 6,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.araslovsgolf.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [14.0947, 56.0412] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Degerberga-Widtsköfle Golfklubb",
+        "municipality": "Kristianstad",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.degerbergagk.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [14.0808, 55.8286] }
     }
+
   ]
 }
