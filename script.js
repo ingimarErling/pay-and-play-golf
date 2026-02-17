@@ -57,20 +57,21 @@ const icon18 = L.icon({
 // ===============================
 
 const regionFiles = [
-    "stockholm.geojson",
-    "vastra-gotaland.geojson",
-    "skane.geojson",
-    "smaland.geojson",
-    "ostergotland.geojson",
-    "halland.geojson",
-    "norrland.geojson",
-    "sodermanland.geojson",
-    "uppland.geojson",
-    "varmnalnd.geojson",
-    "vastmanland.geojson",
-    "orebro.geojson",
-    "dalarna.geojson"
-];
+  "dalarna",
+  "halland",
+  "norrland",
+  "orebro",
+  "ostergotland",
+  "skane",
+  "smaland",
+  "sodermanland",
+  "stockholm",
+  "uppland",
+  "varmland",
+  "vastmanland",
+  "vastra-gotaland"
+].map(r => `${r}.geojson`);
+
 
 Promise.all(
     regionFiles.map(file =>
