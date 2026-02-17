@@ -11,7 +11,8 @@ ta sen bort -> Ta bort din egen manuella cookie-banner (id="cookieBanner")
 
 python -m venv .venv
 
-source .venv/bin/activate
+source .venv/bin/activate eller source .venv/Scripts/activate
+ 
 
 pip install requests
 
