@@ -1,0 +1,104 @@
+{
+  "type": "FeatureCollection",
+  "name": "orebro",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Degerfors Golfklubb",
+        "municipality": "Degerfors",
+        "region": "Örebro",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.degerforsgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [14.4500, 59.2300] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karlskoga Golfklubb",
+        "municipality": "Karlskoga",
+        "region": "Örebro",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.karlskogagk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [14.5200, 59.3300] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kumla Golfklubb",
+        "municipality": "Kumla",
+        "region": "Örebro",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.kumlagk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [15.1300, 59.1200] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lindesbergs Golfklubb",
+        "municipality": "Lindesberg",
+        "region": "Örebro",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.lindesbergsgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [15.2500, 59.6000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Nora Golfklubb",
+        "municipality": "Nora",
+        "region": "Örebro",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.noragk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [15.0500, 59.5200] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stjernfors Golfklubb",
+        "municipality": "Hällefors",
+        "region": "Örebro",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.stjernforsgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [14.5200, 59.7800] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Örebro City Golf",
+        "municipality": "Örebro",
+        "region": "Örebro",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.orebrocitygolf.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [15.2100, 59.2700] }
+    }
+  ]
+}
