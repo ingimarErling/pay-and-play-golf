@@ -1,6 +1,7 @@
 {
   "type": "FeatureCollection",
   "features": [
+
     {
       "type": "Feature",
       "properties": {
@@ -16,10 +17,11 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.8385, 56.6876] }
     },
+
     {
       "type": "Feature",
       "properties": {
-        "name": "Holms Golfklubb",
+        "name": "Holms Golfklubb (9-håls)",
         "municipality": "Halmstad",
         "region": "Halland",
         "holes": 9,
@@ -31,6 +33,7 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.7712, 56.7324] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -44,12 +47,13 @@
         "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
-      "geometry": { "type": "Point", "coordinates": [12.5093, 56.9001] }
+      "geometry": { "type": "Point", "coordinates": [12.5699, 56.8898] }
     },
+
     {
       "type": "Feature",
       "properties": {
-        "name": "Åkulla Golf & Country Club",
+        "name": "Åkulla Golf & Country Club (9-håls)",
         "municipality": "Varberg",
         "region": "Halland",
         "holes": 9,
@@ -61,6 +65,7 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.3895, 57.1613] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -76,10 +81,11 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.6948, 56.7009] }
     },
+
     {
       "type": "Feature",
       "properties": {
-        "name": "Tönnersjö Golfklubb",
+        "name": "Tönnersjö Golfklubb (9-håls)",
         "municipality": "Halmstad",
         "region": "Halland",
         "holes": 9,
@@ -91,6 +97,7 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.7456, 56.6753] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -104,24 +111,25 @@
         "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
-      "geometry": { "type": "Point", "coordinates": [12.7084, 56.715] }
+      "geometry": { "type": "Point", "coordinates": [12.7084, 56.7150] }
     },
 
     {
       "type": "Feature",
       "properties": {
         "name": "Björnhults GK",
-        "municipality": "Halmstad",
+        "municipality": "Falkenberg",
         "region": "Halland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": null,
+        "website": "https://bjornhultsgk.se/",
         "source": "Bildlista 2026-02",
         "last_updated": "2026-02"
       },
-      "geometry": { "type": "Point", "coordinates": [0, 0] }
+      "geometry": { "type": "Point", "coordinates": [12.5078, 56.9005] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -135,8 +143,9 @@
         "source": "Bildlista 2026-02",
         "last_updated": "2026-02"
       },
-      "geometry": { "type": "Point", "coordinates": [0, 0] }
+      "geometry": { "type": "Point", "coordinates": [12.8557, 56.6653] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -150,8 +159,9 @@
         "source": "Bildlista 2026-02",
         "last_updated": "2026-02"
       },
-      "geometry": { "type": "Point", "coordinates": [0, 0] }
+      "geometry": { "type": "Point", "coordinates": [12.9284, 56.6829] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -165,8 +175,9 @@
         "source": "Bildlista 2026-02",
         "last_updated": "2026-02"
       },
-      "geometry": { "type": "Point", "coordinates": [0, 0] }
+      "geometry": { "type": "Point", "coordinates": [12.6843, 56.9109] }
     },
+
     {
       "type": "Feature",
       "properties": {
@@ -176,11 +187,12 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": null,
+        "website": "https://leadingcourses.com",
         "source": "Bildlista 2026-02",
         "last_updated": "2026-02"
       },
-      "geometry": { "type": "Point", "coordinates": [0, 0] }
+      "geometry": { "type": "Point", "coordinates": [12.5462, 56.8801] }
     }
+
   ]
 }
