@@ -1,7 +1,6 @@
 {
   "type": "FeatureCollection",
   "features": [
-
     {
       "type": "Feature",
       "properties": {
@@ -17,7 +16,6 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.8385, 56.6876] }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -33,7 +31,6 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.7712, 56.7324] }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -47,9 +44,8 @@
         "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
-      "geometry": { "type": "Point", "coordinates": [12.5699, 56.8898] }
+      "geometry": { "type": "Point", "coordinates": [12.5093, 56.9001] }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -65,7 +61,6 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.3895, 57.1613] }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -81,7 +76,6 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.6948, 56.7009] }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -97,7 +91,6 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.7456, 56.6753] }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -113,7 +106,6 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.7084, 56.7150] }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -129,7 +121,6 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.5078, 56.9005] }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -145,7 +136,6 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.8557, 56.6653] }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -161,7 +151,6 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.9284, 56.6829] }
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -177,21 +166,20 @@
       },
       "geometry": { "type": "Point", "coordinates": [12.6843, 56.9109] }
     },
-
     {
       "type": "Feature",
       "properties": {
         "name": "Vinbergs GK",
         "municipality": "Falkenberg",
         "region": "Halland",
-        "holes": 9,
+        "holes": 18,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://leadingcourses.com",
+        "website": "https://www.vinbergsgolfklubb.se",
         "source": "Bildlista 2026-02",
         "last_updated": "2026-02"
       },
-      "geometry": { "type": "Point", "coordinates": [12.5462, 56.8801] }
+      "geometry": { "type": "Point", "coordinates": [12.55451, 56.96123] }
     }
 
   ]
