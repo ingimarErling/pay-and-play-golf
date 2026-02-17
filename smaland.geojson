@@ -4,14 +4,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Växjö Golfklubb (Pay & Play)",
+        "name": "Växjö Golfklubb",
         "municipality": "Växjö",
         "region": "Småland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
         "website": "https://vaxjogk.se",
-        "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -25,14 +24,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Kalmar Golfklubb (9-håls)",
+        "name": "Kalmar Golfklubb",
         "municipality": "Kalmar",
         "region": "Småland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
         "website": "https://kalmargk.se",
-        "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -46,14 +44,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Västerviks Golfklubb (Pay & Play)",
+        "name": "Västerviks Golfklubb",
         "municipality": "Västervik",
         "region": "Småland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://vasterviksgolf.se/",
-        "source": "Öppen greenfee",
+        "website": "https://vasterviksgolf.se",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -67,14 +64,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Oskarshamns Golfklubb (9-håls)",
+        "name": "Oskarshamns Golfklubb",
         "municipality": "Oskarshamn",
         "region": "Småland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
         "website": "https://oskarshamnsgk.se",
-        "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -88,14 +84,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Eksjö Golfklubb (Pay & Play)",
+        "name": "Eksjö Golfklubb",
         "municipality": "Eksjö",
         "region": "Småland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
         "website": "https://eksjogk.se",
-        "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -109,14 +104,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Tranås Golfklubb (9-håls)",
+        "name": "Tranås Golfklubb",
         "municipality": "Tranås",
         "region": "Småland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
         "website": "https://tranasgk.se",
-        "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -130,14 +124,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Vetlanda Golfklubb (Pay & Play)",
+        "name": "Vetlanda Golfklubb",
         "municipality": "Vetlanda",
         "region": "Småland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
         "website": "https://vetlandagk.se",
-        "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -156,9 +149,8 @@
         "region": "Småland",
         "holes": 9,
         "pay_and_play": true,
-        "verified": true,
+        "verified": false,
         "website": "https://gotastromsgk.se",
-        "source": "Officiell Pay & Play info",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -166,6 +158,306 @@
         "coordinates": [
           14.1437,
           57.4948
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "A6 Golfklubb",
+        "municipality": "Jönköping",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://a6gk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.1686,
+          57.7815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Binga Golfklubb",
+        "municipality": "Habo",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://bingagk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.067,
+          57.908
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Böda Sand Golfklubb",
+        "municipality": "Borgholm",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://bodasand.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.89,
+          57.266
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glasrikets Golfklubb",
+        "municipality": "Nybro",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://glasriketsgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.907,
+          56.745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Isaberg Golfklubb",
+        "municipality": "Gislaved",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://isaberg.com",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.617,
+          57.433
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lagans Golfklubb",
+        "municipality": "Ljungby",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://lagansgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.998,
+          56.916
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lanna Golfklubb",
+        "municipality": "Lanna",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://lannagk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.64,
+          57.65
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lysingebadets Golfklubb",
+        "municipality": "Västervik",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://lysingebadet.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.646,
+          57.75
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ramkvilla Golfklubb",
+        "municipality": "Vetlanda",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://ramkvillagk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.707,
+          57.363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ryfors Golfklubb",
+        "municipality": "Mullsjö",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://ryforsgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.887,
+          57.915
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Skinnarebo Golfklubb",
+        "municipality": "Hultsfred",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://skinnarebogk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.827,
+          57.483
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Uppvidinge Golfklubb",
+        "municipality": "Uppvidinge",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://uppvidingegk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.373,
+          57.004
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Wiredaholms Golf",
+        "municipality": "Vimmerby",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://wiredaholm.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.866,
+          57.671
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Visingsö Golfklubb",
+        "municipality": "Jönköping",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://visingsogk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.405,
+          58.095
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Värnamo Golfklubb",
+        "municipality": "Värnamo",
+        "region": "Småland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://varnamogk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.034,
+          57.184
         ]
       }
     }
