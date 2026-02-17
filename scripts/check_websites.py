@@ -4,6 +4,8 @@ import csv
 import requests
 from requests.exceptions import RequestException
 from urllib.parse import urlparse
+import sys
+import time
 
 # ===============================
 # REGIONFILER
@@ -25,20 +27,13 @@ region_files = [
     "vastra-gotaland.geojson"
 ]
 
-# ===============================
-# INSTÄLLNINGAR
-# ===============================
-
-TIMEOUT = 8
+TIMEOUT = 6
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; GolfChecker/1.0)"
 }
 
 results = []
 
-# ===============================
-# FUNKTIONER
-# ===============================
 
 def check_url(url):
     try:
@@ -48,90 +43,84 @@ def check_url(url):
             headers=HEADERS,
             allow_redirects=True
         )
-        return response.status_code, response.url
+        return response.status_code
     except RequestException as e:
-        return f"ERROR: {type(e).__name__}", None
+        return f"ERROR ({type(e).__name__})"
 
 
 def normalize_url(url):
-    if not url:
-        return None
-
     parsed = urlparse(url)
-
     if parsed.scheme:
         return url
-
     return "https://" + url
 
 
 # ===============================
-# RÄKNA TOTALA KLUBBAR
+# RÄKNA KLUBBAR
 # ===============================
 
-total_clubs = 0
-
+total = 0
 for file_name in region_files:
     if os.path.exists(file_name):
         with open(file_name, "r", encoding="utf-8") as f:
             data = json.load(f)
-            total_clubs += len(data.get("features", []))
+            total += len(data.get("features", []))
 
-print(f"\nTotal clubs to check: {total_clubs}\n")
-
-# ===============================
-# LOOPA MED PROGRESS
-# ===============================
+print(f"\nTotal clubs: {total}")
+print("-" * 40)
+sys.stdout.flush()
 
 current = 0
+
+# ===============================
+# LOOP MED LIVE PROGRESS
+# ===============================
 
 for file_name in region_files:
 
     if not os.path.exists(file_name):
-        print(f"File missing: {file_name}")
+        print(f"Missing file: {file_name}")
+        sys.stdout.flush()
         continue
 
-    print(f"\n=== Checking file: {file_name} ===")
+    print(f"\nProcessing file: {file_name}")
+    sys.stdout.flush()
 
     with open(file_name, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     for feature in data.get("features", []):
+        current += 1
+
         props = feature.get("properties", {})
         name = props.get("name")
         website = props.get("website")
 
-        current += 1
-        print(f"[{current}/{total_clubs}] Checking {name} ...", end=" ")
+        print(f"[{current}/{total}] {name}", end=" -> ")
+        sys.stdout.flush()
 
         if not website:
             print("NO WEBSITE")
+            sys.stdout.flush()
             results.append({
                 "club": name,
                 "region": file_name,
                 "website": None,
-                "status": "NO WEBSITE",
-                "final_url": None
+                "status": "NO WEBSITE"
             })
             continue
 
         website = normalize_url(website)
-        status, final_url = check_url(website)
-
-        # fallback till http
-        if isinstance(status, str) and website.startswith("https://"):
-            fallback = website.replace("https://", "http://")
-            status, final_url = check_url(fallback)
-            website = fallback
+        status = check_url(website)
 
         print(status)
+        sys.stdout.flush()
 
         results.append({
             "club": name,
             "region": file_name,
             "website": website,
-            "status": status,
-            "final_url": final_url
+            "status": status
         })
 
 
@@ -142,16 +131,6 @@ for file_name in region_files:
 with open("website_report.json", "w", encoding="utf-8") as f:
     json.dump(results, f, indent=2, ensure_ascii=False)
 
-with open("website_report.csv", "w", newline="", encoding="utf-8") as csvfile:
-    writer = csv.DictWriter(
-        csvfile,
-        fieldnames=["club", "region", "website", "status", "final_url"]
-    )
-    writer.writeheader()
-    writer.writerows(results)
-
-print("\n----------------------------------")
-print("Finished checking websites.")
-print(f"Total checked: {current}")
-print("Report saved as website_report.json and website_report.csv")
-print("----------------------------------")
+print("\nFinished.")
+print(f"Checked {current} clubs.")
+print("Report saved as website_report.json")
