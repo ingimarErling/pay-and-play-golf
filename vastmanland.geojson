@@ -1,0 +1,104 @@
+{
+  "type": "FeatureCollection",
+  "name": "vastmanland",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arboga Golfklubb",
+        "municipality": "Arboga",
+        "region": "Västmanland",
+        "holes": 6,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.arbogagk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [15.8300, 59.3900] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Frösåker",
+        "municipality": "Västerås",
+        "region": "Västmanland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.frosaker.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [16.6300, 59.6100] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fullerö Golfklubb",
+        "municipality": "Västerås",
+        "region": "Västmanland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.fullerogk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [16.5400, 59.6300] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sala Golfklubb",
+        "municipality": "Sala",
+        "region": "Västmanland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.salaggk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [16.6200, 59.9300] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Skerike Golfklubb",
+        "municipality": "Västerås",
+        "region": "Västmanland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.skerikegk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [16.5500, 59.6500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Strömsholms Golfklubb",
+        "municipality": "Hallstahammar",
+        "region": "Västmanland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.stromsholmsgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [16.2200, 59.5200] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ängsö Golfklubb",
+        "municipality": "Västerås",
+        "region": "Västmanland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.angsogk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [16.7000, 59.6000] }
+    }
+  ]
+}
