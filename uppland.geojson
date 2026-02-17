@@ -1,1 +1,77 @@
+{
+  "type": "FeatureCollection",
+  "name": "uppland",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Johannesberg Golf",
+        "municipality": "Upplands-Bro",
+        "region": "Uppland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.johannesberggolf.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [17.7000, 59.5500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sundsta Golf",
+        "municipality": "Uppsala",
+        "region": "Uppland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.sundstagolf.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [17.7500, 59.8500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Upsala Golfklubb",
+        "municipality": "Uppsala",
+        "region": "Uppland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.upsalagk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [17.6400, 59.8600] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Väddö Golfklubb",
+        "municipality": "Norrtälje",
+        "region": "Uppland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.vaddogk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [18.8500, 60.0000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Öregrunds Golfklubb",
+        "municipality": "Östhammar",
+        "region": "Uppland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.oregrundsgk.com",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [18.4500, 60.3300] }
+    }
+  ]
+}
 
