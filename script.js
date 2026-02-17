@@ -67,7 +67,8 @@ const regionFiles = [
     "sodermanland.geojson",
     "uppland.geojson",
     "varmnalnd.geojson",
-    "vastmanland.geojson"
+    "vastmanland.geojson",
+    "orebro.geojson"
 ];
 
 Promise.all(
