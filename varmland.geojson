@@ -1,0 +1,62 @@
+{
+  "type": "FeatureCollection",
+  "name": "varmland",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bryngfjorden Golf",
+        "municipality": "Karlstad",
+        "region": "Värmland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.bryngfjorden.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.5000, 59.4300] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Karlstad Golfklubb",
+        "municipality": "Karlstad",
+        "region": "Värmland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.karlstadgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.5200, 59.3800] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sommarro Golf",
+        "municipality": "Karlstad",
+        "region": "Värmland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.sommarrogolf.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.4900, 59.4000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Uddeholms Golfklubb",
+        "municipality": "Hagfors",
+        "region": "Värmland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.uddeholmsgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.6500, 60.0500] }
+    }
+  ]
+}
