@@ -225,6 +225,234 @@
       },
       "geometry": { "type": "Point", "coordinates": [14.0808, 55.8286] }
     }
+	
+	{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Eslövs Golfklubb",
+        "municipality": "Eslöv",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.eslovsgk.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.2875, 55.8414] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glumslövs Golfklubb",
+        "municipality": "Landskrona",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.glumslovsgolf.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [12.7966, 55.9424] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Naturligtvis Golf & Country Club",
+        "municipality": "Tomelilla",
+        "region": "Skåne",
+        "holes": 12,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.naturligtvis.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.9755, 55.5364] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Oxie Golfklubb",
+        "municipality": "Malmö",
+        "region": "Skåne",
+        "holes": 12,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.oxiegk.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.1232, 55.5502] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rya Golfklubb",
+        "municipality": "Helsingborg",
+        "region": "Skåne",
+        "holes": 6,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.ryagk.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [12.6603, 56.0318] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sankt Arild Golfklubb",
+        "municipality": "Höganäs",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.starildsgk.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [12.5795, 56.2849] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Söderslätts Golfklubb",
+        "municipality": "Trelleborg",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.soderslattsgk.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.1458, 55.3512] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tegelberga Golfklubb",
+        "municipality": "Staffanstorp",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.tegelbergagk.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.2165, 55.6648] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vallgårdens Golfklubb",
+        "municipality": "Helsingborg",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.vallgarden.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [12.6741, 56.0582] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vasatorps Golfklubb",
+        "municipality": "Helsingborg",
+        "region": "Skåne",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.vasatorp.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [12.7394, 56.0766] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Åkagårdens Golfklubb",
+        "municipality": "Båstad",
+        "region": "Skåne",
+        "holes": 6,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.akagarden.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [12.8506, 56.4279] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Örestads Golfklubb",
+        "municipality": "Malmö",
+        "region": "Skåne",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.orestadsgk.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [13.0874, 55.5887] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Österlens Golfklubb",
+        "municipality": "Simrishamn",
+        "region": "Skåne",
+        "holes": 6,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.osterlensgk.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [14.3558, 55.5847] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Östra Göinge Golfklubb",
+        "municipality": "Östra Göinge",
+        "region": "Skåne",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.ostragoingegk.se",
+        "source": "Extern lista",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [14.3009, 56.1405] }
+    }
 
   ]
 }
