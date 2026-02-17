@@ -4,14 +4,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Landeryds Golfklubb (Pay & Play)",
+        "name": "Landeryds Golfklubb",
         "municipality": "Linköping",
         "region": "Östergötland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
         "website": "https://landeryd.se",
-        "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -25,14 +24,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Linköpings Golfklubb (9-håls)",
+        "name": "Linköpings Golfklubb",
         "municipality": "Linköping",
         "region": "Östergötland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
         "website": "https://linkopingsgk.se",
-        "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -46,14 +44,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Norrköpings Golfklubb (Pay & Play)",
+        "name": "Norrköpings Golfklubb",
         "municipality": "Norrköping",
         "region": "Östergötland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
         "website": "https://www.golfnorrkoping.se/segora/norrkopings-golfklubb/",
-        "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -74,7 +71,6 @@
         "pay_and_play": true,
         "verified": false,
         "website": "https://finspangsgk.se",
-        "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -88,14 +84,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Söderköpings Golfklubb (Pay & Play)",
+        "name": "Söderköpings Golfklubb",
         "municipality": "Söderköping",
         "region": "Östergötland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
         "website": "https://www.nsgk.se/",
-        "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -109,14 +104,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Vadstena Golfklubb (9-håls)",
+        "name": "Vadstena Golfklubb",
         "municipality": "Vadstena",
         "region": "Östergötland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
         "website": "https://vadstenagk.se",
-        "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -130,14 +124,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Mjölby Golfklubb (Pay & Play)",
+        "name": "Mjölby Golfklubb",
         "municipality": "Mjölby",
         "region": "Östergötland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
         "website": "https://mjolbygk.se",
-        "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -158,7 +151,6 @@
         "pay_and_play": true,
         "verified": true,
         "website": "https://atvidabergsgk.se",
-        "source": "Officiell Pay & Play info",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -166,6 +158,126 @@
         "coordinates": [
           16.0032,
           58.1987
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Bråvikens Golfklubb",
+        "municipality": "Norrköping",
+        "region": "Östergötland",
+        "holes": 8,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://bravikensgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.252,
+          58.643
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fleminge Golfklubb",
+        "municipality": "Söderköping",
+        "region": "Östergötland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://flemingegk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.325,
+          58.395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ingelsta Golfklubb",
+        "municipality": "Norrköping",
+        "region": "Östergötland",
+        "holes": 12,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://ingelstagk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.2005,
+          58.6105
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Motala Golfklubb",
+        "municipality": "Motala",
+        "region": "Östergötland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://motalagk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.034,
+          58.539
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "NSGK Hylinge",
+        "municipality": "Norrköping",
+        "region": "Östergötland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.nsgk.se/",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.1485,
+          58.5485
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vreta Kloster Golfklubb",
+        "municipality": "Linköping",
+        "region": "Östergötland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://vretagk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.5405,
+          58.472
         ]
       }
     }
