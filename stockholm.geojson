@@ -225,6 +225,170 @@
       },
       "geometry": { "type": "Point", "coordinates": [18.1001, 59.1085] }
     }
+,
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Fors Golfklubb",
+    "municipality": "Haninge",
+    "region": "Stockholm",
+    "holes": 9,
+    "pay_and_play": true,
+    "verified": false,
+    "website": "https://forsgk.se",
+    "source": "Klubbwebb",
+    "last_updated": "2026-02"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [18.1315, 59.1332]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Fågelbro Golf & Country Club",
+    "municipality": "Värmdö",
+    "region": "Stockholm",
+    "holes": 18,
+    "pay_and_play": true,
+    "verified": false,
+    "website": "https://fagelbro.se",
+    "source": "Klubbwebb",
+    "last_updated": "2026-02"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [18.4124, 59.3145]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "name": "GolfStar Bromma",
+    "municipality": "Stockholm",
+    "region": "Stockholm",
+    "holes": 9,
+    "pay_and_play": true,
+    "verified": false,
+    "website": "https://golfstar.se/bromma",
+    "source": "GolfStar",
+    "last_updated": "2026-02"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [17.8935, 59.3546]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "name": "GolfStar Lindö",
+    "municipality": "Vallentuna",
+    "region": "Stockholm",
+    "holes": 18,
+    "pay_and_play": true,
+    "verified": false,
+    "website": "https://golfstar.se/lindo",
+    "source": "GolfStar",
+    "last_updated": "2026-02"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [18.0874, 59.6034]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Jarlabanke Golfklubb",
+    "municipality": "Täby",
+    "region": "Stockholm",
+    "holes": 18,
+    "pay_and_play": true,
+    "verified": false,
+    "website": "https://jarlabankegk.se",
+    "source": "Klubbwebb",
+    "last_updated": "2026-02"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [18.0618, 59.4503]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Mälarö Golfklubb Skytteholm",
+    "municipality": "Ekerö",
+    "region": "Stockholm",
+    "holes": 18,
+    "pay_and_play": true,
+    "verified": false,
+    "website": "https://malarogk.se",
+    "source": "Klubbwebb",
+    "last_updated": "2026-02"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [17.6332, 59.2873]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Ulriksdals Golfklubb",
+    "municipality": "Solna",
+    "region": "Stockholm",
+    "holes": 9,
+    "pay_and_play": true,
+    "verified": false,
+    "website": "https://ulriksdalsgk.se",
+    "source": "Klubbwebb",
+    "last_updated": "2026-02"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [18.0112, 59.3754]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Wäsby Golf",
+    "municipality": "Upplands Väsby",
+    "region": "Stockholm",
+    "holes": 18,
+    "pay_and_play": true,
+    "verified": false,
+    "website": "https://wasbygolf.se",
+    "source": "Klubbwebb",
+    "last_updated": "2026-02"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [17.9073, 59.5295]
+  }
+},
+{
+  "type": "Feature",
+  "properties": {
+    "name": "Botkyrka Golfklubb",
+    "municipality": "Botkyrka",
+    "region": "Stockholm",
+    "holes": 18,
+    "pay_and_play": true,
+    "verified": false,
+    "website": "https://botkyrkagk.se",
+    "source": "Klubbwebb",
+    "last_updated": "2026-02"
+  },
+  "geometry": {
+    "type": "Point",
+    "coordinates": [17.8511, 59.1924]
+  }
+}
+
 
   ]
 }
