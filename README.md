@@ -5,3 +5,18 @@
 
 ## 16 feb.
 ta sen bort -> Ta bort din egen manuella cookie-banner (id="cookieBanner") 
+
+
+## 17 feb python och virtuell miljö
+
+python -m venv .venv
+
+source .venv/bin/activate
+
+pip install requests
+
+## utöka .gitignore
+.venv/
+__pycache__/
+*.pyc
+
