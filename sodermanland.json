@@ -1,1 +1,105 @@
+{
+  "type": "FeatureCollection",
+  "name": "sodermanland",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Fogdö Golfklubb",
+        "municipality": "Strängnäs",
+        "region": "Södermanland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.fogdogk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [17.1806, 59.3106] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Katrineholms Golfklubb",
+        "municipality": "Katrineholm",
+        "region": "Södermanland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.katrineholmsgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [16.2000, 59.0000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mälarbadens Golfklubb",
+        "municipality": "Eskilstuna",
+        "region": "Södermanland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.malarbadensgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [16.6500, 59.3500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Strand Golf Resort",
+        "municipality": "Trosa",
+        "region": "Södermanland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.strandgolf.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [16.9500, 58.8500] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Strängnäs Golfklubb",
+        "municipality": "Strängnäs",
+        "region": "Södermanland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.strangnasgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [17.0300, 59.3800] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sundbyvik Golf",
+        "municipality": "Strängnäs",
+        "region": "Södermanland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.sundbyvikgolf.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [17.2000, 59.3000] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vidbynäs Golf",
+        "municipality": "Nykvarn",
+        "region": "Södermanland",
+        "holes": 6,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.vidbynasgolf.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [17.1500, 59.0500] }
+    }
+  ]
+}
 
