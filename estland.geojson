@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Niitvälja Golf",
+        "municipality": "Lääne-Harju",
+        "region": "Estland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://niitvaljagolf.ee/en/",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.2275,
+          59.3344
+        ]
+      }
+    }
+  ]
+}
