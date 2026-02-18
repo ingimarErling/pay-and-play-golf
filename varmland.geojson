@@ -11,7 +11,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://www.bryngfjorden.se",
+        "website": "https://bryngfjorden.com",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [13.5000, 59.4300] }
@@ -39,7 +39,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://www.sommarrogolf.se",
+        "website": "https://www.karlstadcitygolf.se",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [13.4900, 59.4000] }
