@@ -210,7 +210,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://falkopingsgk.se",
+        "website": "https://www.falkopingsgk.com/",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -270,7 +270,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://lundsbrunngk.se",
+        "website": "https://lundsbrunngk.com",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -310,7 +310,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://marksgk.se",
+        "website": "https://www.marksgk.se/lydde-9-haal",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -324,33 +324,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Marks Golfklubb Korthål",
-        "municipality": "Kinna",
-        "region": "Västra Götaland",
-        "holes": 6,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://marksgk.se",
-        "last_updated": "2026-02"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          12.6985,
-          57.509
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Onsjö Golfklubb",
         "municipality": "Vänersborg",
         "region": "Västra Götaland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://onsjogk.se",
+        "website": "https://www.onsjogk.com/",
         "last_updated": "2026-02"
       },
       "geometry": {
@@ -430,7 +410,7 @@
         "holes": 18,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://vargardagk.se",
+        "website": "https://vargardagolf.se",
         "last_updated": "2026-02"
       },
       "geometry": {
