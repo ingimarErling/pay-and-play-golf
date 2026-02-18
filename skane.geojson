@@ -172,27 +172,6 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Svalövs Golfklubb",
-        "municipality": "Svalöv",
-        "region": "Skåne",
-        "holes": 9,
-        "pay_and_play": true,
-        "verified": false,
-        "website": null,
-        "source": "Öppen greenfee",
-        "last_updated": "2026-02"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          13.1172,
-          55.9191
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "name": "Vellinge Golfklubb (Pay & Play)",
         "municipality": "Vellinge",
         "region": "Skåne",
