@@ -25,7 +25,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://www.katrineholmsgk.se",
+        "website": "https://www.katrineholmsgolf.se/",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [16.2000, 59.0000] }
@@ -81,7 +81,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://www.sundbyvikgolf.se",
+        "website": "https://www.kvicksundgolf.com",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [17.2000, 59.3000] }
