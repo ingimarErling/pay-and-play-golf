@@ -25,7 +25,7 @@
         "holes": 6,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://www.furudalsbruksgk.se",
+        "website": " https://furudalsgolf.com/",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [15.0500, 61.1500] }
@@ -33,13 +33,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Gagnefs Golfklubb (18 hål)",
+        "name": "Gagnefs Golfklubb",
         "municipality": "Gagnef",
         "region": "Dalarna",
         "holes": 18,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://www.gagnefsgk.se",
+        "website": "https://www.gagnefsgk.com/",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [15.0800, 60.5800] }
@@ -95,7 +95,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://www.malunggk.se",
+        "website": "https://malungsgk.se/",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [13.7100, 60.6800] }
@@ -109,7 +109,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://www.samuelsdalsgk.se",
+        "website": "https://www.samuelsdalgolf.nu/",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [15.6600, 60.6200] }
@@ -151,7 +151,7 @@
         "holes": 18,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://www.tallbergsgk.se",
+        "website": "https://tallberggk.com/",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [15.0000, 60.8200] }
