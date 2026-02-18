@@ -10,15 +10,97 @@
         "holes": 18,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://niitvaljagolf.ee/en/",
+        "website": "https://niitvaljagolf.ee/en",
         "last_updated": "2026-02"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [
-          24.2275,
-          59.3344
-        ]
+        "coordinates": [24.2275, 59.3344]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Estonian Golf & Country Club",
+        "municipality": "Jõelähtme",
+        "region": "Estland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://egcc.ee/en",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.0217, 59.4689]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Rae Golf",
+        "municipality": "Rae",
+        "region": "Estland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://raegolf.ee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.8343, 59.3746]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Otepää Golf Club",
+        "municipality": "Otepää",
+        "region": "Estland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://otepaagolf.com/en/",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [26.5183, 58.0522]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Pärnu Bay Golf Links",
+        "municipality": "Pärnu",
+        "region": "Estland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://parnubay.com",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [24.4052, 58.3726]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saare Golf",
+        "municipality": "Kuressaare",
+        "region": "Estland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://saaregolf.ee",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [22.4705, 58.2447]
       }
     }
   ]
