@@ -5,7 +5,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Umeå Golfklubb (Pay & Play)",
+        "name": "Umeå Golfklubb",
         "municipality": "Umeå",
         "region": "Västerbotten",
         "holes": 9,
@@ -21,7 +21,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Skellefteå Golfklubb (9-håls)",
+        "name": "Skellefteå Golfklubb",
         "municipality": "Skellefteå",
         "region": "Västerbotten",
         "holes": 9,
@@ -43,7 +43,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://arvidsjaursgk.se",
+        "website": "https://arvidsjaurgolf.se",
         "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
@@ -59,7 +59,7 @@
         "holes": 18,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://gallivaregk.se",
+        "website": "https://www.gmgk.se",
         "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
@@ -75,7 +75,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://piteagk.se",
+        "website": "https://piteagolf.se",
         "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
@@ -85,7 +85,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Luleå Golfklubb (Pay & Play)",
+        "name": "Luleå Golfklubb",
         "municipality": "Luleå",
         "region": "Norrbotten",
         "holes": 9,
@@ -101,7 +101,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Boden Golfklubb (9-håls)",
+        "name": "Boden Golfklubb",
         "municipality": "Boden",
         "region": "Norrbotten",
         "holes": 9,
@@ -149,7 +149,7 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Sundsvalls Golfklubb (Pay & Play)",
+        "name": "Sundsvalls Golfklubb",
         "municipality": "Sundsvall",
         "region": "Västernorrland",
         "holes": 9,
@@ -171,7 +171,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://veckefjarden.se",
+        "website": "https://veckefjarden.com/",
         "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
@@ -187,7 +187,7 @@
         "holes": 18,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://norrfallsviken.se",
+        "website": "https://nvgk.se/",
         "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
