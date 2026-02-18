@@ -25,7 +25,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://www.frosaker.se",
+        "website": "https://fgcc.se/golf/",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [16.6300, 59.6100] }
@@ -53,7 +53,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://www.salaggk.se",
+        "website": "https://salagk.se",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [16.6200, 59.9300] }
@@ -81,7 +81,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://www.stromsholmsgk.se",
+        "website": "https://stromsholmsgolf.se",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [16.2200, 59.5200] }
@@ -95,7 +95,7 @@
         "holes": 18,
         "pay_and_play": true,
         "verified": false,
-        "website": "https://www.angsogk.se",
+        "website": "https://angsogolfklubb.com",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [16.7000, 59.6000] }
