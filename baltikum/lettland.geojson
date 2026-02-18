@@ -1,0 +1,105 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ozo Golf Club",
+        "municipality": "Riga",
+        "region": "Lettland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.ozogolf.lv",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.2146,
+          56.9994
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Viesturi Golf Club",
+        "municipality": "Babīte",
+        "region": "Lettland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.viesturigolf.lv",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8575,
+          56.9383
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Jurmala Golf Club & Hotel",
+        "municipality": "Jūrmala",
+        "region": "Lettland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.jurmalagolf.com",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.6895,
+          56.9867
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Reinis Track Golf",
+        "municipality": "Sigulda",
+        "region": "Lettland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.reinistrase.lv",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.8453,
+          57.1532
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Saliena Golf Club",
+        "municipality": "Piņķi",
+        "region": "Lettland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.salienagolf.com",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          23.8856,
+          56.9518
+        ]
+      }
+    }
+  ]
+}
