@@ -41,7 +41,6 @@
         "pay_and_play": true,
         "verified": false,
         "website": "https://falkenbergsgk.se",
-        "source": "Klubbwebb",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [12.5093, 56.9001] }
@@ -49,14 +48,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Åkulla Golf & Country Club (9-håls)",
+        "name": "Åkulla Golf & Country Club",
         "municipality": "Varberg",
         "region": "Halland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": null,
-        "source": "Öppen greenfee",
+        "website": "https://www.akullaresort.se/",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [12.3895, 57.1613] }
@@ -94,14 +92,13 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Haverdals Golfklubb (Pay & Play)",
+        "name": "Haverdals Golfklubb",
         "municipality": "Halmstad",
         "region": "Halland",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
         "website": "https://haverdalsgk.se",
-        "source": "Öppen greenfee",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [12.7084, 56.7150] }
@@ -130,8 +127,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": null,
-        "source": "Bildlista 2026-02",
+        "website": "https://flygstadensgolfklubb.se",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [12.8557, 56.6653] }
@@ -145,8 +141,7 @@
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
-        "website": null,
-        "source": "Bildlista 2026-02",
+        "website": "https://strandtorpgolf.com/",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [12.9284, 56.6829] }
@@ -160,8 +155,7 @@
         "holes": 18,
         "pay_and_play": true,
         "verified": false,
-        "website": null,
-        "source": "Bildlista 2026-02",
+        "website": "https://fladjegolf.se",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [12.6843, 56.9109] }
@@ -176,7 +170,6 @@
         "pay_and_play": true,
         "verified": false,
         "website": "https://www.vinbergsgolfklubb.se",
-        "source": "Bildlista 2026-02",
         "last_updated": "2026-02"
       },
       "geometry": { "type": "Point", "coordinates": [12.55451, 56.96123] }
