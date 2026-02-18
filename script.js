@@ -73,7 +73,8 @@ const swedenRegions = [
 ].map(r => `${r}.geojson`);
 
 const balticRegions = [
-  "estland"
+  "estland",
+  "lettland"
 ].map(r => `baltikum/${r}.geojson`);
 
 const regionFiles = [...swedenRegions, ...balticRegions];
