@@ -69,7 +69,8 @@ const regionFiles = [
   "uppland",
   "varmland",
   "vastmanland",
-  "vastra-gotaland"
+  "vastra-gotaland",
+  "estland.geojson"
 ].map(r => `${r}.geojson`);
 
 
