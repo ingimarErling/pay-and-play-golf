@@ -203,11 +203,14 @@ function resetMap() {
 
     map.setView(SWEDEN_CENTER, SWEDEN_ZOOM);
 
-    document.getElementById("infoPanel").innerHTML = `
+    const panel = document.getElementById("infoPanel");
+
+    panel.innerHTML = `
         <h2>Välj en klubb</h2>
         <p>Klicka på en markering på kartan för mer information.</p>
     `;
 }
+
 
 // ===============================
 // RESULT COUNTER
