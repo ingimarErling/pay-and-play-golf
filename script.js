@@ -250,21 +250,21 @@ function showClubInfo(club) {
                  data-ad-client="ca-pub-6036839968490609"
                  data-ad-slot="7765842047"
                  data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
+                 data-full-width-responsive="true"
+                 data-adtest="on"></ins>
         </div>
     `;
 
-    // Vänta en kort stund innan vi pushar annonsen
+    // Push annons efter DOM-render
     setTimeout(() => {
-        if (window.adsbygoogle) {
-            try {
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            } catch (e) {
-                console.log("AdSense push misslyckades:", e);
-            }
+        try {
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (e) {
+            console.log("AdSense push misslyckades:", e);
         }
-    }, 200);
+    }, 300);
 }
+
 
 // ===============================
 // COOKIE BANNER
