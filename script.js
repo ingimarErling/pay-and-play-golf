@@ -225,7 +225,6 @@ function updateCounter(count) {
 // ===============================
 // INFO PANEL
 // ===============================
-
 function showClubInfo(club) {
 
     const panel = document.getElementById("infoPanel");
@@ -234,6 +233,7 @@ function showClubInfo(club) {
         <h2>${club.name}</h2>
         <p>📍 ${club.municipality || ""}</p>
         <p>⛳ ${club.holes || "?"} hål</p>
+
         ${club.website ? `
             <p>
                 <a href="${club.website}" target="_blank" rel="noopener">
@@ -242,7 +242,7 @@ function showClubInfo(club) {
             </p>
         ` : ""}
 
-        <div class="ad-container" style="margin-top:20px;">
+        <div style="margin-top:20px;">
             <p style="font-size:12px;color:#777;">Annons</p>
 
             <ins class="adsbygoogle"
@@ -254,16 +254,18 @@ function showClubInfo(club) {
         </div>
     `;
 
-    //  Viktigt: trigga annonsen efter att den lagts in i DOM
-    if (window.adsbygoogle && typeof adsbygoogle.push === "function") {
-    try {
-        adsbygoogle.push({});
-    } catch (e) {
-        console.log("AdSense redan laddad eller blockerad.");
-    }
-  }
-
+    // Vänta en kort stund innan vi pushar annonsen
+    setTimeout(() => {
+        if (window.adsbygoogle) {
+            try {
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            } catch (e) {
+                console.log("AdSense push misslyckades:", e);
+            }
+        }
+    }, 200);
 }
+
 // ===============================
 // COOKIE BANNER
 // ===============================
