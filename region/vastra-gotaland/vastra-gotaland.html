@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Pay & Play Golf i Västra Götaland 2026 – Spela utan grönt kort</title>
+
+<meta name="description" content="Hitta alla Pay & Play golfbanor i Västra Götaland. Spela golf utan grönt kort i Göteborg och hela regionen.">
+
+<link rel="canonical" href="https://pay-and-play.org/region/vastra-gotaland/">
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<script async
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6036839968490609"
+crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+<header class="site-header">
+<h1>Pay & Play-banor i Västra Götaland</h1>
+<p class="subtitle">
+Alla golfbanor utan grönt kort i regionen.
+</p>
+</header>
+
+<main style="max-width:1100px;margin:40px auto;padding:0 20px;">
+
+<section>
+<h2>Spela golf utan grönt kort i Västra Götaland</h2>
+
+<p>
+Här hittar du alla Pay & Play-banor i Västra Götaland.
+Du behöver inte vara medlem i en golfklubb och du behöver inget officiellt handicap.
+</p>
+
+<p>
+Regionen har flera 9-hålsbanor och 18-hålsbanor som är öppna för nybörjare,
+familjer och dig som vill spela golf utan grönt kort.
+</p>
+
+</section>
+
+<div id="map" style="height:500px;margin:40px 0;"></div>
+
+<section>
+<h2>Lista över Pay & Play-banor i Västra Götaland</h2>
+
+<table border="1" cellpadding="8" style="border-collapse:collapse;width:100%;">
+<thead>
+<tr>
+<th>Golfbana</th>
+<th>Kommun</th>
+<th>Hål</th>
+<th>Hemsida</th>
+</tr>
+</thead>
+<tbody id="clubTable">
+</tbody>
+</table>
+
+</section>
+
+</main>
+
+<footer class="compact-footer">
+<div class="footer-inner">
+© 2026 Erlingsson – Pay & Play Golf Sverige |
+<a href="../../index.html">Startsida</a> |
+<a href="../../privacy-policy.html">Integritetspolicy</a>
+</div>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script>
+const map = L.map('map');
+const geoFile = "../../vastra-gotaland.geojson";
+
+fetch(geoFile)
+.then(res => res.json())
+.then(data => {
+
+    const layer = L.geoJSON(data, {
+        pointToLayer: function(feature, latlng) {
+
+            const holes = feature.properties.holes || 9;
+
+            const icon = L.icon({
+                iconUrl: holes == 18 
+                    ? "https://maps.google.com/mapfiles/ms/icons/red-dot.png"
+                    : "https://maps.google.com/mapfiles/ms/icons/green-dot.png",
+                iconSize: [32, 32]
+            });
+
+            return L.marker(latlng, { icon });
+        }
+    }).addTo(map);
+
+    map.fitBounds(layer.getBounds());
+
+    const table = document.getElementById("clubTable");
+
+    data.features.forEach(feature => {
+
+        const p = feature.properties;
+
+        table.innerHTML += `
+        <tr>
+            <td>${p.name}</td>
+            <td>${p.municipality || ""}</td>
+            <td>${p.holes || "?"}</td>
+            <td>
+                ${p.website ? 
+                    `<a href="${p.website}" target="_blank">Besök</a>` 
+                    : "-"
+                }
+            </td>
+        </tr>
+        `;
+    });
+
+});
+</script>
+
+</body>
+</html>
