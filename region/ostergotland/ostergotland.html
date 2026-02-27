@@ -1,1 +1,100 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Pay & Play-banor i Västra Götaland 2026 – Spela utan grönt kort</title>
+<meta name="description" content="Alla Pay & Play-banor i Västra Götaland. Spela golf utan grönt kort i Göteborg, Borås, Skövde, Uddevalla och hela regionen.">
+
+<link rel="canonical" href="https://pay-and-play.org/region/vastra-gotaland/vastra-gotaland.html">
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<style>
+.region-container {
+    max-width:1100px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+#regionMap {
+    height:500px;
+    margin:30px 0;
+    border-radius:8px;
+}
+
+.region-table {
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+.region-table th,
+.region-table td {
+    padding:10px;
+    border:1px solid #ddd;
+}
+
+.region-table th {
+    background:#f3f3f3;
+    text-align:left;
+}
+
+.region-table tr:hover {
+    background:#f9f9f9;
+}
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+    <h1>Pay & Play-banor i Västra Götaland</h1>
+    <p class="subtitle">Spela golf utan grönt kort i hela regionen.</p>
+</header>
+
+<div class="region-container">
+
+    <h2>Spela golf utan grönt kort i Västra Götaland</h2>
+    <p>
+    Här hittar du alla Pay & Play-banor i Västra Götaland.
+    Du behöver inte vara medlem i en golfklubb och inget officiellt handicap krävs.
+    Regionen har både 9-hålsbanor och 18-hålsbanor öppna för nybörjare,
+    familjer och dig som vill spela golf utan grönt kort.
+    </p>
+
+    <div id="regionMap"></div>
+
+    <h2>Lista över Pay & Play-banor i Västra Götaland</h2>
+
+    <table class="region-table">
+        <thead>
+            <tr>
+                <th>Golfbana</th>
+                <th>Kommun</th>
+                <th>Hål</th>
+                <th>Hemsida</th>
+            </tr>
+        </thead>
+        <tbody id="clubTable">
+        </tbody>
+    </table>
+
+</div>
+
+<footer class="compact-footer">
+    <div class="footer-inner">
+        © 2026 Erlingsson – Pay & Play Golf Sverige |
+        <a href="../../index.html">Startsida</a> |
+        <a href="../../integritetspolicy.html">Integritetspolicy</a>
+    </div>
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="vastra-gotaland.js"></script>
+
+</body>
+</html>
