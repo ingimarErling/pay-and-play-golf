@@ -2,9 +2,11 @@
 // CONFIG
 // ===============================
 
-const REGION_CENTER = [57.4, 14.6];
-const REGION_ZOOM = 7;
+const REGION_CENTER = [57.3, 14.6];
+const REGION_ZOOM = 8;
+
 const GEOJSON_PATH = "../../smaland.geojson";
+
 
 // ===============================
 // INIT MAP
@@ -12,77 +14,122 @@ const GEOJSON_PATH = "../../smaland.geojson";
 
 const map = L.map('regionMap').setView(REGION_CENTER, REGION_ZOOM);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; OpenStreetMap contributors'
-}).addTo(map);
+
+// ===============================
+// BACKGROUND MAP
+// ===============================
+
+L.tileLayer(
+'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+{
+attribution: '&copy; OpenStreetMap contributors'
+}
+).addTo(map);
+
 
 // ===============================
 // ICONS
 // ===============================
 
 const icon9 = L.icon({
-    iconUrl: "https://maps.google.com/mapfiles/ms/icons/green-dot.png",
-    iconSize: [32, 32]
+iconUrl: "https://maps.google.com/mapfiles/ms/icons/green-dot.png",
+iconSize: [32,32]
 });
 
 const icon18 = L.icon({
-    iconUrl: "https://maps.google.com/mapfiles/ms/icons/red-dot.png",
-    iconSize: [32, 32]
+iconUrl: "https://maps.google.com/mapfiles/ms/icons/red-dot.png",
+iconSize: [32,32]
 });
+
 
 // ===============================
 // LOAD GEOJSON
 // ===============================
 
 fetch(GEOJSON_PATH)
-.then(res => res.json())
+
+.then(response => response.json())
+
 .then(data => {
 
-    const geoLayer = L.geoJSON(data, {
+const geoLayer = L.geoJSON(data, {
 
-        pointToLayer: function(feature, latlng) {
+pointToLayer: function(feature, latlng){
 
-            const p = feature.properties;
-            const holes = p.holes || 9;
-            const icon = holes == 18 ? icon18 : icon9;
+const p = feature.properties;
 
-            const marker = L.marker(latlng, { icon });
+const holes = p.holes || 9;
 
-            marker.bindPopup(
-                "<strong>" + p.name + "</strong><br>" +
-                (p.municipality || "") + "<br>" +
-                "⛳ " + holes + " hål<br>" +
-                (p.website ? '<a href="' + p.website + '" target="_blank">Besök hemsida</a>' : "")
-            );
+const icon = holes == 18 ? icon18 : icon9;
 
-            return marker;
-        }
+const marker = L.marker(latlng, {icon});
 
-    }).addTo(map);
+marker.bindPopup(
 
-    map.fitBounds(geoLayer.getBounds());
+"<strong>" + p.name + "</strong><br>" +
 
-    const table = document.getElementById("clubTable");
+(p.municipality || "") + "<br>" +
 
-    data.features.forEach(feature => {
+"⛳ " + holes + " hål<br>" +
 
-        const p = feature.properties;
+(p.website
+? '<a href="'+p.website+'" target="_blank">Besök hemsida</a>'
+: ""
+)
 
-        table.innerHTML +=
-        "<tr>" +
-            "<td>" + p.name + "</td>" +
-            "<td>" + (p.municipality || "") + "</td>" +
-            "<td>" + (p.holes || "?") + "</td>" +
-            "<td>" +
-                (p.website ?
-                    '<a href="' + p.website + '" target="_blank">Besök</a>'
-                    : "-"
-                ) +
-            "</td>" +
-        "</tr>";
-    });
+);
+
+return marker;
+
+}
+
+}).addTo(map);
+
+
+// ===============================
+// AUTO ZOOM
+// ===============================
+
+map.fitBounds(geoLayer.getBounds());
+
+
+// ===============================
+// BUILD TABLE
+// ===============================
+
+const table = document.getElementById("clubTable");
+
+data.features.forEach(feature => {
+
+const p = feature.properties;
+
+table.innerHTML +=
+
+"<tr>" +
+
+"<td>" + p.name + "</td>" +
+
+"<td>" + (p.municipality || "") + "</td>" +
+
+"<td>" + (p.holes || "?") + "</td>" +
+
+"<td>" +
+
+(p.website
+? '<a href="'+p.website+'" target="_blank">Besök</a>'
+: "-"
+) +
+
+"</td>" +
+
+"</tr>";
+
+});
 
 })
+
 .catch(err => {
-    console.error("Kunde inte ladda geojson:", err);
+
+console.error("Kunde inte ladda geojson:", err);
+
 });
