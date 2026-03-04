@@ -9,6 +9,9 @@ export default class Ball {
         this.vy = 0;
 
         this.friction = 0.98;
+
+        this.maxDistance = 0;
+        this.travel = 0;
     }
 
     hit(power, angle, maxDistance) {
@@ -22,7 +25,7 @@ export default class Ball {
         this.travel = 0;
     }
 
-    update() {
+    update(canvasWidth, canvasHeight) {
 
         this.x += this.vx;
         this.y += this.vy;
@@ -37,6 +40,16 @@ export default class Ball {
 
         this.vx *= this.friction;
         this.vy *= this.friction;
+
+        /*
+         Stoppa bollen vid canvas-kanter
+        */
+
+        if(this.x < 5) this.x = 5;
+        if(this.y < 5) this.y = 5;
+
+        if(this.x > canvasWidth-5) this.x = canvasWidth-5;
+        if(this.y > canvasHeight-5) this.y = canvasHeight-5;
     }
 
     isStopped(){
