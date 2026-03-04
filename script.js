@@ -152,7 +152,7 @@ map.fitBounds(geoLayer.getBounds())
 
 function applyFilters(){
 
-const search=document
+let search=document
 .getElementById("searchInput")
 .value
 .toLowerCase()
@@ -162,6 +162,28 @@ const holes=document
 .getElementById("holesFilter")
 .value
 
+
+// ===============================
+// SYNONYMS
+// ===============================
+
+const synonyms={
+
+"sörmland":"sodermanland",
+"södermanland":"sodermanland",
+
+"skåne":"skane",
+
+"västra götaland":"vastra-gotaland",
+"västergötland":"vastra-gotaland",
+
+"östergötland":"ostergotland"
+
+}
+
+search = synonyms[search] || search
+
+
 const filtered=allFeatures.filter(f=>{
 
 const p=f.properties
@@ -169,7 +191,7 @@ const p=f.properties
 const matchSearch=
 
 !search ||
-p.name.toLowerCase().includes(search) ||
+p.name?.toLowerCase().includes(search) ||
 p.municipality?.toLowerCase().includes(search) ||
 p.region?.toLowerCase().includes(search)
 
