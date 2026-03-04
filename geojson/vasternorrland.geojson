@@ -1,0 +1,70 @@
+{
+"type": "FeatureCollection",
+"features": [
+
+{
+"type": "Feature",
+"properties": {
+"name": "Sundsvalls Golfklubb",
+"municipality": "Sundsvall",
+"region": "Västernorrland",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://sundsvallsgk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [17.3066,62.3647]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Timrå Golfklubb",
+"municipality": "Timrå",
+"region": "Västernorrland",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://timragk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [17.3316,62.4904]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Härnösands Golfklubb",
+"municipality": "Härnösand",
+"region": "Västernorrland",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://harnosandsgk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [17.9601,62.6444]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Örnsköldsviks Golfklubb",
+"municipality": "Örnsköldsvik",
+"region": "Västernorrland",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://oviksgk.com"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [18.6892,63.3191]
+}
+}
+
+]
+}
