@@ -5,74 +5,117 @@ import Swing from "./swing.js";
 
 export default class Game {
 
-    constructor(canvas){
+    constructor(canvas) {
 
         this.canvas = canvas;
         this.ctx = canvas.getContext("2d");
 
-        this.ball = new Ball(150,300);
+        /*
+         Game objects
+        */
+
+        this.ball = new Ball(150, 300);
         this.course = new Course();
         this.swing = new Swing();
 
         this.renderer = new Renderer(this.ctx);
 
+        /*
+         Game state machine
+        */
+
         this.state = "AIMING";
+
+        /*
+         Timing
+        */
 
         this.lastTime = 0;
 
+        /*
+         Aim direction (radians)
+        */
+
         this.angle = 0;
+
+        /*
+         Score system
+        */
 
         this.strokes = 0;
         this.par = 3;
         this.result = null;
 
+        /*
+         Hole information
+        */
+
+        this.holeDistance = 120;      // yards
+        this.maxShotDistance = 140;   // maximum travel
+
         this.registerEvents();
     }
 
-    registerEvents(){
+    /*
+     Input handling
+    */
 
-        window.addEventListener("click",()=>{
+    registerEvents() {
 
-            if(this.state==="AIMING"){
+        window.addEventListener("click", () => {
+
+            if (this.state === "AIMING") {
 
                 this.swing.start();
-                this.state="SWINGING";
+                this.state = "SWINGING";
             }
 
-            else if(this.state==="SWINGING"){
+            else if (this.state === "SWINGING") {
 
                 const power = this.swing.stop();
 
-                this.ball.hit(power,this.angle);
+                this.ball.hit(power, this.angle, this.maxShotDistance);
 
                 this.strokes++;
 
-                this.state="BALL_MOVING";
+                this.state = "BALL_MOVING";
             }
+
         });
 
-        window.addEventListener("keydown",(e)=>{
+        /*
+         Aim left/right with arrow keys
+        */
 
-            if(this.state!=="AIMING") return;
+        window.addEventListener("keydown", (e) => {
 
-            if(e.key==="ArrowLeft"){
+            if (this.state !== "AIMING") return;
 
+            if (e.key === "ArrowLeft") {
                 this.angle -= 0.1;
             }
 
-            if(e.key==="ArrowRight"){
-
+            if (e.key === "ArrowRight") {
                 this.angle += 0.1;
             }
+
         });
     }
 
-    start(){
+    /*
+     Start game loop
+    */
+
+    start() {
 
         requestAnimationFrame(this.loop.bind(this));
     }
 
-    loop(timestamp){
+    /*
+     Main loop
+    */
+
+    loop(timestamp) {
 
         const delta = timestamp - this.lastTime;
         this.lastTime = timestamp;
@@ -83,61 +126,88 @@ export default class Game {
         requestAnimationFrame(this.loop.bind(this));
     }
 
-    update(delta){
+    /*
+     Update game logic
+    */
 
-        if(this.state==="BALL_MOVING"){
+    update(delta) {
+
+        if (this.state === "BALL_MOVING") {
 
             this.ball.update();
 
-            if(this.ball.isStopped()){
+            if (this.ball.isStopped()) {
 
-                if(this.isBallInHole()){
+                if (this.isBallInHole()) {
 
                     this.calculateScore();
-                    this.state="FINISHED";
+                    this.state = "FINISHED";
                 }
-                else{
+                else {
 
-                    this.state="AIMING";
+                    this.state = "AIMING";
                 }
             }
         }
 
-        if(this.state==="SWINGING"){
+        if (this.state === "SWINGING") {
 
             this.swing.update(delta);
         }
     }
 
-    isBallInHole(){
+    /*
+     Detect if ball reached the hole
+    */
+
+    isBallInHole() {
 
         const dx = this.ball.x - this.course.hole.x;
         const dy = this.ball.y - this.course.hole.y;
 
-        const distance = Math.sqrt(dx*dx + dy*dy);
+        const distance = Math.sqrt(dx * dx + dy * dy);
 
         return distance < this.course.hole.radius;
     }
 
-    calculateScore(){
+    /*
+     Calculate golf score
+    */
+
+    calculateScore() {
 
         const diff = this.strokes - this.par;
 
-        if(this.strokes===1) this.result="HOLE IN ONE!";
-        else if(diff===-1) this.result="BIRDIE";
-        else if(diff===0) this.result="PAR";
-        else if(diff===1) this.result="BOGEY";
-        else this.result="DOUBLE BOGEY+";
+        if (this.strokes === 1) {
+            this.result = "HOLE IN ONE!";
+        }
+        else if (diff === -1) {
+            this.result = "BIRDIE";
+        }
+        else if (diff === 0) {
+            this.result = "PAR";
+        }
+        else if (diff === 1) {
+            this.result = "BOGEY";
+        }
+        else {
+            this.result = "DOUBLE BOGEY+";
+        }
     }
 
-    render(){
+    /*
+     Render frame
+    */
+
+    render() {
 
         this.renderer.clear();
 
         this.renderer.drawCourse(this.course);
         this.renderer.drawBall(this.ball);
-        this.renderer.drawAim(this.ball,this.angle,this.state);
-        this.renderer.drawSwing(this.swing,this.state);
+
+        this.renderer.drawAim(this.ball, this.angle, this.state);
+        this.renderer.drawSwing(this.swing, this.state);
 
         this.renderer.drawHUD(this);
     }
