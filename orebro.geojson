@@ -12,9 +12,9 @@
         "pay_and_play": true,
         "verified": false,
         "website": "https://www.degerforsgolf.se",
-        "last_updated": "2026-02"
+        "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [14.4500, 59.2300] }
+      "geometry": { "type": "Point", "coordinates": [14.4172, 59.2558] }
     },
     {
       "type": "Feature",
@@ -26,9 +26,9 @@
         "pay_and_play": true,
         "verified": false,
         "website": "https://www.karlskogagk.se",
-        "last_updated": "2026-02"
+        "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [14.5200, 59.3300] }
+      "geometry": { "type": "Point", "coordinates": [14.5412, 59.3484] }
     },
     {
       "type": "Feature",
@@ -40,9 +40,9 @@
         "pay_and_play": true,
         "verified": false,
         "website": "https://www.kumlagk.se",
-        "last_updated": "2026-02"
+        "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [15.1300, 59.1200] }
+      "geometry": { "type": "Point", "coordinates": [15.1912, 59.1321] }
     },
     {
       "type": "Feature",
@@ -54,9 +54,9 @@
         "pay_and_play": true,
         "verified": false,
         "website": "https://www.lindesbergsgk.se",
-        "last_updated": "2026-02"
+        "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [15.2500, 59.6000] }
+      "geometry": { "type": "Point", "coordinates": [15.2284, 59.6112] }
     },
     {
       "type": "Feature",
@@ -68,37 +68,107 @@
         "pay_and_play": true,
         "verified": false,
         "website": "https://www.noragk.se",
-        "last_updated": "2026-02"
+        "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [15.0500, 59.5200] }
+      "geometry": { "type": "Point", "coordinates": [15.0345, 59.4921] }
     },
     {
       "type": "Feature",
       "properties": {
         "name": "Stjernfors Golfklubb",
-        "municipality": "Hällefors",
+        "municipality": "Kopparberg",
         "region": "Örebro",
         "holes": 18,
         "pay_and_play": true,
         "verified": false,
         "website": "https://www.stjernforsgk.se",
-        "last_updated": "2026-02"
+        "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [14.5200, 59.7800] }
+      "geometry": { "type": "Point", "coordinates": [14.9924, 59.8884] }
     },
     {
       "type": "Feature",
       "properties": {
-        "name": "Örebro City Golf",
+        "name": "Örebro City Golf (Mosjö)",
         "municipality": "Örebro",
         "region": "Örebro",
         "holes": 9,
         "pay_and_play": true,
         "verified": false,
         "website": "https://www.orebrocitygolf.se",
-        "last_updated": "2026-02"
+        "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [15.2100, 59.2700] }
+      "geometry": { "type": "Point", "coordinates": [15.1584, 59.2012] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Örebro City Golf (Gustavsvik)",
+        "municipality": "Örebro",
+        "region": "Örebro",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://www.orebrocitygolf.se",
+        "last_updated": "2026-03"
+      },
+      "geometry": { "type": "Point", "coordinates": [15.1952, 59.2554] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lannalodge Golfresort",
+        "municipality": "Lekeberg",
+        "region": "Örebro",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://www.lannalodge.se",
+        "last_updated": "2026-03"
+      },
+      "geometry": { "type": "Point", "coordinates": [14.9312, 59.2458] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Askersunds Golfklubb",
+        "municipality": "Askersund",
+        "region": "Örebro",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://www.askersundsgk.se",
+        "last_updated": "2026-03"
+      },
+      "geometry": { "type": "Point", "coordinates": [14.9582, 58.8312] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kårsta Golfklubb",
+        "municipality": "Örebro",
+        "region": "Örebro",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://www.karstagk.se",
+        "last_updated": "2026-03"
+      },
+      "geometry": { "type": "Point", "coordinates": [15.3124, 59.3321] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lekebergs Golfklubb",
+        "municipality": "Lekeberg",
+        "region": "Örebro",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "http://www.lekebergsgk.se",
+        "last_updated": "2026-03"
+      },
+      "geometry": { "type": "Point", "coordinates": [14.8812, 59.2154] }
     }
   ]
 }
