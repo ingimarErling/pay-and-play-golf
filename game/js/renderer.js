@@ -43,13 +43,25 @@ export default class Renderer {
         this.ctx.fill();
     }
 
-    drawSwing(swing,state) {
+   drawSwing(swing,state){
 
-        if(state !== "SWINGING") return;
+    if(state !== "SWINGING") return;
 
-        this.ctx.fillStyle="white";
-        this.ctx.fillRect(200,550,swing.power*4,20);
-    }
+    const baseX = 200;
+    const baseY = 550;
+    const width = 400;
+
+    this.ctx.fillStyle="white";
+
+    this.ctx.fillRect(baseX,baseY,swing.power*4,20);
+
+    this.ctx.font="14px monospace";
+
+    this.ctx.fillText("0",baseX,baseY-5);
+    this.ctx.fillText("50",baseX+200,baseY-5);
+    this.ctx.fillText("75",baseX+300,baseY-5);
+    this.ctx.fillText("100",baseX+380,baseY-5);
+}
 
     drawAim(ball,angle,state){
 
