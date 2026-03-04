@@ -1,0 +1,70 @@
+{
+"type": "FeatureCollection",
+"features": [
+
+{
+"type": "Feature",
+"properties": {
+"name": "Luleå Golfklubb",
+"municipality": "Luleå",
+"region": "Norrbotten",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://luleagk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [22.1225,65.5438]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Boden Golfklubb",
+"municipality": "Boden",
+"region": "Norrbotten",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://bodengolfklubb.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [21.7381,65.8332]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Piteå Golfklubb",
+"municipality": "Piteå",
+"region": "Norrbotten",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://piteagk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [21.5556,65.3262]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Kiruna Golfklubb",
+"municipality": "Kiruna",
+"region": "Norrbotten",
+"holes": 9,
+"pay_and_play": true,
+"website": "https://kirunagk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [20.2555,67.8558]
+}
+}
+
+]
+}
