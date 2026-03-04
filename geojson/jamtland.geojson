@@ -1,0 +1,54 @@
+{
+"type": "FeatureCollection",
+"features": [
+
+{
+"type": "Feature",
+"properties": {
+"name": "Östersund-Frösö Golfklubb",
+"municipality": "Östersund",
+"region": "Jämtland",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://osd-frosoegk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [14.5565,63.2007]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Åre Golfklubb",
+"municipality": "Åre",
+"region": "Jämtland",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://aregolfklubb.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [13.0954,63.4033]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Svegs Golfklubb",
+"municipality": "Härjedalen",
+"region": "Jämtland",
+"holes": 9,
+"pay_and_play": true,
+"website": "https://svegsgk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [14.3667,62.0333]
+}
+}
+
+]
+}
