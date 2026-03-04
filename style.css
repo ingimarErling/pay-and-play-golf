@@ -132,10 +132,9 @@ min-height:0;
 /* MAP */
 
 #map{
-
-flex:3;
-height:100%;
-
+    flex:3;
+    height:calc(100vh - 230px);
+    min-height:500px;
 }
 
 /* PANEL */
@@ -228,8 +227,10 @@ color:#2e7d32;
 
 @media(max-width:900px){
 
-.layout{
-flex-direction:column;
+#map{
+    flex:3;
+    height:calc(100vh - 230px);
+    min-height:500px;
 }
 
 #map{
