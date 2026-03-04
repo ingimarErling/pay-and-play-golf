@@ -140,7 +140,7 @@ return marker
 
 }).addTo(map)
 
-if(fitBounds){
+if(fitBounds && features.length){
 map.fitBounds(geoLayer.getBounds())
 }
 
@@ -170,7 +170,8 @@ const matchSearch=
 
 !search ||
 p.name.toLowerCase().includes(search) ||
-p.municipality?.toLowerCase().includes(search)
+p.municipality?.toLowerCase().includes(search) ||
+p.region?.toLowerCase().includes(search)
 
 const matchHoles=
 !holes || p.holes==holes
@@ -179,7 +180,7 @@ return matchSearch && matchHoles
 
 })
 
-renderGeoJSON(filtered)
+renderGeoJSON(filtered,true)
 
 updateCounter(filtered.length)
 
@@ -196,7 +197,7 @@ document.getElementById("holesFilter").value=""
 
 selectedMarker=null
 
-renderGeoJSON(allFeatures,false)
+renderGeoJSON(allFeatures,true)
 
 map.setView(SWEDEN_CENTER,SWEDEN_ZOOM)
 
@@ -218,7 +219,6 @@ document.getElementById("infoPanel").innerHTML=`
 function updateCounter(count){
 
 document.getElementById("resultCounter").innerHTML=
-
 `<strong>Antal träffar: ${count}</strong>`
 
 }
