@@ -14,7 +14,7 @@
         "website": "https://www.johannesbergsslott.se/golf.html",
         "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [18.2321, 59.6684] }
+      "geometry": { "type": "Point", "coordinates": [18.2345, 59.6698] }
     },
     {
       "type": "Feature",
@@ -28,7 +28,7 @@
         "website": "https://www.sundsta.se/golf-norrtalje",
         "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [18.6352, 59.7821] }
+      "geometry": { "type": "Point", "coordinates": [18.6368, 59.7825] }
     },
     {
       "type": "Feature",
@@ -42,7 +42,7 @@
         "website": "https://www.upsalagk.se",
         "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [17.5182, 59.8514] }
+      "geometry": { "type": "Point", "coordinates": [17.5121, 59.8532] }
     },
     {
       "type": "Feature",
@@ -56,7 +56,7 @@
         "website": "https://vgk.nu/",
         "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [18.8251, 59.9812] }
+      "geometry": { "type": "Point", "coordinates": [18.8245, 59.9821] }
     },
     {
       "type": "Feature",
@@ -70,7 +70,7 @@
         "website": "https://www.oregrundsgk.com",
         "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [18.3912, 60.2984] }
+      "geometry": { "type": "Point", "coordinates": [18.3905, 60.2978] }
     },
     {
       "type": "Feature",
@@ -84,7 +84,7 @@
         "website": "https://gronlundgk.se",
         "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [17.9721, 59.8912] }
+      "geometry": { "type": "Point", "coordinates": [17.9715, 59.8924] }
     },
     {
       "type": "Feature",
@@ -98,7 +98,7 @@
         "website": "https://vassundagk.se",
         "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [17.7534, 59.7341] }
+      "geometry": { "type": "Point", "coordinates": [17.7521, 59.7335] }
     },
     {
       "type": "Feature",
@@ -112,7 +112,7 @@
         "website": "https://enkopingsgk.se",
         "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [17.0231, 59.6124] }
+      "geometry": { "type": "Point", "coordinates": [17.0225, 59.6131] }
     },
     {
       "type": "Feature",
@@ -126,7 +126,7 @@
         "website": "https://golfstar.se/sigtuna",
         "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [17.6521, 59.6341] }
+      "geometry": { "type": "Point", "coordinates": [17.6515, 59.6352] }
     },
     {
       "type": "Feature",
@@ -140,7 +140,7 @@
         "website": "https://wattholmagk.se",
         "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [17.7412, 59.9921] }
+      "geometry": { "type": "Point", "coordinates": [17.7425, 59.9918] }
     },
     {
       "type": "Feature",
@@ -154,7 +154,91 @@
         "website": "https://burvik.se",
         "last_updated": "2026-03"
       },
-      "geometry": { "type": "Point", "coordinates": [18.2834, 59.8821] }
+      "geometry": { "type": "Point", "coordinates": [18.2842, 59.8815] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "GolfUppsala - Söderby (9-hålsbanan)",
+        "municipality": "Uppsala",
+        "region": "Uppland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://golfuppsala.se",
+        "last_updated": "2026-03"
+      },
+      "geometry": { "type": "Point", "coordinates": [17.5678, 59.7915] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "GolfUppsala - Edenhof (9-hålsbanan)",
+        "municipality": "Uppsala",
+        "region": "Uppland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://golfuppsala.se",
+        "last_updated": "2026-03"
+      },
+      "geometry": { "type": "Point", "coordinates": [17.4825, 59.9841] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Roslagens GK Norrtälje (12-hålsbanan)",
+        "municipality": "Norrtälje",
+        "region": "Uppland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://roslagensgk.com",
+        "last_updated": "2026-03"
+      },
+      "geometry": { "type": "Point", "coordinates": [18.6432, 59.7321] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hallstaviks Golfklubb",
+        "municipality": "Norrtälje",
+        "region": "Uppland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://hallstavikgk.se",
+        "last_updated": "2026-03"
+      },
+      "geometry": { "type": "Point", "coordinates": [18.5745, 60.0335] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sparren Golfklubb",
+        "municipality": "Norrtälje",
+        "region": "Uppland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://sparrengolf.se",
+        "last_updated": "2026-03"
+      },
+      "geometry": { "type": "Point", "coordinates": [18.2135, 59.6835] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Olandsbygdens Golfklubb",
+        "municipality": "Östhammar",
+        "region": "Uppland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://olandsbygdensgk.se",
+        "last_updated": "2026-03"
+      },
+      "geometry": { "type": "Point", "coordinates": [18.0625, 60.1032] }
     }
   ]
 }
