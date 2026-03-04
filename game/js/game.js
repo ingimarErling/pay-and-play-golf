@@ -5,69 +5,74 @@ import Swing from "./swing.js";
 
 export default class Game {
 
-    constructor(canvas) {
+    constructor(canvas){
 
         this.canvas = canvas;
         this.ctx = canvas.getContext("2d");
 
-        // Game objects
-        this.ball = new Ball(150, 300);
+        this.ball = new Ball(150,300);
         this.course = new Course();
         this.swing = new Swing();
 
-        // Renderer handles all drawing
         this.renderer = new Renderer(this.ctx);
 
-        /*
-         * Game state machine
-         *
-         * AIMING       Player prepares the shot
-         * SWINGING     Power meter active
-         * BALL_MOVING  Ball physics simulation
-         */
         this.state = "AIMING";
 
         this.lastTime = 0;
 
+        this.angle = 0;
+
+        this.strokes = 0;
+        this.par = 3;
+        this.result = null;
+
         this.registerEvents();
     }
 
-    /*
-     * Register player input events.
-     * Currently we only use mouse click.
-     */
-    registerEvents() {
+    registerEvents(){
 
-        window.addEventListener("click", () => {
+        window.addEventListener("click",()=>{
 
-            if (this.state === "AIMING") {
+            if(this.state==="AIMING"){
 
                 this.swing.start();
-                this.state = "SWINGING";
+                this.state="SWINGING";
+            }
 
-            } else if (this.state === "SWINGING") {
+            else if(this.state==="SWINGING"){
 
                 const power = this.swing.stop();
 
-                this.ball.hit(power);
+                this.ball.hit(power,this.angle);
 
-                this.state = "BALL_MOVING";
+                this.strokes++;
+
+                this.state="BALL_MOVING";
+            }
+        });
+
+        window.addEventListener("keydown",(e)=>{
+
+            if(this.state!=="AIMING") return;
+
+            if(e.key==="ArrowLeft"){
+
+                this.angle -= 0.1;
+            }
+
+            if(e.key==="ArrowRight"){
+
+                this.angle += 0.1;
             }
         });
     }
 
-    /*
-     * Start the main game loop.
-     */
-    start() {
+    start(){
+
         requestAnimationFrame(this.loop.bind(this));
     }
 
-    /*
-     * Main game loop.
-     * Runs continuously via requestAnimationFrame.
-     */
-    loop(timestamp) {
+    loop(timestamp){
 
         const delta = timestamp - this.lastTime;
         this.lastTime = timestamp;
@@ -78,37 +83,62 @@ export default class Game {
         requestAnimationFrame(this.loop.bind(this));
     }
 
-    /*
-     * Update game logic.
-     */
-    update(delta) {
+    update(delta){
 
-        if (this.state === "BALL_MOVING") {
+        if(this.state==="BALL_MOVING"){
 
             this.ball.update();
 
-            if (this.ball.isStopped()) {
-                this.state = "AIMING";
+            if(this.ball.isStopped()){
+
+                if(this.isBallInHole()){
+
+                    this.calculateScore();
+                    this.state="FINISHED";
+                }
+                else{
+
+                    this.state="AIMING";
+                }
             }
         }
 
-        if (this.state === "SWINGING") {
+        if(this.state==="SWINGING"){
+
             this.swing.update(delta);
         }
     }
 
-    /*
-     * Render the current frame.
-     */
-    render() {
+    isBallInHole(){
+
+        const dx = this.ball.x - this.course.hole.x;
+        const dy = this.ball.y - this.course.hole.y;
+
+        const distance = Math.sqrt(dx*dx + dy*dy);
+
+        return distance < this.course.hole.radius;
+    }
+
+    calculateScore(){
+
+        const diff = this.strokes - this.par;
+
+        if(this.strokes===1) this.result="HOLE IN ONE!";
+        else if(diff===-1) this.result="BIRDIE";
+        else if(diff===0) this.result="PAR";
+        else if(diff===1) this.result="BOGEY";
+        else this.result="DOUBLE BOGEY+";
+    }
+
+    render(){
 
         this.renderer.clear();
 
         this.renderer.drawCourse(this.course);
         this.renderer.drawBall(this.ball);
-        this.renderer.drawSwing(this.swing, this.state);
+        this.renderer.drawAim(this.ball,this.angle,this.state);
+        this.renderer.drawSwing(this.swing,this.state);
 
-        // Draw text / UI on top of game
-        this.renderer.drawHUD();
+        this.renderer.drawHUD(this);
     }
 }
