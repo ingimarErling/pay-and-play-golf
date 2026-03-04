@@ -1,6 +1,6 @@
 export default class Ball {
 
-    constructor(x, y) {
+    constructor(x, y){
 
         this.x = x;
         this.y = y;
@@ -8,15 +8,19 @@ export default class Ball {
         this.vx = 0;
         this.vy = 0;
 
-        this.friction = 0.98;
+        this.friction = 0.99;
 
         this.maxDistance = 0;
         this.travel = 0;
     }
 
-    hit(power, angle, maxDistance) {
+    hit(power, angle, maxDistance){
 
-        const speed = power * 0.15;
+        /*
+         Bättre slaglängd
+        */
+
+        const speed = power * 0.35;
 
         this.vx = Math.cos(angle) * speed;
         this.vy = Math.sin(angle) * speed;
@@ -25,12 +29,16 @@ export default class Ball {
         this.travel = 0;
     }
 
-    update(canvasWidth, canvasHeight) {
+    update(canvasWidth, canvasHeight){
 
         this.x += this.vx;
         this.y += this.vy;
 
         this.travel += Math.sqrt(this.vx*this.vx + this.vy*this.vy);
+
+        /*
+         stoppa efter maxlängd
+        */
 
         if(this.travel > this.maxDistance){
 
@@ -38,18 +46,22 @@ export default class Ball {
             this.vy = 0;
         }
 
+        /*
+         friktion
+        */
+
         this.vx *= this.friction;
         this.vy *= this.friction;
 
         /*
-         Stoppa bollen vid canvas-kanter
+         stoppa vid canvas
         */
 
-        if(this.x < 5) this.x = 5;
-        if(this.y < 5) this.y = 5;
+        if(this.x < 6) this.x = 6;
+        if(this.y < 6) this.y = 6;
 
-        if(this.x > canvasWidth-5) this.x = canvasWidth-5;
-        if(this.y > canvasHeight-5) this.y = canvasHeight-5;
+        if(this.x > canvasWidth-6) this.x = canvasWidth-6;
+        if(this.y > canvasHeight-6) this.y = canvasHeight-6;
     }
 
     isStopped(){
