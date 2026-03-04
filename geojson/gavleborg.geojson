@@ -1,1 +1,70 @@
+{
+"type": "FeatureCollection",
+"features": [
 
+{
+"type": "Feature",
+"properties": {
+"name": "Gävle Golfklubb",
+"municipality": "Gävle",
+"region": "Gävleborg",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://gavlegk.com"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [17.1413,60.7069]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Hofors Golfklubb",
+"municipality": "Hofors",
+"region": "Gävleborg",
+"holes": 9,
+"pay_and_play": true,
+"website": "https://hoforsgk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [16.2906,60.5465]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Bollnäs Golfklubb",
+"municipality": "Bollnäs",
+"region": "Gävleborg",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://bollnasgk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [16.3977,61.3501]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Hudiksvalls Golfklubb",
+"municipality": "Hudiksvall",
+"region": "Gävleborg",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://hudiksvallsgk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [17.1216,61.7271]
+}
+}
+
+]
+}
