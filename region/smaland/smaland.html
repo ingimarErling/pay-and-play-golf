@@ -1,42 +1,50 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pay & Play Golf i Småland</title>
+<title>Pay & Play Golf i Småland – Spela utan grönt kort</title>
 
-<meta name="description" content="Hitta Pay & Play golfbanor i Småland. Spela golf utan grönt kort och se alla banor på karta.">
+<meta name="description" content="Hitta Pay & Play golfbanor i Småland. Se karta och lista över golfbanor där du kan spela utan grönt kort.">
 
 <link rel="canonical" href="https://pay-and-play.org/region/smaland/">
 
 <link rel="stylesheet" href="../../style.css">
-<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6036839968490609"
-crossorigin="anonymous"></script>
+<link rel="stylesheet"
+href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+<link rel="icon" type="image/x-icon" href="../../favicon.ico">
 
 <style>
 
-#map {
-height:500px;
+#regionMap{
+height:520px;
+margin-top:30px;
 margin-bottom:40px;
+border-radius:8px;
 }
 
-table {
+table{
 width:100%;
 border-collapse:collapse;
 margin-top:30px;
+font-size:15px;
 }
 
-th, td {
+th,td{
 border:1px solid #ddd;
-padding:8px;
+padding:10px;
 }
 
-th {
-background:#f5f5f5;
-text-align:left;
+th{
+background:#f4f4f4;
+}
+
+tr:nth-child(even){
+background:#fafafa;
 }
 
 </style>
@@ -46,41 +54,66 @@ text-align:left;
 <body>
 
 <header class="site-header">
-<h1>Pay & Play golf i Småland</h1>
-<p class="subtitle">Golfbanor där du kan spela utan grönt kort.</p>
+
+<h1>Pay & Play-banor i Småland</h1>
+
+<p class="subtitle">
+Alla golfbanor utan grönt kort i regionen
+</p>
+
 </header>
 
-<main style="max-width:1100px;margin:40px auto;padding:0 20px;">
+<main style="max-width:1100px;margin:auto;padding:20px">
 
-<div id="map"></div>
+<h2>Spela golf utan grönt kort i Småland</h2>
 
-<h2>Golfbanor i Småland</h2>
+<p>
+Här hittar du alla Pay & Play-banor i Småland där du kan spela golf utan grönt kort.
+Du behöver inte vara medlem i en golfklubb och inget officiellt handicap krävs.
+</p>
 
-<table id="clubTable">
+<p>
+Regionen har flera 9-hålsbanor och 18-hålsbanor som är öppna för nybörjare,
+familjer och dig som vill spela golf spontant.
+</p>
+
+<div id="regionMap"></div>
+
+<h2>Lista över Pay & Play-banor i Småland</h2>
+
+<table>
+
 <thead>
 <tr>
-<th>Golfklubb</th>
+<th>Golfbana</th>
 <th>Kommun</th>
 <th>Hål</th>
 <th>Hemsida</th>
 </tr>
 </thead>
 
-<tbody></tbody>
+<tbody id="clubTable"></tbody>
 
 </table>
 
 </main>
 
 <footer class="compact-footer">
+
 <div class="footer-inner">
+
 © 2026 Erlingsson – Pay & Play Golf Sverige |
 <a href="../../index.html">Startsida</a> |
-<a href="../../region/index.html">Alla regioner</a>
+<a href="../../privacy-policy.html">Integritetspolicy</a>
+
 </div>
+
 </footer>
 
-<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script
+src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
+</script>
+
 <script src="smaland.js"></script>
 
 </body>
