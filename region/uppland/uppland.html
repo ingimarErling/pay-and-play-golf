@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>Pay & Play Golf i Uppland – Spela utan grönt kort</title>
+
+<meta name="description" content="Hitta Pay & Play golfbanor i Uppland. Se karta och lista över golfbanor där du kan spela utan grönt kort.">
+
+<link rel="canonical" href="https://pay-and-play.org/region/uppland/">
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+
+<!-- AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6036839968490609"
+crossorigin="anonymous"></script>
+
+<style>
+
+#regionMap{
+height:500px;
+margin-bottom:40px;
+border-radius:6px;
+}
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:30px;
+}
+
+th,td{
+border:1px solid #ddd;
+padding:8px;
+}
+
+th{
+background:#f5f5f5;
+text-align:left;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+<h1>Pay & Play Golf i Uppland</h1>
+<p class="subtitle">
+Golfbanor där du kan spela utan grönt kort
+</p>
+</header>
+
+<main style="max-width:1100px;margin:40px auto;padding:0 20px;line-height:1.7;">
+
+<section>
+
+<p>
+Här hittar du Pay & Play golfbanor i Uppland där du kan spela golf utan grönt kort.
+Kartan visar alla banor och tabellen nedanför listar klubbarna.
+</p>
+
+</section>
+
+<div id="regionMap"></div>
+
+<section>
+
+<h2>Golfbanor i Uppland</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Golfklubb</th>
+<th>Kommun</th>
+<th>Hål</th>
+<th>Hemsida</th>
+</tr>
+</thead>
+
+<tbody id="clubTable"></tbody>
+
+</table>
+
+</section>
+
+</main>
+
+<footer class="compact-footer">
+
+<div class="footer-inner">
+
+© 2026 Erlingsson – Pay & Play Golf Sverige |
+
+<a href="../../index.html">Startsida</a> |
+
+<a href="../index.html">Alla regioner</a> |
+
+<a href="../../privacy-policy.html">Integritetspolicy</a>
+
+</div>
+
+</footer>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="uppland.js"></script>
+
+</body>
+</html>
