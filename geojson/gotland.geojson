@@ -1,15 +1,54 @@
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <title>Retro Golf 1986</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+{
+"type": "FeatureCollection",
+"features": [
 
-<canvas id="gameCanvas" width="900" height="600"></canvas>
+{
+"type": "Feature",
+"properties": {
+"name": "Visby Golfklubb",
+"municipality": "Gotland",
+"region": "Gotland",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://www.visbygk.com"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [18.1186,57.6615]
+}
+},
 
-<script type="module" src="js/main.js"></script>
+{
+"type": "Feature",
+"properties": {
+"name": "Gumbalde Golfklubb",
+"municipality": "Gotland",
+"region": "Gotland",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://gumbalde.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [18.4148,57.4304]
+}
+},
 
-</body>
-</html>
+{
+"type": "Feature",
+"properties": {
+"name": "När Golfklubb",
+"municipality": "Gotland",
+"region": "Gotland",
+"holes": 18,
+"pay_and_play": true,
+"website": "https://nargk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [18.7067,57.2072]
+}
+}
+
+]
+}
