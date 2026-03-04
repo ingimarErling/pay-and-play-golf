@@ -16,18 +16,31 @@ export default class Game {
 
         this.renderer = new Renderer(this.ctx);
 
-        this.state="AIMING";
+        this.state = "AIMING";
 
-        this.lastTime=0;
+        this.lastTime = 0;
 
-        this.angle=0;
+        this.angle = 0;
 
-        this.strokes=0;
-        this.par=3;
-        this.result=null;
+        /*
+         score
+        */
 
-        this.holeDistance=110; // meter
-        this.maxShotDistance=130;
+        this.strokes = 0;
+        this.par = 3;
+        this.result = null;
+
+        /*
+         hål-information
+        */
+
+        this.holeDistance = 110; // meter
+
+        /*
+         maxslag PW
+        */
+
+        this.maxShotDistance = 180;
 
         this.registerEvents();
     }
@@ -44,7 +57,7 @@ export default class Game {
 
             else if(this.state==="SWINGING"){
 
-                const power=this.swing.stop();
+                const power = this.swing.stop();
 
                 this.ball.hit(power,this.angle,this.maxShotDistance);
 
@@ -59,8 +72,9 @@ export default class Game {
 
             if(this.state!=="AIMING") return;
 
-            if(e.key==="ArrowLeft") this.angle-=0.1;
-            if(e.key==="ArrowRight") this.angle+=0.1;
+            if(e.key==="ArrowLeft") this.angle -= 0.1;
+
+            if(e.key==="ArrowRight") this.angle += 0.1;
 
         });
     }
@@ -72,8 +86,8 @@ export default class Game {
 
     loop(timestamp){
 
-        const delta=timestamp-this.lastTime;
-        this.lastTime=timestamp;
+        const delta = timestamp - this.lastTime;
+        this.lastTime = timestamp;
 
         this.update(delta);
         this.render();
@@ -92,6 +106,7 @@ export default class Game {
                 if(this.isBallInHole()){
 
                     this.calculateScore();
+
                     this.state="FINISHED";
                 }
                 else{
@@ -109,17 +124,17 @@ export default class Game {
 
     isBallInHole(){
 
-        const dx=this.ball.x-this.course.hole.x;
-        const dy=this.ball.y-this.course.hole.y;
+        const dx = this.ball.x - this.course.hole.x;
+        const dy = this.ball.y - this.course.hole.y;
 
-        const distance=Math.sqrt(dx*dx+dy*dy);
+        const distance = Math.sqrt(dx*dx + dy*dy);
 
         return distance < this.course.hole.radius;
     }
 
     calculateScore(){
 
-        const diff=this.strokes-this.par;
+        const diff = this.strokes - this.par;
 
         if(this.strokes===1) this.result="HOLE IN ONE!";
         else if(diff===-1) this.result="BIRDIE";
