@@ -34,14 +34,30 @@ export default class Renderer {
         this.ctx.fill();
     }
 
-    drawBall(ball){
+  drawBall(ball){
 
-        this.ctx.fillStyle="white";
+    const visualY = ball.y - ball.height;
 
-        this.ctx.beginPath();
-        this.ctx.arc(ball.x,ball.y,6,0,Math.PI*2);
-        this.ctx.fill();
-    }
+    /*
+     skugga
+    */
+
+    this.ctx.fillStyle="rgba(0,0,0,0.4)";
+
+    this.ctx.beginPath();
+    this.ctx.arc(ball.x,ball.y,5,0,Math.PI*2);
+    this.ctx.fill();
+
+    /*
+     boll
+    */
+
+    this.ctx.fillStyle="white";
+
+    this.ctx.beginPath();
+    this.ctx.arc(ball.x,visualY,6,0,Math.PI*2);
+    this.ctx.fill();
+}
 
     drawAim(ball,angle,state){
 
