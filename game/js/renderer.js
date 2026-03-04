@@ -84,22 +84,23 @@ export default class Renderer {
      HUD (Head-Up Display)
     */
 
-    drawHUD(game){
+   drawHUD(game){
 
-        this.ctx.fillStyle="white";
-        this.ctx.font="18px monospace";
+    this.ctx.fillStyle="white";
+    this.ctx.font="18px monospace";
 
-        this.ctx.fillText("Pay-and-Play Golf",20,30);
-        this.ctx.fillText("Hole 1 - Par 3",20,60);
-        this.ctx.fillText("Club: PW (Pitching Wedge)",20,90);
-        this.ctx.fillText("Strokes: "+game.strokes,20,120);
+    this.ctx.fillText("Pay-and-Play Golf",20,30);
+    this.ctx.fillText("Hole 1 - Par 3",20,60);
+    this.ctx.fillText("Distance: "+game.holeDistance+" yards",20,90);
+    this.ctx.fillText("Club: PW (Pitching Wedge)",20,120);
+    this.ctx.fillText("Strokes: "+game.strokes,20,150);
 
-        this.ctx.fillText("← → Aim   Click Swing",20,150);
+    this.ctx.fillText("← → Aim   Click Swing",20,180);
 
-        if(game.result){
+    if(game.result){
 
-            this.ctx.font="28px monospace";
-            this.ctx.fillText(game.result,350,300);
-        }
+        this.ctx.font="28px monospace";
+        this.ctx.fillText(game.result,350,300);
     }
+}
 }
