@@ -1,225 +1,294 @@
-/* ===============================
-   RESET
-=============================== */
+// ===============================
+// CONFIG
+// ===============================
 
-* {
-    box-sizing: border-box;
+const SWEDEN_CENTER = [62,15]
+const SWEDEN_ZOOM = 5
+
+let map
+let selectedMarker = null
+let geoLayer = null
+let allFeatures = []
+
+// ===============================
+// INIT MAP
+// ===============================
+
+map = L.map("map").setView(SWEDEN_CENTER, SWEDEN_ZOOM)
+
+L.tileLayer(
+"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+{
+attribution: "&copy; OpenStreetMap contributors"
+}).addTo(map)
+
+// ===============================
+// MARKER ICONS
+// ===============================
+
+const icon9 = L.icon({
+iconUrl:"https://maps.google.com/mapfiles/ms/icons/green-dot.png",
+iconSize:[32,32]
+})
+
+const icon18 = L.icon({
+iconUrl:"https://maps.google.com/mapfiles/ms/icons/red-dot.png",
+iconSize:[32,32]
+})
+
+// ===============================
+// LOAD GEOJSON
+// ===============================
+
+const swedenRegions = [
+
+"dalarna",
+"halland",
+"norrland",
+"orebro",
+"ostergotland",
+"skane",
+"smaland",
+"sodermanland",
+"stockholm",
+"uppland",
+"varmland",
+"vastmanland",
+"vastra-gotaland"
+
+].map(r=>`${r}.geojson`)
+
+
+const balticRegions=[
+
+"estland",
+"lettland"
+
+].map(r=>`baltikum/${r}.geojson`)
+
+
+const regionFiles=[...swedenRegions,...balticRegions]
+
+
+Promise.all(
+
+regionFiles.map(file=>
+
+fetch(file)
+.then(res=>res.json())
+.catch(()=>({features:[]}))
+
+)
+
+).then(dataSets=>{
+
+allFeatures=dataSets
+.flatMap(d=>d.features)
+.filter(f=>f?.properties?.name)
+
+renderGeoJSON(allFeatures,true)
+updateCounter(allFeatures.length)
+
+})
+
+// ===============================
+// RENDER GEOJSON
+// ===============================
+
+function renderGeoJSON(features,fitBounds=true){
+
+if(geoLayer){
+map.removeLayer(geoLayer)
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+geoLayer=L.geoJSON(features,{
+
+pointToLayer:function(feature,latlng){
+
+const p=feature.properties
+const holes=p.holes||9
+const icon=holes==18?icon18:icon9
+
+const marker=L.marker(latlng,{icon})
+
+marker.bindTooltip(
+
+`<strong>${p.name}</strong><br>
+${p.municipality||""}<br>
+⛳ ${holes} hål`,
+
+{direction:"top"}
+
+)
+
+marker.on("click",()=>{
+
+showClubInfo(p)
+
+if(selectedMarker){
+selectedMarker.setOpacity(1)
 }
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    background: #f5f7f6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    color: #222;
-    -webkit-font-smoothing: antialiased;
+marker.setOpacity(0.6)
+selectedMarker=marker
+
+})
+
+return marker
+
 }
 
-/* ===============================
-   HEADER
-=============================== */
+}).addTo(map)
 
-.site-header {
-    text-align: center;
-    padding: 24px 12px 16px;
+if(fitBounds){
+map.fitBounds(geoLayer.getBounds())
 }
 
-.site-header h1 {
-    margin: 0;
-    font-size: 28px;
 }
 
-.subtitle {
-    margin-top: 6px;
-    font-size: 15px;
-    color: #555;
+// ===============================
+// FILTER
+// ===============================
+
+function applyFilters(){
+
+const search=document
+.getElementById("searchInput")
+.value
+.toLowerCase()
+.trim()
+
+const holes=document
+.getElementById("holesFilter")
+.value
+
+const filtered=allFeatures.filter(f=>{
+
+const p=f.properties
+
+const matchSearch=
+
+!search ||
+p.name.toLowerCase().includes(search) ||
+p.municipality?.toLowerCase().includes(search)
+
+const matchHoles=
+!holes || p.holes==holes
+
+return matchSearch && matchHoles
+
+})
+
+renderGeoJSON(filtered)
+
+updateCounter(filtered.length)
+
 }
 
-/* ===============================
-   FILTER BAR
-=============================== */
+// ===============================
+// RESET
+// ===============================
 
-.filter-bar {
-    background: #ffffff;
-    border-bottom: 1px solid #ddd;
-    padding: 14px 0;
+function resetMap(){
+
+document.getElementById("searchInput").value=""
+document.getElementById("holesFilter").value=""
+
+selectedMarker=null
+
+renderGeoJSON(allFeatures,false)
+
+map.setView(SWEDEN_CENTER,SWEDEN_ZOOM)
+
+updateCounter(allFeatures.length)
+
+document.getElementById("infoPanel").innerHTML=`
+
+<h2>Välj en klubb</h2>
+<p>Klicka på en markering på kartan för mer information.</p>
+
+`
+
 }
 
-.filter-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
+// ===============================
+// COUNTER
+// ===============================
+
+function updateCounter(count){
+
+document.getElementById("resultCounter").innerHTML=
+
+`<strong>Antal träffar: ${count}</strong>`
+
 }
 
-.filter-inner input,
-.filter-inner select,
-.filter-inner button {
-    margin: 6px;
-    padding: 10px 14px;
-    font-size: 15px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    min-height: 44px; /* 👈 bättre touch-mål */
+// ===============================
+// CLUB INFO
+// ===============================
+
+function showClubInfo(club){
+
+const panel=document.getElementById("infoPanel")
+
+panel.innerHTML=`
+
+<h2>${club.name}</h2>
+
+<p>📍 ${club.municipality||""}</p>
+
+<p>⛳ ${club.holes||"?"} hål</p>
+
+${club.website?
+`<p>
+<a href="${club.website}" target="_blank">
+Besök hemsida
+</a>
+</p>`:""}
+
+<div class="ad-container">
+
+<p>Annons</p>
+
+<ins class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-6036839968490609"
+data-ad-slot="7765842047"
+data-ad-format="auto"
+data-full-width-responsive="true"></ins>
+
+</div>
+
+`
+
+setTimeout(()=>{
+
+try{
+(adsbygoogle=window.adsbygoogle||[]).push({})
+}catch(e){}
+
+},300)
+
 }
 
-.btn-primary {
-    background: #2e7d32;
-    color: white;
-    border: none;
-    cursor: pointer;
+// ===============================
+// COOKIE BANNER
+// ===============================
+
+function acceptCookies(){
+
+localStorage.setItem("cookiesAccepted","true")
+
+document.getElementById("cookieBanner").style.display="none"
+
 }
 
-.btn-primary:hover {
-    background: #256628;
+window.addEventListener("load",()=>{
+
+if(!localStorage.getItem("cookiesAccepted")){
+
+document.getElementById("cookieBanner").style.display="block"
+
 }
 
-.btn-secondary {
-    background: #eeeeee;
-    cursor: pointer;
-}
-
-/* ===============================
-   RESULT COUNTER
-=============================== */
-
-#resultCounter {
-    text-align: center;
-    padding: 10px;
-    font-weight: bold;
-    background: #e8f5e9;
-    border-bottom: 1px solid #c8e6c9;
-}
-
-/* ===============================
-   LAYOUT
-=============================== */
-
-.layout {
-    flex: 1;
-    display: flex;
-    min-height: 0;
-}
-
-/* ===============================
-   MAP
-=============================== */
-
-#map {
-    flex: 3;
-    height: 100%;
-}
-
-/* ===============================
-   INFO PANEL
-=============================== */
-
-#infoPanel {
-    flex: 1;
-    max-width: 360px;
-    padding: 22px;
-    background: #ffffff;
-    border-left: 3px solid #2e7d32;
-    overflow-y: auto;
-}
-
-#infoPanel h2 {
-    margin-top: 0;
-    color: #2e7d32;
-}
-
-/* ===============================
-   ANNONSBOX (för bättre mobil)
-=============================== */
-
-.ad-container {
-    margin-top: 20px;
-    padding-top: 12px;
-    border-top: 1px solid #eee;
-    text-align: center;
-}
-
-.ad-container p {
-    font-size: 12px;
-    color: #777;
-    margin-bottom: 8px;
-}
-
-.adsbygoogle {
-    max-width: 100%;
-}
-
-/* ===============================
-   FOOTER
-=============================== */
-
-.compact-footer {
-    text-align: center;
-    padding: 14px;
-    background: #e8f5e9;
-    font-size: 13px;
-    border-top: 1px solid #c8e6c9;
-}
-
-.compact-footer a {
-    color: #2e7d32;
-    text-decoration: none;
-}
-
-.compact-footer a:hover {
-    text-decoration: underline;
-}
-
-.footer-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    line-height: 1.6;
-}
-
-.footer-links {
-    opacity: 0.9;
-}
-
-/* ===============================
-   RESPONSIVE (Mobil)
-=============================== */
-
-@media (max-width: 900px) {
-
-    .layout {
-        flex-direction: column;
-    }
-
-    #map {
-        height: 50vh; /* 👈 lite mer balanserad */
-    }
-
-    #infoPanel {
-        max-width: 100%;
-        border-left: none;
-        border-top: 3px solid #2e7d32;
-        padding: 20px;
-    }
-
-    .filter-inner input,
-    .filter-inner select,
-    .filter-inner button {
-        width: 92%;
-        display: block;
-        margin: 8px auto;
-    }
-
-    .site-header h1 {
-        font-size: 22px; /* 👈 bättre mobil */
-    }
-
-    .subtitle {
-        font-size: 14px;
-    }
-}
+})
