@@ -66,7 +66,6 @@ const synonyms={
 
 "sormland":"sodermanland",
 "sodermanland":"sodermanland",
-"sorml":"sodermanland",
 
 "skane":"skane",
 
@@ -82,16 +81,41 @@ const synonyms={
 
 
 // ===============================
-// LOAD REGIONS LIST
+// GEOJSON FILES
 // ===============================
 
-fetch("geojson/regions.json")
-.then(res=>res.json())
-.then(data=>{
+const regionFiles=[
 
-const regionFiles = data.regions.map(r=>`geojson/${r}.geojson`)
+"geojson/blekinge.geojson",
+"geojson/dalarna.geojson",
+"geojson/estland.geojson",
+"geojson/gavleborg.geojson",
+"geojson/gotland.geojson",
+"geojson/halland.geojson",
+"geojson/jamtland.geojson",
+"geojson/norrbotten.geojson",
+"geojson/norrland.geojson",
+"geojson/orebro.geojson",
+"geojson/ostergotland.geojson",
+"geojson/skane.geojson",
+"geojson/smaland.geojson",
+"geojson/sodermanland.geojson",
+"geojson/stockholm.geojson",
+"geojson/uppland.geojson",
+"geojson/varmland.geojson",
+"geojson/vasterbotten.geojson",
+"geojson/vasternorrland.geojson",
+"geojson/vastmanland.geojson",
+"geojson/vastra-gotaland.geojson"
 
-return Promise.all(
+]
+
+
+// ===============================
+// LOAD GEOJSON
+// ===============================
+
+Promise.all(
 
 regionFiles.map(file=>
 
@@ -101,9 +125,7 @@ fetch(file)
 
 )
 
-})
-
-.then(dataSets=>{
+).then(dataSets=>{
 
 allFeatures=dataSets
 .flatMap(d=>d.features)
