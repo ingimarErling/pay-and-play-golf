@@ -1,120 +1,115 @@
-<!DOCTYPE html>
-<html lang="sv">
+// ===============================
+// CONFIG
+// ===============================
 
-<head>
+const REGION_CENTER = [64.7, 19.0];
+const REGION_ZOOM = 7;
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+const GEOJSON_PATH = "../../geojson/vasterbotten.geojson";
 
-<title>Pay & Play Golf i Västerbotten – Spela utan grönt kort</title>
 
-<meta name="description" content="Hitta Pay & Play golfbanor i Västerbotten. Se karta och lista över golfbanor där du kan spela golf utan grönt kort.">
+// ===============================
+// INIT MAP
+// ===============================
 
-<link rel="canonical" href="https://pay-and-play.org/region/vasterbotten/">
+const map = L.map("regionMap").setView(REGION_CENTER, REGION_ZOOM);
 
-<link rel="stylesheet" href="../../style.css">
+L.tileLayer(
+"https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+{
+attribution: "&copy; OpenStreetMap contributors"
+}).addTo(map);
 
-<link rel="stylesheet"
-href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 
-<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+// ===============================
+// ICONS
+// ===============================
 
-<style>
+const icon9 = L.icon({
+iconUrl:"https://maps.google.com/mapfiles/ms/icons/green-dot.png",
+iconSize:[32,32]
+});
 
-#regionMap{
-height:520px;
-margin-top:30px;
-margin-bottom:40px;
-border-radius:8px;
+const icon18 = L.icon({
+iconUrl:"https://maps.google.com/mapfiles/ms/icons/red-dot.png",
+iconSize:[32,32]
+});
+
+
+// ===============================
+// LOAD GEOJSON
+// ===============================
+
+fetch(GEOJSON_PATH)
+
+.then(res => res.json())
+
+.then(data => {
+
+const geoLayer = L.geoJSON(data,{
+
+pointToLayer:function(feature,latlng){
+
+const p = feature.properties;
+
+const holes = p.holes || 9;
+
+const icon = holes == 18 ? icon18 : icon9;
+
+const marker = L.marker(latlng,{icon});
+
+marker.bindPopup(
+
+"<strong>"+p.name+"</strong><br>"+
+(p.municipality || "")+"<br>"+
+"⛳ "+holes+" hål<br>"+
+(p.website
+? '<a href="'+p.website+'" target="_blank">Besök hemsida</a>'
+: "")
+
+);
+
+return marker;
+
 }
 
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:30px;
-font-size:15px;
-}
+}).addTo(map);
 
-th,td{
-border:1px solid #ddd;
-padding:10px;
-}
 
-th{
-background:#f4f4f4;
-}
+// zooma till regionen
 
-tr:nth-child(even){
-background:#fafafa;
-}
+map.fitBounds(geoLayer.getBounds());
 
-</style>
 
-</head>
+// ===============================
+// TABLE
+// ===============================
 
-<body>
+const table = document.getElementById("clubTable");
 
-<header class="site-header">
+data.features.forEach(feature => {
 
-<h1>Pay & Play-banor i Västerbotten</h1>
+const p = feature.properties;
 
-<p class="subtitle">
-Spela golf utan grönt kort i Västerbotten
-</p>
+table.innerHTML +=
 
-</header>
+"<tr>" +
+"<td>"+p.name+"</td>"+
+"<td>"+(p.municipality || "")+"</td>"+
+"<td>"+(p.holes || "?")+"</td>"+
+"<td>"+(
+p.website
+? '<a href="'+p.website+'" target="_blank">Besök</a>'
+: "-"
+)+"</td>"+
+"</tr>";
 
-<main style="max-width:1100px;margin:auto;padding:20px">
+});
 
-<h2>Golf utan grönt kort i Västerbotten</h2>
+})
 
-<p>
-I Västerbotten finns flera golfbanor där du kan spela Pay & Play.
-Du behöver inte vara medlem i en golfklubb och du behöver inget grönt kort.
-</p>
+.catch(err => {
 
-<p>
-Regionen erbjuder golf nära både kust, älvdalar och skogar.
-</p>
+console.error("Kunde inte ladda geojson:", err);
 
-<div id="regionMap"></div>
-
-<h2>Lista över Pay & Play-banor i Västerbotten</h2>
-
-<table>
-
-<thead>
-<tr>
-<th>Golfbana</th>
-<th>Kommun</th>
-<th>Hål</th>
-<th>Hemsida</th>
-</tr>
-</thead>
-
-<tbody id="clubTable"></tbody>
-
-</table>
-
-</main>
-
-<footer class="compact-footer">
-
-<div class="footer-inner">
-
-© 2026 Erlingsson – Pay & Play Golf Sverige |
-<a href="../../index.html">Startsida</a> |
-<a href="../../privacy-policy.html">Integritetspolicy</a>
-
-</div>
-
-</footer>
-
-<script
-src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
-</script>
-
-<script src="vasterbotten.js"></script>
-
-</body>
-</html>
+});
