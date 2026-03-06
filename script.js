@@ -6,9 +6,9 @@ const SWEDEN_CENTER = [62,15]
 const SWEDEN_ZOOM = 5
 
 let map
-let selectedMarker = null
-let geoLayer = null
-let allFeatures = []
+let geoLayer
+let selectedMarker=null
+let allFeatures=[]
 
 
 // ===============================
@@ -20,8 +20,21 @@ map = L.map("map").setView(SWEDEN_CENTER, SWEDEN_ZOOM)
 L.tileLayer(
 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
 {
-attribution: "&copy; OpenStreetMap contributors"
+attribution:"© OpenStreetMap contributors"
 }).addTo(map)
+
+
+// ===============================
+// MARKER CLUSTER GROUP
+// ===============================
+
+const markerCluster = L.markerClusterGroup({
+spiderfyOnMaxZoom:true,
+showCoverageOnHover:false,
+maxClusterRadius:40
+})
+
+map.addLayer(markerCluster)
 
 
 // ===============================
@@ -143,9 +156,7 @@ updateCounter(allFeatures.length)
 
 function renderGeoJSON(features,fitBounds=true){
 
-if(geoLayer){
-map.removeLayer(geoLayer)
-}
+markerCluster.clearLayers()
 
 geoLayer=L.geoJSON(features,{
 
@@ -158,13 +169,10 @@ const icon=holes==18?icon18:icon9
 const marker=L.marker(latlng,{icon})
 
 marker.bindTooltip(
-
 `<strong>${p.name}</strong><br>
 ${p.municipality||""}<br>
 ⛳ ${holes} hål`,
-
 {direction:"top"}
-
 )
 
 marker.on("click",()=>{
@@ -184,7 +192,9 @@ return marker
 
 }
 
-}).addTo(map)
+})
+
+markerCluster.addLayer(geoLayer)
 
 if(fitBounds && features.length){
 map.fitBounds(geoLayer.getBounds())
