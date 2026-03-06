@@ -22,7 +22,7 @@ color:#222;
 
 .site-header{
 text-align:center;
-padding:24px;
+padding:24px 10px;
 }
 
 .site-header h1{
@@ -57,6 +57,7 @@ margin:6px;
 padding:10px 14px;
 border-radius:6px;
 border:1px solid #ccc;
+font-size:14px;
 }
 
 .btn-primary{
@@ -111,8 +112,10 @@ min-height:0;
 
 #map{
 flex:3;
-height:70vh;
+height:calc(100vh - 260px);
 min-height:500px;
+border-radius:6px;
+overflow:hidden;
 }
 
 
@@ -156,6 +159,7 @@ padding:16px;
 background:#e8f5e9;
 font-size:13px;
 border-top:1px solid #c8e6c9;
+margin-top:auto;
 }
 
 .compact-footer a{
@@ -189,6 +193,13 @@ padding:6px 12px;
 border:none;
 background:white;
 color:#2e7d32;
+}
+
+
+/* LEAFLET */
+
+.leaflet-container{
+font:inherit;
 }
 
 
