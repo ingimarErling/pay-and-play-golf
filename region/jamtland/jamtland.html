@@ -8,44 +8,38 @@
 
 <title>Pay & Play Golf i Jämtland – Spela utan grönt kort</title>
 
-<meta name="description" content="Hitta Pay & Play golfbanor i Jämtland Härjedalen. Se karta och lista över golfbanor där du kan spela golf utan grönt kort.">
+<meta name="description"
+content="Hitta Pay & Play golfbanor i Jämtland Härjedalen. Se karta och lista över golfbanor där du kan spela golf utan grönt kort.">
 
 <link rel="canonical" href="https://pay-and-play.org/region/jamtland/">
 
 <link rel="stylesheet" href="../../style.css">
-
-<link rel="stylesheet"
-href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
 
 <link rel="icon" type="image/x-icon" href="../../favicon.ico">
 
 <style>
 
 #regionMap{
-height:520px;
-margin-top:30px;
+height:500px;
 margin-bottom:40px;
-border-radius:8px;
+border-radius:6px;
 }
 
 table{
 width:100%;
 border-collapse:collapse;
 margin-top:30px;
-font-size:15px;
 }
 
 th,td{
 border:1px solid #ddd;
-padding:10px;
+padding:8px;
 }
 
 th{
-background:#f4f4f4;
-}
-
-tr:nth-child(even){
-background:#fafafa;
+background:#f5f5f5;
+text-align:left;
 }
 
 </style>
@@ -55,37 +49,35 @@ background:#fafafa;
 <body>
 
 <header class="site-header">
-
-<h1>Pay & Play-banor i Jämtland</h1>
+<h1>Pay & Play Golf i Jämtland</h1>
 
 <p class="subtitle">
-Spela golf utan grönt kort i Jämtland Härjedalen
+Golfbanor där du kan spela utan grönt kort
 </p>
-
 </header>
 
-<main style="max-width:1100px;margin:auto;padding:20px">
+<main style="max-width:1100px;margin:40px auto;padding:0 20px;line-height:1.7;">
 
-<h2>Golf utan grönt kort i Jämtland</h2>
-
-<p>
-I Jämtland Härjedalen finns flera golfbanor där du kan spela Pay & Play.
-Du behöver inte vara medlem i en golfklubb och du behöver inget grönt kort.
-</p>
+<section>
 
 <p>
-Regionen erbjuder naturnära golf med fjällmiljö och långa sommardagar.
+Här hittar du Pay & Play golfbanor i Jämtland Härjedalen där du kan spela golf utan grönt kort.
+Kartan visar alla banor och tabellen nedanför listar klubbarna.
 </p>
+
+</section>
 
 <div id="regionMap"></div>
 
-<h2>Lista över Pay & Play-banor i Jämtland</h2>
+<section>
+
+<h2>Golfbanor i Jämtland</h2>
 
 <table>
 
 <thead>
 <tr>
-<th>Golfbana</th>
+<th>Golfklubb</th>
 <th>Kommun</th>
 <th>Hål</th>
 <th>Hemsida</th>
@@ -96,6 +88,8 @@ Regionen erbjuder naturnära golf med fjällmiljö och långa sommardagar.
 
 </table>
 
+</section>
+
 </main>
 
 <footer class="compact-footer">
@@ -103,17 +97,18 @@ Regionen erbjuder naturnära golf med fjällmiljö och långa sommardagar.
 <div class="footer-inner">
 
 © 2026 Erlingsson – Pay & Play Golf Sverige |
+
 <a href="../../index.html">Startsida</a> |
+
+<a href="../index.html">Alla regioner</a> |
+
 <a href="../../privacy-policy.html">Integritetspolicy</a>
 
 </div>
 
 </footer>
 
-<script
-src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
-</script>
-
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script src="jamtland.js"></script>
 
 </body>
