@@ -1,0 +1,425 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Albatross Golfklubb",
+        "municipality": "Göteborg",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://albatrossgolf.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9185,
+          57.7009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sisjö Golfklubb",
+        "municipality": "Göteborg",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://sisjogolf.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9201,
+          57.6372
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Torslanda Golfklubb",
+        "municipality": "Göteborg",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://torslandagk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.7961,
+          57.7216
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Borås Golfklubb",
+        "municipality": "Borås",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.borasgolfklubb.se/",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.9403,
+          57.721
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lidköpings Golfklubb",
+        "municipality": "Lidköping",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://lidkopingsgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.151,
+          58.5066
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Stannum Golf",
+        "municipality": "Lerum",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": true,
+        "website": "https://www.stannumgolf.se/",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.3034,
+          57.7943
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Strömstad Golfklubb",
+        "municipality": "Strömstad",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://stdgk.se/",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.157,
+          58.9461
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Uddevalla Golfklubb",
+        "municipality": "Uddevalla",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://uddevallagk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.9387,
+          58.3519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Billingens Golfklubb",
+        "municipality": "Skövde",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://billingensgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.845,
+          58.4085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Breviken Golfklubb",
+        "municipality": "Hjo",
+        "region": "Västra Götaland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://breviken.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.2685,
+          58.3135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Falköpings Golfklubb",
+        "municipality": "Falköping",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.falkopingsgk.com/",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.5358,
+          58.1765
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hökensås Golfklubb",
+        "municipality": "Tidaholm",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://hokensasgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.814,
+          58.144
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Hörlycke Golfklubb",
+        "municipality": "Vara",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://horlyckegk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.955,
+          58.268
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Lundsbrunn Golfklubb",
+        "municipality": "Götene",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://lundsbrunngk.com",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4465,
+          58.556
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Mariestads Golfklubb",
+        "municipality": "Mariestad",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://mariestadsgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.8405,
+          58.699
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Marks Golfklubb Lydde",
+        "municipality": "Kinna",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.marksgk.se/lydde-9-haal",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.698,
+          57.5085
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Onsjö Golfklubb",
+        "municipality": "Vänersborg",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.onsjogk.com/",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.329,
+          58.3615
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Skövde Golfklubb",
+        "municipality": "Skövde",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://skovdegk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.85,
+          58.395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Töreboda Golfklubb",
+        "municipality": "Töreboda",
+        "region": "Västra Götaland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://torebodagk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          14.11,
+          58.71
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ulricehamns Golfklubb",
+        "municipality": "Ulricehamn",
+        "region": "Västra Götaland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://ulricehamnsgk.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          13.4205,
+          57.785
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Vårgårda Golfklubb",
+        "municipality": "Vårgårda",
+        "region": "Västra Götaland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://vargardagolf.se",
+        "last_updated": "2026-02"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          12.816,
+          58.0375
+        ]
+      }
+    }
+  ]
+}

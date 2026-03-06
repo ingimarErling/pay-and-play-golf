@@ -1,0 +1,214 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Umeå Golfklubb",
+        "municipality": "Umeå",
+        "region": "Västerbotten",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://umgk.se/",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [20.3221, 63.8258] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Skellefteå Golfklubb",
+        "municipality": "Skellefteå",
+        "region": "Västerbotten",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.skellefteagolf.se/",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [20.9314, 64.7502] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Arvidsjaurs GK",
+        "municipality": "Arvidsjaur",
+        "region": "Norrbotten",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://arvidsjaurgolf.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [19.1700, 65.5900] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Gällivare-Malmbergets GK",
+        "municipality": "Gällivare",
+        "region": "Norrbotten",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.gmgk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [20.6500, 67.1400] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Piteå GK",
+        "municipality": "Piteå",
+        "region": "Norrbotten",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://piteagolf.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [21.4900, 65.3200] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Luleå Golfklubb",
+        "municipality": "Luleå",
+        "region": "Norrbotten",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://www.luleagolf.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [22.1468, 65.5848] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Boden Golfklubb",
+        "municipality": "Boden",
+        "region": "Norrbotten",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://bodensgk.se/",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [21.7015, 65.8276] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Granöbygdens GK",
+        "municipality": "Vindeln",
+        "region": "Västerbotten",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://granobygdensgk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [19.3200, 64.2500] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Robertsfors GK",
+        "municipality": "Robertsfors",
+        "region": "Västerbotten",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://robertsforsgk.se",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [20.8500, 64.2000] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sundsvalls Golfklubb",
+        "municipality": "Sundsvall",
+        "region": "Västernorrland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://sundsvallsgk.se",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [17.3069, 62.4105] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Veckefjärdens GK",
+        "municipality": "Örnsköldsvik",
+        "region": "Västernorrland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://veckefjarden.com/",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [18.7200, 63.3000] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Norrfällvikens GK",
+        "municipality": "Kramfors",
+        "region": "Västernorrland",
+        "holes": 18,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://nvgk.se/",
+        "source": "Klubbwebb",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [18.8400, 62.9400] }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Östersunds Golfklubb (Pay & Play)",
+        "municipality": "Östersund",
+        "region": "Jämtland",
+        "holes": 9,
+        "pay_and_play": true,
+        "verified": false,
+        "website": "https://ofg.nu/",
+        "source": "Öppen greenfee",
+        "last_updated": "2026-02"
+      },
+      "geometry": { "type": "Point", "coordinates": [14.6352, 63.1912] }
+    }
+
+  ]
+}
