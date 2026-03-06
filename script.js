@@ -22,6 +22,7 @@ L.tileLayer(
 attribution: "&copy; OpenStreetMap contributors"
 }).addTo(map)
 
+
 // ===============================
 // MARKER ICONS
 // ===============================
@@ -36,8 +37,51 @@ iconUrl:"https://maps.google.com/mapfiles/ms/icons/red-dot.png",
 iconSize:[32,32]
 })
 
+
 // ===============================
-// LOAD GEOJSON
+// TEXT NORMALIZATION
+// ===============================
+
+function normalizeText(text){
+
+if(!text) return ""
+
+return text
+.toLowerCase()
+.replace(/å/g,"a")
+.replace(/ä/g,"a")
+.replace(/ö/g,"o")
+.replace(/-/g," ")
+.trim()
+
+}
+
+
+// ===============================
+// SYNONYMS
+// ===============================
+
+const synonyms={
+
+"sormland":"sodermanland",
+"sodermanland":"sodermanland",
+"sorml":"sodermanland",
+
+"skane":"skane",
+
+"ostergotland":"ostergotland",
+
+"vastra gotaland":"vastra gotaland",
+"vast gotaland":"vastra gotaland",
+"vastergotland":"vastra gotaland",
+
+"goteborg":"vastra gotaland"
+
+}
+
+
+// ===============================
+// INIT MAP DATA
 // ===============================
 
 const swedenRegions = [
@@ -90,6 +134,7 @@ renderGeoJSON(allFeatures,true)
 updateCounter(allFeatures.length)
 
 })
+
 
 // ===============================
 // RENDER GEOJSON
@@ -146,6 +191,7 @@ map.fitBounds(geoLayer.getBounds())
 
 }
 
+
 // ===============================
 // FILTER
 // ===============================
@@ -155,45 +201,35 @@ function applyFilters(){
 let search=document
 .getElementById("searchInput")
 .value
-.toLowerCase()
-.trim()
+
+search=normalizeText(search)
 
 const holes=document
 .getElementById("holesFilter")
 .value
 
 
-// ===============================
-// SYNONYMS
-// ===============================
+// synonym lookup
 
-const synonyms={
-
-"sörmland":"sodermanland",
-"södermanland":"sodermanland",
-
-"skåne":"skane",
-
-"västra götaland":"vastra-gotaland",
-"västergötland":"vastra-gotaland",
-
-"östergötland":"ostergotland"
-
+if(synonyms[search]){
+search=synonyms[search]
 }
-
-search = synonyms[search] || search
 
 
 const filtered=allFeatures.filter(f=>{
 
 const p=f.properties
 
+const name=normalizeText(p.name)
+const municipality=normalizeText(p.municipality)
+const region=normalizeText(p.region)
+
 const matchSearch=
 
 !search ||
-p.name?.toLowerCase().includes(search) ||
-p.municipality?.toLowerCase().includes(search) ||
-p.region?.toLowerCase().includes(search)
+name.includes(search) ||
+municipality.includes(search) ||
+region.includes(search)
 
 const matchHoles=
 !holes || p.holes==holes
@@ -207,6 +243,7 @@ renderGeoJSON(filtered,true)
 updateCounter(filtered.length)
 
 }
+
 
 // ===============================
 // RESET
@@ -234,6 +271,7 @@ document.getElementById("infoPanel").innerHTML=`
 
 }
 
+
 // ===============================
 // COUNTER
 // ===============================
@@ -244,6 +282,7 @@ document.getElementById("resultCounter").innerHTML=
 `<strong>Antal träffar: ${count}</strong>`
 
 }
+
 
 // ===============================
 // CLUB INFO
@@ -292,6 +331,7 @@ try{
 },300)
 
 }
+
 
 // ===============================
 // COOKIE BANNER
