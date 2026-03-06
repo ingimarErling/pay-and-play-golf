@@ -1,70 +1,122 @@
-{
-"type": "FeatureCollection",
-"features": [
+<!DOCTYPE html>
+<html lang="sv">
 
-{
-"type": "Feature",
-"properties": {
-"name": "Umeå Golfklubb",
-"municipality": "Umeå",
-"region": "Västerbotten",
-"holes": 18,
-"pay_and_play": true,
-"website": "https://umeagk.se"
-},
-"geometry": {
-"type": "Point",
-"coordinates": [20.2605,63.8473]
-}
-},
+<head>
 
-{
-"type": "Feature",
-"properties": {
-"name": "Skellefteå Golfklubb",
-"municipality": "Skellefteå",
-"region": "Västerbotten",
-"holes": 18,
-"pay_and_play": true,
-"website": "https://skellefteagk.se"
-},
-"geometry": {
-"type": "Point",
-"coordinates": [20.9882,64.7502]
-}
-},
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-{
-"type": "Feature",
-"properties": {
-"name": "Norsjö Golfklubb",
-"municipality": "Norsjö",
-"region": "Västerbotten",
-"holes": 9,
-"pay_and_play": true,
-"website": "https://norsjogk.se"
-},
-"geometry": {
-"type": "Point",
-"coordinates": [19.4985,64.9142]
-}
-},
+<title>Pay & Play Golf i Västerbotten – Spela utan grönt kort</title>
 
-{
-"type": "Feature",
-"properties": {
-"name": "Lycksele Golfklubb",
-"municipality": "Lycksele",
-"region": "Västerbotten",
-"holes": 9,
-"pay_and_play": true,
-"website": "https://lyckselegk.se"
-},
-"geometry": {
-"type": "Point",
-"coordinates": [18.7036,64.5937]
-}
+<meta name="description"
+content="Hitta Pay & Play golfbanor i Västerbotten. Se karta och lista över golfbanor där du kan spela golf utan grönt kort.">
+
+<link rel="canonical" href="https://pay-and-play.org/region/vasterbotten/">
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+
+<style>
+
+#regionMap{
+height:500px;
+margin-bottom:40px;
+border-radius:6px;
 }
 
-]
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:30px;
 }
+
+th,td{
+border:1px solid #ddd;
+padding:8px;
+}
+
+th{
+background:#f5f5f5;
+text-align:left;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header class="site-header">
+
+<h1>Pay & Play Golf i Västerbotten</h1>
+
+<p class="subtitle">
+Golfbanor där du kan spela utan grönt kort
+</p>
+
+</header>
+
+
+<main style="max-width:1100px;margin:40px auto;padding:0 20px;line-height:1.7;">
+
+<section>
+
+<p>
+Här hittar du Pay & Play golfbanor i Västerbotten där du kan spela golf utan grönt kort.
+Kartan visar alla banor och tabellen nedanför listar klubbarna.
+</p>
+
+</section>
+
+
+<div id="regionMap"></div>
+
+
+<section>
+
+<h2>Golfbanor i Västerbotten</h2>
+
+<table>
+
+<thead>
+<tr>
+<th>Golfklubb</th>
+<th>Kommun</th>
+<th>Hål</th>
+<th>Hemsida</th>
+</tr>
+</thead>
+
+<tbody id="clubTable"></tbody>
+
+</table>
+
+</section>
+
+</main>
+
+
+<footer class="compact-footer">
+
+<div class="footer-inner">
+
+© 2026 Erlingsson – Pay & Play Golf Sverige |
+
+<a href="../../index.html">Startsida</a> |
+
+<a href="../index.html">Alla regioner</a> |
+
+<a href="../../privacy-policy.html">Integritetspolicy</a>
+
+</div>
+
+</footer>
+
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="vasterbotten.js"></script>
+
+</body>
+</html>
