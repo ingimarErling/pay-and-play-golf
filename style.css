@@ -3,244 +3,217 @@ box-sizing:border-box;
 }
 
 html,body{
-
 margin:0;
 padding:0;
 height:100%;
-
 }
 
 body{
-
 font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial;
-
 background:#f5f7f6;
-
 display:flex;
 flex-direction:column;
 min-height:100vh;
-
 color:#222;
-
 }
+
 
 /* HEADER */
 
 .site-header{
-
 text-align:center;
 padding:24px;
-
 }
 
 .site-header h1{
-
 margin:0;
 font-size:28px;
-
 }
 
 .subtitle{
-
 color:#555;
 font-size:15px;
-
 }
+
 
 /* FILTER */
 
 .filter-bar{
-
 background:white;
 border-bottom:1px solid #ddd;
-
 }
 
 .filter-inner{
-
 max-width:1100px;
 margin:auto;
 text-align:center;
 padding:12px;
-
 }
 
 .filter-inner input,
 .filter-inner select,
 .filter-inner button{
-
 margin:6px;
 padding:10px 14px;
 border-radius:6px;
 border:1px solid #ccc;
-
 }
 
 .btn-primary{
-
 background:#2e7d32;
 color:white;
 border:none;
 cursor:pointer;
-
 }
 
 .btn-primary:hover{
-
 background:#256628;
-
 }
 
 .btn-secondary{
-
 background:#eee;
-
 }
+
 
 /* ANNONS */
 
 .top-ad{
-
 max-width:1100px;
 margin:20px auto;
 text-align:center;
-
 }
+
 
 /* COUNTER */
 
 #resultCounter{
-
 text-align:center;
 padding:10px;
 font-weight:bold;
 background:#e8f5e9;
 border-bottom:1px solid #c8e6c9;
-
 }
+
 
 /* LAYOUT */
 
 .layout{
-
 flex:1;
 display:flex;
+max-width:1200px;
+width:100%;
+margin:auto;
 min-height:0;
-
 }
+
 
 /* MAP */
 
 #map{
-    flex:3;
-    height:calc(100vh - 230px);
-    min-height:500px;
+flex:3;
+height:70vh;
+min-height:500px;
 }
+
 
 /* PANEL */
 
 #infoPanel{
-
 flex:1;
 max-width:360px;
-
 padding:22px;
-
 background:white;
-
 border-left:3px solid #2e7d32;
-
 overflow-y:auto;
-
 }
 
 #infoPanel h2{
-
 margin-top:0;
 color:#2e7d32;
-
 }
+
 
 /* ANNONSBOX */
 
 .ad-container{
-
 margin-top:20px;
 border-top:1px solid #eee;
 padding-top:12px;
 text-align:center;
-
 }
 
 .ad-container p{
-
 font-size:12px;
 color:#777;
-
 }
+
 
 /* FOOTER */
 
 .compact-footer{
-
 text-align:center;
-padding:14px;
+padding:16px;
 background:#e8f5e9;
 font-size:13px;
-
+border-top:1px solid #c8e6c9;
 }
+
+.compact-footer a{
+color:#2e7d32;
+text-decoration:none;
+}
+
+.compact-footer a:hover{
+text-decoration:underline;
+}
+
 
 /* COOKIE */
 
 #cookieBanner{
-
 position:fixed;
 bottom:0;
 left:0;
 right:0;
-
 background:#2e7d32;
-
 color:white;
-
 padding:15px;
-
 text-align:center;
-
 z-index:9999;
-
 display:none;
-
 }
 
 #cookieBanner button{
-
 margin-left:15px;
 padding:6px 12px;
 border:none;
 background:white;
 color:#2e7d32;
-
 }
+
 
 /* MOBILE */
 
 @media(max-width:900px){
 
-#map{
-    flex:3;
-    height:calc(100vh - 230px);
-    min-height:500px;
+.layout{
+flex-direction:column;
 }
 
 #map{
+width:100%;
 height:50vh;
+min-height:350px;
 }
 
 #infoPanel{
 max-width:100%;
 border-left:none;
 border-top:3px solid #2e7d32;
+}
+
+.filter-inner input{
+width:70%;
 }
 
 }
