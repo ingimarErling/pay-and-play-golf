@@ -104,18 +104,15 @@ display:flex;
 max-width:1200px;
 width:100%;
 margin:auto;
-min-height:0;
+align-items:stretch;
 }
-
 
 /* MAP */
 
 #map{
 flex:3;
-height:calc(100vh - 260px);
 min-height:500px;
-border-radius:6px;
-overflow:hidden;
+height:100%;
 }
 
 
