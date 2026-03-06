@@ -1,0 +1,1058 @@
+[
+  {
+    "club": "Dalsjö Golf",
+    "region": "dalarna.geojson",
+    "website": "https://www.dalsjogolf.se",
+    "status": 200
+  },
+  {
+    "club": "Furudals Bruks Golfklubb",
+    "region": "dalarna.geojson",
+    "website": "https://www.furudalsbruksgk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Gagnefs Golfklubb (18 hål)",
+    "region": "dalarna.geojson",
+    "website": "https://www.gagnefsgk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Gagnefs Golfklubb (Korthål)",
+    "region": "dalarna.geojson",
+    "website": "https://www.gagnefsgk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Hedemora Golfklubb (18 hål)",
+    "region": "dalarna.geojson",
+    "website": "https://www.hedemoragk.se",
+    "status": 200
+  },
+  {
+    "club": "Hedemora Golfklubb (Korthål)",
+    "region": "dalarna.geojson",
+    "website": "https://www.hedemoragk.se",
+    "status": 200
+  },
+  {
+    "club": "Malungs Golfklubb",
+    "region": "dalarna.geojson",
+    "website": "https://www.malunggk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Samuelsdals Golfklubb",
+    "region": "dalarna.geojson",
+    "website": "https://www.samuelsdalsgk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Snöå Golfklubb",
+    "region": "dalarna.geojson",
+    "website": "https://www.snoagk.se",
+    "status": 200
+  },
+  {
+    "club": "Säters Golfklubb",
+    "region": "dalarna.geojson",
+    "website": "https://www.satersgk.se",
+    "status": 200
+  },
+  {
+    "club": "Tällbergs Golfklubb",
+    "region": "dalarna.geojson",
+    "website": "https://www.tallbergsgk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Halmstad Golfarena (Pay & Play)",
+    "region": "halland.geojson",
+    "website": "https://www.golfarenan.se/",
+    "status": 200
+  },
+  {
+    "club": "Holms Golfklubb (9-håls)",
+    "region": "halland.geojson",
+    "website": "https://holmsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Falkenbergs Golfklubb (Pay & Play)",
+    "region": "halland.geojson",
+    "website": "https://falkenbergsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Åkulla Golf & Country Club (9-håls)",
+    "region": "halland.geojson",
+    "website": null,
+    "status": "NO WEBSITE"
+  },
+  {
+    "club": "Ringenäs Golfklubb (Pay & Play)",
+    "region": "halland.geojson",
+    "website": "https://ringenas.com/",
+    "status": 200
+  },
+  {
+    "club": "Tönnersjö Golfklubb (9-håls)",
+    "region": "halland.geojson",
+    "website": "https://tonnersjogk.se",
+    "status": 200
+  },
+  {
+    "club": "Haverdals Golfklubb (Pay & Play)",
+    "region": "halland.geojson",
+    "website": "https://haverdalsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Björnhults GK",
+    "region": "halland.geojson",
+    "website": "https://bjornhultsgk.se/",
+    "status": 200
+  },
+  {
+    "club": "Flygstaden GK",
+    "region": "halland.geojson",
+    "website": null,
+    "status": "NO WEBSITE"
+  },
+  {
+    "club": "Strandtorps GK",
+    "region": "halland.geojson",
+    "website": null,
+    "status": "NO WEBSITE"
+  },
+  {
+    "club": "Ullared Flädje GK",
+    "region": "halland.geojson",
+    "website": null,
+    "status": "NO WEBSITE"
+  },
+  {
+    "club": "Vinbergs GK",
+    "region": "halland.geojson",
+    "website": "https://www.vinbergsgolfklubb.se",
+    "status": 200
+  },
+  {
+    "club": "Umeå Golfklubb (Pay & Play)",
+    "region": "norrland.geojson",
+    "website": "https://umgk.se/",
+    "status": 200
+  },
+  {
+    "club": "Skellefteå Golfklubb (9-håls)",
+    "region": "norrland.geojson",
+    "website": "https://www.skellefteagolf.se/",
+    "status": 200
+  },
+  {
+    "club": "Arvidsjaurs GK",
+    "region": "norrland.geojson",
+    "website": "https://arvidsjaursgk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Gällivare-Malmbergets GK",
+    "region": "norrland.geojson",
+    "website": "https://gallivaregk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Piteå GK",
+    "region": "norrland.geojson",
+    "website": "https://piteagk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Luleå Golfklubb (Pay & Play)",
+    "region": "norrland.geojson",
+    "website": "https://www.luleagolf.se",
+    "status": 200
+  },
+  {
+    "club": "Boden Golfklubb (9-håls)",
+    "region": "norrland.geojson",
+    "website": "https://bodensgk.se/",
+    "status": 200
+  },
+  {
+    "club": "Granöbygdens GK",
+    "region": "norrland.geojson",
+    "website": "https://granobygdensgk.se",
+    "status": 200
+  },
+  {
+    "club": "Robertsfors GK",
+    "region": "norrland.geojson",
+    "website": "https://robertsforsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Sundsvalls Golfklubb (Pay & Play)",
+    "region": "norrland.geojson",
+    "website": "https://sundsvallsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Veckefjärdens GK",
+    "region": "norrland.geojson",
+    "website": "https://veckefjarden.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Norrfällvikens GK",
+    "region": "norrland.geojson",
+    "website": "https://norrfallsviken.se",
+    "status": "ERROR (SSLError)"
+  },
+  {
+    "club": "Östersunds Golfklubb (Pay & Play)",
+    "region": "norrland.geojson",
+    "website": "https://ofg.nu/",
+    "status": 200
+  },
+  {
+    "club": "Degerfors Golfklubb",
+    "region": "orebro.geojson",
+    "website": "https://www.degerforsgk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Karlskoga Golfklubb",
+    "region": "orebro.geojson",
+    "website": "https://www.karlskogagk.se",
+    "status": 200
+  },
+  {
+    "club": "Kumla Golfklubb",
+    "region": "orebro.geojson",
+    "website": "https://www.kumlagk.se",
+    "status": 200
+  },
+  {
+    "club": "Lindesbergs Golfklubb",
+    "region": "orebro.geojson",
+    "website": "https://www.lindesbergsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Nora Golfklubb",
+    "region": "orebro.geojson",
+    "website": "https://www.noragk.se",
+    "status": 200
+  },
+  {
+    "club": "Stjernfors Golfklubb",
+    "region": "orebro.geojson",
+    "website": "https://www.stjernforsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Örebro City Golf",
+    "region": "orebro.geojson",
+    "website": "https://www.orebrocitygolf.se",
+    "status": 200
+  },
+  {
+    "club": "Landeryds Golfklubb",
+    "region": "ostergotland.geojson",
+    "website": "https://landeryd.se",
+    "status": 200
+  },
+  {
+    "club": "Linköpings Golfklubb",
+    "region": "ostergotland.geojson",
+    "website": "https://linkopingsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Norrköpings Golfklubb",
+    "region": "ostergotland.geojson",
+    "website": "https://www.golfnorrkoping.se/segora/norrkopings-golfklubb/",
+    "status": 200
+  },
+  {
+    "club": "Finspångs Golfklubb",
+    "region": "ostergotland.geojson",
+    "website": "https://finspangsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Söderköpings Golfklubb",
+    "region": "ostergotland.geojson",
+    "website": "https://www.nsgk.se/",
+    "status": 200
+  },
+  {
+    "club": "Vadstena Golfklubb",
+    "region": "ostergotland.geojson",
+    "website": "https://vadstenagk.se",
+    "status": 200
+  },
+  {
+    "club": "Mjölby Golfklubb",
+    "region": "ostergotland.geojson",
+    "website": "https://mjolbygk.se",
+    "status": 200
+  },
+  {
+    "club": "Åtvidabergs Golfklubb",
+    "region": "ostergotland.geojson",
+    "website": "https://atvidabergsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Bråvikens Golfklubb",
+    "region": "ostergotland.geojson",
+    "website": "https://bravikensgk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Fleminge Golfklubb",
+    "region": "ostergotland.geojson",
+    "website": "https://flemingegk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Ingelsta Golfklubb",
+    "region": "ostergotland.geojson",
+    "website": "https://ingelstagk.se",
+    "status": 200
+  },
+  {
+    "club": "Motala Golfklubb",
+    "region": "ostergotland.geojson",
+    "website": "https://motalagk.se",
+    "status": 200
+  },
+  {
+    "club": "NSGK Hylinge",
+    "region": "ostergotland.geojson",
+    "website": "https://www.nsgk.se/",
+    "status": 200
+  },
+  {
+    "club": "Vreta Kloster Golfklubb",
+    "region": "ostergotland.geojson",
+    "website": "https://vretagk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Rönnebäck Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://hintongolf.se/",
+    "status": 200
+  },
+  {
+    "club": "Sofiedals Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://sofiedalsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Tomelilla Golfklubb (Pay & Play)",
+    "region": "skane.geojson",
+    "website": "https://tomelillagk.se",
+    "status": 200
+  },
+  {
+    "club": "Perstorps Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://perstorpsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Hässlegårdens Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://hggk.se/",
+    "status": 200
+  },
+  {
+    "club": "Skyrups Golfklubb (9-håls)",
+    "region": "skane.geojson",
+    "website": "https://skyrupsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Ystad Golfklubb (Pay & Play)",
+    "region": "skane.geojson",
+    "website": "https://ystadgk.se",
+    "status": 200
+  },
+  {
+    "club": "Båstad Golfklubb (9-håls Pay & Play)",
+    "region": "skane.geojson",
+    "website": "https://www.bgk.se/",
+    "status": 200
+  },
+  {
+    "club": "Svalövs Golfklubb",
+    "region": "skane.geojson",
+    "website": null,
+    "status": "NO WEBSITE"
+  },
+  {
+    "club": "Vellinge Golfklubb (Pay & Play)",
+    "region": "skane.geojson",
+    "website": "https://vellingegk.se",
+    "status": 200
+  },
+  {
+    "club": "Abbekås Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.abbekasgk.se",
+    "status": 200
+  },
+  {
+    "club": "Allerums Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.allerumsgk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Araslöv Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.araslovsgolf.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Degerberga-Widtsköfle Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.degerbergagk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Eslövs Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.eslovsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Glumslövs Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.glumslovsgolf.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Naturligtvis Golf & Country Club",
+    "region": "skane.geojson",
+    "website": "https://www.naturligtvis.se",
+    "status": "ERROR (SSLError)"
+  },
+  {
+    "club": "Oxie Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.oxiegk.se",
+    "status": 200
+  },
+  {
+    "club": "Rya Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.ryagk.se",
+    "status": 200
+  },
+  {
+    "club": "Sankt Arild Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.starildsgk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Söderslätts Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.soderslattsgk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Tegelberga Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.tegelbergagk.se",
+    "status": 200
+  },
+  {
+    "club": "Vallgårdens Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.vallgarden.se",
+    "status": "ERROR (ConnectTimeout)"
+  },
+  {
+    "club": "Vasatorps Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.vasatorp.se",
+    "status": "ERROR (SSLError)"
+  },
+  {
+    "club": "Åkagårdens Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.akagarden.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Örestads Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.orestadsgk.se",
+    "status": "ERROR (ConnectTimeout)"
+  },
+  {
+    "club": "Österlens Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.osterlensgk.se",
+    "status": 200
+  },
+  {
+    "club": "Östra Göinge Golfklubb",
+    "region": "skane.geojson",
+    "website": "https://www.ostragoingegk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Växjö Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://vaxjogk.se",
+    "status": 200
+  },
+  {
+    "club": "Kalmar Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://kalmargk.se",
+    "status": 200
+  },
+  {
+    "club": "Västerviks Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://vasterviksgolf.se",
+    "status": 200
+  },
+  {
+    "club": "Oskarshamns Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://oskarshamnsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Eksjö Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://eksjogk.se",
+    "status": 200
+  },
+  {
+    "club": "Tranås Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://tranasgk.se",
+    "status": 200
+  },
+  {
+    "club": "Vetlanda Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://vetlandagk.se",
+    "status": 200
+  },
+  {
+    "club": "Götaströms Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://gotastromsgk.se",
+    "status": 200
+  },
+  {
+    "club": "A6 Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://a6gk.se",
+    "status": 200
+  },
+  {
+    "club": "Binga Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://bingagk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Böda Sand Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://bodasand.se",
+    "status": 200
+  },
+  {
+    "club": "Glasrikets Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://glasriketsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Isaberg Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://isaberg.com",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Lagans Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://lagansgk.se",
+    "status": 200
+  },
+  {
+    "club": "Lanna Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://lannagk.se",
+    "status": 200
+  },
+  {
+    "club": "Lysingebadets Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://lysingebadet.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Ramkvilla Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://ramkvillagk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Ryfors Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://ryforsgk.se",
+    "status": "ERROR (ConnectTimeout)"
+  },
+  {
+    "club": "Skinnarebo Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://skinnarebogk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Uppvidinge Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://uppvidingegk.se",
+    "status": 200
+  },
+  {
+    "club": "Wiredaholms Golf",
+    "region": "smaland.geojson",
+    "website": "https://wiredaholm.se",
+    "status": 200
+  },
+  {
+    "club": "Visingsö Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://visingsogk.se",
+    "status": 200
+  },
+  {
+    "club": "Värnamo Golfklubb",
+    "region": "smaland.geojson",
+    "website": "https://varnamogk.se",
+    "status": 200
+  },
+  {
+    "club": "Fogdö Golfklubb",
+    "region": "sodermanland.geojson",
+    "website": "https://www.fogdogk.se",
+    "status": 200
+  },
+  {
+    "club": "Katrineholms Golfklubb",
+    "region": "sodermanland.geojson",
+    "website": "https://www.katrineholmsgk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Mälarbadens Golfklubb",
+    "region": "sodermanland.geojson",
+    "website": "https://www.malarbadensgk.se",
+    "status": 200
+  },
+  {
+    "club": "Strand Golf Resort",
+    "region": "sodermanland.geojson",
+    "website": "https://www.strandgolf.se",
+    "status": 200
+  },
+  {
+    "club": "Strängnäs Golfklubb",
+    "region": "sodermanland.geojson",
+    "website": "https://www.strangnasgk.se",
+    "status": 200
+  },
+  {
+    "club": "Sundbyvik Golf",
+    "region": "sodermanland.geojson",
+    "website": "https://www.sundbyvikgolf.se",
+    "status": "ERROR (ConnectTimeout)"
+  },
+  {
+    "club": "Vidbynäs Golf",
+    "region": "sodermanland.geojson",
+    "website": "https://www.vidbynasgolf.se",
+    "status": 200
+  },
+  {
+    "club": "Ågesta Golfklubb",
+    "region": "stockholm.geojson",
+    "website": "https://agestagk.se",
+    "status": 200
+  },
+  {
+    "club": "Salems Golfklubb",
+    "region": "stockholm.geojson",
+    "website": "https://salemsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Hässelby Golf",
+    "region": "stockholm.geojson",
+    "website": "https://hasselbygolfklubb.se/",
+    "status": 200
+  },
+  {
+    "club": "Rotebro Golf",
+    "region": "stockholm.geojson",
+    "website": "https://www.rotebrogolf.com/",
+    "status": 200
+  },
+  {
+    "club": "Kyssinge Golf",
+    "region": "stockholm.geojson",
+    "website": null,
+    "status": "NO WEBSITE"
+  },
+  {
+    "club": "Norråva Golfklubb",
+    "region": "stockholm.geojson",
+    "website": "https://norravagk.se",
+    "status": 200
+  },
+  {
+    "club": "Huvudstadens Golfklubb",
+    "region": "stockholm.geojson",
+    "website": "https://hgk.se",
+    "status": 200
+  },
+  {
+    "club": "Viksjö Golfklubb",
+    "region": "stockholm.geojson",
+    "website": "https://viksjogk.se",
+    "status": 200
+  },
+  {
+    "club": "Österåkers Golfklubb",
+    "region": "stockholm.geojson",
+    "website": "https://ostgk.se/",
+    "status": 200
+  },
+  {
+    "club": "Årsta Golf",
+    "region": "stockholm.geojson",
+    "website": "https://arstagolf.se/",
+    "status": 200
+  },
+  {
+    "club": "Waxholms Golfklubb",
+    "region": "stockholm.geojson",
+    "website": "https://www.waxholmsgolfklubb.se/",
+    "status": 200
+  },
+  {
+    "club": "Bergshamra Golfklubb",
+    "region": "stockholm.geojson",
+    "website": null,
+    "status": "NO WEBSITE"
+  },
+  {
+    "club": "Kungsängen Golf Club (9-hålsbana)",
+    "region": "stockholm.geojson",
+    "website": "https://kungsangengolf.se",
+    "status": 200
+  },
+  {
+    "club": "HaningeStrand Golfklubb",
+    "region": "stockholm.geojson",
+    "website": "https://haningestrand.se",
+    "status": 200
+  },
+  {
+    "club": "Fors Golfklubb",
+    "region": "stockholm.geojson",
+    "website": "https://forsgk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Fågelbro Golf & Country Club",
+    "region": "stockholm.geojson",
+    "website": "https://fagelbro.se",
+    "status": "ERROR (ConnectTimeout)"
+  },
+  {
+    "club": "GolfStar Bromma",
+    "region": "stockholm.geojson",
+    "website": "https://golfstar.se/bromma",
+    "status": 200
+  },
+  {
+    "club": "GolfStar Lindö",
+    "region": "stockholm.geojson",
+    "website": "https://golfstar.se/lindo",
+    "status": 200
+  },
+  {
+    "club": "Jarlabanke Golfklubb",
+    "region": "stockholm.geojson",
+    "website": "https://jarlabankegk.se",
+    "status": 200
+  },
+  {
+    "club": "Mälarö Golfklubb Skytteholm",
+    "region": "stockholm.geojson",
+    "website": "https://malarogk.se",
+    "status": 200
+  },
+  {
+    "club": "Ulriksdals Golfklubb",
+    "region": "stockholm.geojson",
+    "website": "https://ulriksdalsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Wäsby Golf",
+    "region": "stockholm.geojson",
+    "website": "https://wasbygolf.se",
+    "status": 200
+  },
+  {
+    "club": "Botkyrka Golfklubb",
+    "region": "stockholm.geojson",
+    "website": "https://botkyrkagk.se",
+    "status": 200
+  },
+  {
+    "club": "Johannesberg Golf",
+    "region": "uppland.geojson",
+    "website": "https://www.johannesberggolf.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Sundsta Golf",
+    "region": "uppland.geojson",
+    "website": "https://www.sundstagolf.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Upsala Golfklubb",
+    "region": "uppland.geojson",
+    "website": "https://www.upsalagk.se",
+    "status": 200
+  },
+  {
+    "club": "Väddö Golfklubb",
+    "region": "uppland.geojson",
+    "website": "https://www.vaddogk.se",
+    "status": "ERROR (ConnectTimeout)"
+  },
+  {
+    "club": "Öregrunds Golfklubb",
+    "region": "uppland.geojson",
+    "website": "https://www.oregrundsgk.com",
+    "status": 200
+  },
+  {
+    "club": "Bryngfjorden Golf",
+    "region": "varmland.geojson",
+    "website": "https://www.bryngfjorden.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Karlstad Golfklubb",
+    "region": "varmland.geojson",
+    "website": "https://www.karlstadgk.se",
+    "status": 200
+  },
+  {
+    "club": "Sommarro Golf",
+    "region": "varmland.geojson",
+    "website": "https://www.sommarrogolf.se",
+    "status": 403
+  },
+  {
+    "club": "Uddeholms Golfklubb",
+    "region": "varmland.geojson",
+    "website": "https://www.uddeholmsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Arboga Golfklubb",
+    "region": "vastmanland.geojson",
+    "website": "https://www.arbogagk.se",
+    "status": 200
+  },
+  {
+    "club": "Frösåker",
+    "region": "vastmanland.geojson",
+    "website": "https://www.frosaker.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Fullerö Golfklubb",
+    "region": "vastmanland.geojson",
+    "website": "https://www.fullerogk.se",
+    "status": 200
+  },
+  {
+    "club": "Sala Golfklubb",
+    "region": "vastmanland.geojson",
+    "website": "https://www.salaggk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Skerike Golfklubb",
+    "region": "vastmanland.geojson",
+    "website": "https://www.skerikegk.se",
+    "status": 200
+  },
+  {
+    "club": "Strömsholms Golfklubb",
+    "region": "vastmanland.geojson",
+    "website": "https://www.stromsholmsgk.se",
+    "status": "ERROR (ConnectTimeout)"
+  },
+  {
+    "club": "Ängsö Golfklubb",
+    "region": "vastmanland.geojson",
+    "website": "https://www.angsogk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Albatross Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://albatrossgolf.se",
+    "status": 200
+  },
+  {
+    "club": "Sisjö Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://sisjogolf.se",
+    "status": 200
+  },
+  {
+    "club": "Torslanda Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://torslandagk.se",
+    "status": "ERROR (ReadTimeout)"
+  },
+  {
+    "club": "Borås Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://www.borasgolfklubb.se/",
+    "status": 200
+  },
+  {
+    "club": "Lidköpings Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://lidkopingsgk.se",
+    "status": "ERROR (ReadTimeout)"
+  },
+  {
+    "club": "Stannum Golf",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://www.stannumgolf.se/",
+    "status": 200
+  },
+  {
+    "club": "Strömstad Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://stdgk.se/",
+    "status": 200
+  },
+  {
+    "club": "Uddevalla Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://uddevallagk.se",
+    "status": 200
+  },
+  {
+    "club": "Billingens Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://billingensgk.se",
+    "status": 200
+  },
+  {
+    "club": "Breviken Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://breviken.se",
+    "status": 200
+  },
+  {
+    "club": "Falköpings Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://falkopingsgk.se",
+    "status": "ERROR (ConnectionError)"
+  },
+  {
+    "club": "Hökensås Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://hokensasgk.se",
+    "status": 200
+  },
+  {
+    "club": "Hörlycke Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://horlyckegk.se",
+    "status": 200
+  },
+  {
+    "club": "Lundsbrunn Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://lundsbrunngk.se",
+    "status": "ERROR (ReadTimeout)"
+  },
+  {
+    "club": "Mariestads Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://mariestadsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Marks Golfklubb Lydde",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://marksgk.se",
+    "status": "ERROR (ConnectTimeout)"
+  },
+  {
+    "club": "Marks Golfklubb Korthål",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://marksgk.se",
+    "status": "ERROR (ConnectTimeout)"
+  },
+  {
+    "club": "Onsjö Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://onsjogk.se",
+    "status": "ERROR (ReadTimeout)"
+  },
+  {
+    "club": "Skövde Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://skovdegk.se",
+    "status": 200
+  },
+  {
+    "club": "Töreboda Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://torebodagk.se",
+    "status": 200
+  },
+  {
+    "club": "Ulricehamns Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://ulricehamnsgk.se",
+    "status": 200
+  },
+  {
+    "club": "Vårgårda Golfklubb",
+    "region": "vastra-gotaland.geojson",
+    "website": "https://vargardagk.se",
+    "status": "ERROR (ConnectionError)"
+  }
+]
