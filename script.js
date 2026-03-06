@@ -10,6 +10,7 @@ let selectedMarker = null
 let geoLayer = null
 let allFeatures = []
 
+
 // ===============================
 // INIT MAP
 // ===============================
@@ -81,40 +82,16 @@ const synonyms={
 
 
 // ===============================
-// INIT MAP DATA
+// LOAD REGIONS LIST
 // ===============================
 
-const swedenRegions = [
+fetch("geojson/regions.json")
+.then(res=>res.json())
+.then(data=>{
 
-"dalarna",
-"halland",
-"norrland",
-"orebro",
-"ostergotland",
-"skane",
-"smaland",
-"sodermanland",
-"stockholm",
-"uppland",
-"varmland",
-"vastmanland",
-"vastra-gotaland"
+const regionFiles = data.regions.map(r=>`geojson/${r}.geojson`)
 
-].map(r=>`${r}.geojson`)
-
-
-const balticRegions=[
-
-"estland",
-"lettland"
-
-].map(r=>`baltikum/${r}.geojson`)
-
-
-const regionFiles=[...swedenRegions,...balticRegions]
-
-
-Promise.all(
+return Promise.all(
 
 regionFiles.map(file=>
 
@@ -124,7 +101,9 @@ fetch(file)
 
 )
 
-).then(dataSets=>{
+})
+
+.then(dataSets=>{
 
 allFeatures=dataSets
 .flatMap(d=>d.features)
@@ -208,13 +187,9 @@ const holes=document
 .getElementById("holesFilter")
 .value
 
-
-// synonym lookup
-
 if(synonyms[search]){
 search=synonyms[search]
 }
-
 
 const filtered=allFeatures.filter(f=>{
 
@@ -239,7 +214,6 @@ return matchSearch && matchHoles
 })
 
 renderGeoJSON(filtered,true)
-
 updateCounter(filtered.length)
 
 }
@@ -340,7 +314,6 @@ try{
 function acceptCookies(){
 
 localStorage.setItem("cookiesAccepted","true")
-
 document.getElementById("cookieBanner").style.display="none"
 
 }
@@ -348,9 +321,7 @@ document.getElementById("cookieBanner").style.display="none"
 window.addEventListener("load",()=>{
 
 if(!localStorage.getItem("cookiesAccepted")){
-
 document.getElementById("cookieBanner").style.display="block"
-
 }
 
 })
