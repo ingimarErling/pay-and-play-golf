@@ -1,120 +1,110 @@
-<!DOCTYPE html>
-<html lang="sv">
+// ===============================
+// CONFIG
+// ===============================
 
-<head>
+const REGION_CENTER = [63.2, 14.6];
+const REGION_ZOOM = 7;
+const GEOJSON_PATH = "../../geojson/jamtland.geojson";
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pay & Play Golf i Jämtland – Spela utan grönt kort</title>
+// ===============================
+// INIT MAP
+// ===============================
 
-<meta name="description" content="Hitta Pay & Play golfbanor i Jämtland Härjedalen. Se karta och lista över golfbanor där du kan spela golf utan grönt kort.">
+const map = L.map('regionMap').setView(REGION_CENTER, REGION_ZOOM);
 
-<link rel="canonical" href="https://pay-and-play.org/region/jamtland/">
+L.tileLayer(
+'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+{
+attribution: '&copy; OpenStreetMap contributors'
+}).addTo(map);
 
-<link rel="stylesheet" href="../../style.css">
 
-<link rel="stylesheet"
-href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+// ===============================
+// ICONS
+// ===============================
 
-<link rel="icon" type="image/x-icon" href="../../favicon.ico">
+const icon9 = L.icon({
+iconUrl:"https://maps.google.com/mapfiles/ms/icons/green-dot.png",
+iconSize:[32,32]
+});
 
-<style>
+const icon18 = L.icon({
+iconUrl:"https://maps.google.com/mapfiles/ms/icons/red-dot.png",
+iconSize:[32,32]
+});
 
-#regionMap{
-height:520px;
-margin-top:30px;
-margin-bottom:40px;
-border-radius:8px;
+
+// ===============================
+// LOAD GEOJSON
+// ===============================
+
+fetch(GEOJSON_PATH)
+
+.then(res=>res.json())
+
+.then(data=>{
+
+const geoLayer = L.geoJSON(data,{
+
+pointToLayer:function(feature,latlng){
+
+const p = feature.properties;
+const holes = p.holes || 9;
+const icon = holes == 18 ? icon18 : icon9;
+
+const marker = L.marker(latlng,{icon});
+
+marker.bindPopup(
+
+"<strong>"+p.name+"</strong><br>"+
+(p.municipality || "")+"<br>"+
+"⛳ "+holes+" hål<br>"+
+(p.website ? '<a href="'+p.website+'" target="_blank">Besök hemsida</a>' : "")
+
+);
+
+return marker;
+
 }
 
-table{
-width:100%;
-border-collapse:collapse;
-margin-top:30px;
-font-size:15px;
-}
+}).addTo(map);
 
-th,td{
-border:1px solid #ddd;
-padding:10px;
-}
 
-th{
-background:#f4f4f4;
-}
+// Zooma till regionen
 
-tr:nth-child(even){
-background:#fafafa;
-}
+map.fitBounds(geoLayer.getBounds());
 
-</style>
 
-</head>
+// ===============================
+// TABLE
+// ===============================
 
-<body>
+const table = document.getElementById("clubTable");
 
-<header class="site-header">
+data.features.forEach(feature=>{
 
-<h1>Pay & Play-banor i Jämtland</h1>
+const p = feature.properties;
 
-<p class="subtitle">
-Spela golf utan grönt kort i Jämtland Härjedalen
-</p>
+table.innerHTML +=
 
-</header>
+"<tr>" +
+"<td>"+p.name+"</td>"+
+"<td>"+(p.municipality || "")+"</td>"+
+"<td>"+(p.holes || "?")+"</td>"+
+"<td>"+(
+p.website
+? '<a href="'+p.website+'" target="_blank">Besök</a>'
+: "-"
+)+"</td>"+
+"</tr>";
 
-<main style="max-width:1100px;margin:auto;padding:20px">
+});
 
-<h2>Golf utan grönt kort i Jämtland</h2>
+})
 
-<p>
-I Jämtland Härjedalen finns flera golfbanor där du kan spela Pay & Play.
-Du behöver inte vara medlem i en golfklubb och du behöver inget grönt kort.
-</p>
+.catch(err=>{
 
-<p>
-Regionen erbjuder naturnära golf med fjällmiljö och långa sommardagar.
-</p>
+console.error("Kunde inte ladda geojson:",err);
 
-<div id="regionMap"></div>
-
-<h2>Lista över Pay & Play-banor i Jämtland</h2>
-
-<table>
-
-<thead>
-<tr>
-<th>Golfbana</th>
-<th>Kommun</th>
-<th>Hål</th>
-<th>Hemsida</th>
-</tr>
-</thead>
-
-<tbody id="clubTable"></tbody>
-
-</table>
-
-</main>
-
-<footer class="compact-footer">
-
-<div class="footer-inner">
-
-© 2026 Erlingsson – Pay & Play Golf Sverige |
-<a href="../../index.html">Startsida</a> |
-<a href="../../privacy-policy.html">Integritetspolicy</a>
-
-</div>
-
-</footer>
-
-<script
-src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js">
-</script>
-
-<script src="jamtland.js"></script>
-
-</body>
-</html>
+});
