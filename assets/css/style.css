@@ -22,12 +22,12 @@ color:#222;
 
 .site-header{
 text-align:center;
-padding:14px 10px;   /* mindre padding */
+padding:14px 10px;
 }
 
 .site-header h1{
 margin:0;
-font-size:24px;      /* mindre titel */
+font-size:24px;
 font-weight:600;
 }
 
@@ -49,14 +49,14 @@ border-bottom:1px solid #ddd;
 max-width:1100px;
 margin:auto;
 text-align:center;
-padding:8px;   /* mindre höjd */
+padding:8px;
 }
 
 .filter-inner input,
 .filter-inner select,
 .filter-inner button{
 margin:4px;
-padding:8px 12px;   /* mindre knappar */
+padding:8px 12px;
 border-radius:6px;
 border:1px solid #ccc;
 font-size:14px;
@@ -82,7 +82,7 @@ background:#eee;
 
 .top-ad{
 max-width:1100px;
-margin:12px auto;   /* mindre avstånd */
+margin:12px auto;
 text-align:center;
 }
 
@@ -179,6 +179,15 @@ text-decoration:underline;
 }
 
 
+/* HIDDEN BUILD TIMESTAMP (Jekyll dev helper) */
+
+.dev-build{
+display:none;
+font-size:11px;
+opacity:0.6;
+}
+
+
 /* COOKIE */
 
 #cookieBanner{
@@ -232,9 +241,5 @@ border-top:3px solid #2e7d32;
 .filter-inner input{
 width:70%;
 }
-.dev-build{
-display:none;
-}
-
 
 }
