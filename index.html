@@ -29,10 +29,104 @@ content="Hitta alla Pay & Play golfbanor i Sverige. Spela golf utan grönt kort 
 
 <link rel="icon" href="/favicon.ico">
 
-<!-- Google AdSense -->
 <script async
 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6036839968490609"
 crossorigin="anonymous"></script>
+
+<style>
+
+/* --- HELA SIDAN --- */
+
+body {
+margin:0;
+display:flex;
+flex-direction:column;
+height:100vh;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+
+.site-header{
+text-align:center;
+padding:12px 10px;
+}
+
+/* FILTER */
+
+.filter-bar{
+padding:10px;
+text-align:center;
+}
+
+.filter-inner{
+display:flex;
+gap:10px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+/* RESULT COUNTER */
+
+#resultCounter{
+text-align:center;
+padding:6px;
+font-weight:600;
+}
+
+/* LAYOUT */
+
+.layout{
+flex:1;
+display:flex;
+overflow:hidden;
+}
+
+/* MAP */
+
+#map{
+flex:1;
+height:100%;
+}
+
+/* INFO PANEL */
+
+#infoPanel{
+width:320px;
+padding:20px;
+border-left:1px solid #ddd;
+overflow-y:auto;
+background:#fafafa;
+}
+
+/* FOOTER */
+
+.compact-footer{
+text-align:center;
+font-size:13px;
+padding:8px;
+background:#f4f4f4;
+}
+
+/* COOKIE */
+
+#cookieBanner{
+position:fixed;
+bottom:10px;
+left:50%;
+transform:translateX(-50%);
+background:#222;
+color:white;
+padding:10px 15px;
+border-radius:6px;
+font-size:13px;
+}
+
+#cookieBanner button{
+margin-left:10px;
+}
+
+</style>
 
 </head>
 
@@ -68,9 +162,9 @@ aria-label="Sök golfklubb">
 
 </select>
 
-<button class="btn-primary" onclick="applyFilters()">Sök</button>
+<button onclick="applyFilters()">Sök</button>
 
-<button class="btn-secondary" onclick="resetMap()">
+<button onclick="resetMap()">
 Visa hela Sverige
 </button>
 
@@ -79,7 +173,6 @@ Visa hela Sverige
 </section>
 
 
-<!-- FAST ANNONS -->
 <div class="top-ad">
 
 <ins class="adsbygoogle"
@@ -99,7 +192,6 @@ data-full-width-responsive="true"></ins>
 
 <div id="map"></div>
 
-
 <aside id="infoPanel">
 
 <h2>Välj en klubb</h2>
@@ -113,7 +205,7 @@ Klicka på en markering på kartan för mer information.
 </main>
 
 
-<div style="font-size:12px;color:#888;text-align:center;margin-top:30px">
+<div style="font-size:12px;color:#888;text-align:center">
 
 <a href="/region/stockholm/stockholm.html">Pay & Play Stockholm</a> |
 <a href="/region/skane/skane.html">Pay & Play Skåne</a> |
@@ -142,8 +234,6 @@ Klicka på en markering på kartan för mer information.
 </footer>
 
 
-<!-- COOKIE BANNER -->
-
 <div id="cookieBanner">
 
 Denna webbplats använder cookies och Google AdSense.
@@ -159,11 +249,9 @@ Denna webbplats använder cookies och Google AdSense.
 <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
 <script src="script.js"></script>
 
-
 <script>
 (adsbygoogle = window.adsbygoogle || []).push({});
 </script>
 
 </body>
-
 </html>
