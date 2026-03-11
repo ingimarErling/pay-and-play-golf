@@ -1,9 +1,48 @@
 ---
-layout: default
-title: Pay & Play Golf i Sverige – Spela utan grönt kort
-description: Hitta alla Pay & Play golfbanor i Sverige. Spela golf utan grönt kort i Stockholm, Skåne, Göteborg och hela landet.
-lastmod: {{ site.time | date: "%Y-%m-%d" }}
+layout: null
 ---
+
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Pay & Play Golf i Sverige – Spela utan grönt kort</title>
+
+<meta name="description"
+content="Hitta alla Pay & Play golfbanor i Sverige. Spela golf utan grönt kort i Stockholm, Skåne, Göteborg och hela landet.">
+
+<meta name="author" content="Erlingsson">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Pay & Play Golf i Sverige">
+<meta property="og:description" content="Sveriges karta över golfbanor utan grönt kort.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://pay-and-play.org/">
+<meta property="og:locale" content="sv_SE">
+
+<link rel="canonical" href="https://pay-and-play.org/">
+
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">
+
+<link rel="icon" href="/favicon.ico">
+
+<script async
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6036839968490609"
+crossorigin="anonymous"></script>
+
+</head>
+
+
+<body>
+
 
 <header class="site-header">
 
@@ -14,6 +53,7 @@ Hitta golfbanor utan grönt kort i hela Sverige
 </p>
 
 </header>
+
 
 
 <section class="filter-bar">
@@ -45,6 +85,7 @@ Visa hela Sverige
 </section>
 
 
+
 <div class="top-ad">
 
 <ins class="adsbygoogle"
@@ -54,10 +95,18 @@ data-ad-slot="7765842047"
 data-ad-format="auto"
 data-full-width-responsive="true"></ins>
 
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
 </div>
 
 
-<div id="resultCounter"></div>
+
+<div id="resultCounter">
+Antal träffar: 0
+</div>
+
 
 
 <main class="layout">
@@ -66,4 +115,81 @@ data-full-width-responsive="true"></ins>
 
 <aside id="infoPanel">
 
-<h2>Välj en klubb
+<h2>Välj en klubb</h2>
+
+<p>
+Klicka på en markering på kartan för mer information.
+</p>
+
+</aside>
+
+</main>
+
+
+
+<div class="region-links">
+
+<a href="/region/stockholm/stockholm.html">Pay & Play Stockholm</a> |
+
+<a href="/region/skane/skane.html">Pay & Play Skåne</a> |
+
+<a href="/region/vastra-gotaland/vastra-gotaland.html">Pay & Play Göteborg</a> |
+
+<a href="/region/index.html">Alla regioner</a>
+
+</div>
+
+
+
+<footer class="compact-footer">
+
+<div>
+
+© {{ site.time | date: "%Y" }} Erlingsson – Pay & Play Golf Sverige |
+
+<a href="/vad-ar-pay-and-play.html">Vad är Pay & Play?</a> |
+
+<a href="/om-oss.html">Om oss</a> |
+
+<a href="mailto:support@pay-and-play.org">Kontakt</a> |
+
+<a href="/privacy-policy.html">Integritetspolicy</a>
+
+</div>
+
+
+<!-- Hidden build timestamp -->
+
+<div class="dev-build">
+
+Build: {{ site.time | date: "%Y-%m-%d %H:%M:%S" }}
+
+</div>
+
+</footer>
+
+
+
+<div id="cookieBanner">
+
+Denna webbplats använder cookies och Google AdSense.
+
+<a href="/privacy-policy.html">Läs mer</a>
+
+<button onclick="acceptCookies()">OK</button>
+
+</div>
+
+
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+
+<script src="/assets/js/script.js"></script>
+
+
+
+</body>
+
+</html>
