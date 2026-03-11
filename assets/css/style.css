@@ -232,5 +232,9 @@ border-top:3px solid #2e7d32;
 .filter-inner input{
 width:70%;
 }
+.dev-build{
+display:none;
+}
+
 
 }
