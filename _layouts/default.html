@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="sv">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>{{ page.title }}</title>
+
+<meta name="description" content="{{ page.description }}">
+<meta name="author" content="Erlingsson">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="{{ page.title }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:locale" content="sv_SE">
+
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+<link rel="stylesheet" href="/assets/css/style.css">
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">
+
+<link rel="icon" href="/favicon.ico">
+
+<script async
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6036839968490609"
+crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+{{ content }}
+
+<footer class="compact-footer">
+
+© 2026 Erlingsson – Pay & Play Golf Sverige |
+
+<a href="/vad-ar-pay-and-play.html">Vad är Pay & Play?</a> |
+<a href="/om-oss.html">Om oss</a> |
+<a href="mailto:support@pay-and-play.org">Kontakt</a> |
+<a href="/privacy-policy.html">Integritetspolicy</a>
+
+</footer>
+
+<div id="cookieBanner">
+
+Denna webbplats använder cookies och Google AdSense.
+
+<a href="/privacy-policy.html">Läs mer</a>
+
+<button onclick="acceptCookies()">OK</button>
+
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+
+<script src="/assets/js/script.js"></script>
+
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</body>
+</html>
