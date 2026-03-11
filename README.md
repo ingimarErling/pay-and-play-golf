@@ -21,3 +21,4 @@ pip install requests
 __pycache__/
 *.pyc
 
+## att skapa ny version
