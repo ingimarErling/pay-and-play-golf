@@ -107,6 +107,7 @@ margin:auto;
 align-items:stretch;
 }
 
+
 /* MAP */
 
 #map{
@@ -145,6 +146,25 @@ text-align:center;
 .ad-container p{
 font-size:12px;
 color:#777;
+}
+
+
+/* REGION LINKS */
+
+.region-links{
+text-align:center;
+padding:15px;
+font-size:14px;
+}
+
+.region-links a{
+color:#2e7d32;
+text-decoration:none;
+margin:0 6px;
+}
+
+.region-links a:hover{
+text-decoration:underline;
 }
 
 
