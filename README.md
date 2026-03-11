@@ -22,3 +22,5 @@ __pycache__/
 *.pyc
 
 ## att skapa ny version
+1. git tag -a v0.3 -m "bättre layout på index.html, innan vi går till jekyll"
+2. git push origin v0.3
