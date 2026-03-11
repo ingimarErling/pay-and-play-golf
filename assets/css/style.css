@@ -22,17 +22,19 @@ color:#222;
 
 .site-header{
 text-align:center;
-padding:24px 10px;
+padding:14px 10px;   /* mindre padding */
 }
 
 .site-header h1{
 margin:0;
-font-size:28px;
+font-size:24px;      /* mindre titel */
+font-weight:600;
 }
 
 .subtitle{
-color:#555;
-font-size:15px;
+color:#666;
+font-size:14px;
+margin-top:4px;
 }
 
 
@@ -47,14 +49,14 @@ border-bottom:1px solid #ddd;
 max-width:1100px;
 margin:auto;
 text-align:center;
-padding:12px;
+padding:8px;   /* mindre höjd */
 }
 
 .filter-inner input,
 .filter-inner select,
 .filter-inner button{
-margin:6px;
-padding:10px 14px;
+margin:4px;
+padding:8px 12px;   /* mindre knappar */
 border-radius:6px;
 border:1px solid #ccc;
 font-size:14px;
@@ -80,7 +82,7 @@ background:#eee;
 
 .top-ad{
 max-width:1100px;
-margin:20px auto;
+margin:12px auto;   /* mindre avstånd */
 text-align:center;
 }
 
@@ -89,10 +91,11 @@ text-align:center;
 
 #resultCounter{
 text-align:center;
-padding:10px;
+padding:8px;
 font-weight:bold;
 background:#e8f5e9;
 border-bottom:1px solid #c8e6c9;
+font-size:14px;
 }
 
 
@@ -123,7 +126,7 @@ min-height:0;
 #infoPanel{
 flex:1;
 max-width:360px;
-padding:22px;
+padding:18px;
 background:white;
 border-left:3px solid #2e7d32;
 overflow-y:auto;
@@ -133,21 +136,7 @@ height:100%;
 #infoPanel h2{
 margin-top:0;
 color:#2e7d32;
-}
-
-
-/* ANNONSBOX */
-
-.ad-container{
-margin-top:20px;
-border-top:1px solid #eee;
-padding-top:12px;
-text-align:center;
-}
-
-.ad-container p{
-font-size:12px;
-color:#777;
+font-size:20px;
 }
 
 
@@ -155,7 +144,7 @@ color:#777;
 
 .region-links{
 text-align:center;
-padding:15px;
+padding:10px;
 font-size:14px;
 }
 
@@ -174,9 +163,9 @@ text-decoration:underline;
 
 .compact-footer{
 text-align:center;
-padding:16px;
+padding:10px;
 background:#e8f5e9;
-font-size:13px;
+font-size:12px;
 border-top:1px solid #c8e6c9;
 }
 
@@ -199,7 +188,7 @@ left:0;
 right:0;
 background:#2e7d32;
 color:white;
-padding:15px;
+padding:12px;
 text-align:center;
 z-index:9999;
 display:none;
