@@ -5,64 +5,76 @@
 {
 "type": "Feature",
 "properties": {
+"id": "nicklastorp-golfklubb",
 "name": "Nicklastorp Golfklubb",
 "municipality": "Karlskrona",
 "region": "Blekinge",
 "holes": 9,
 "pay_and_play": true,
-"website": "https://nicklastorpgolf.se"
+"verified": true,
+"website": "https://nicklastorpgolf.se",
+"last_updated": "2026-03"
 },
 "geometry": {
 "type": "Point",
-"coordinates": [15.6103,56.1804]
+"coordinates": [15.61032,56.18041]
 }
 },
 
 {
 "type": "Feature",
 "properties": {
+"id": "ronneby-golfklubb",
 "name": "Ronneby Golfklubb",
 "municipality": "Ronneby",
 "region": "Blekinge",
 "holes": 18,
 "pay_and_play": true,
-"website": "https://ronnebygk.se"
+"verified": true,
+"website": "https://ronnebygk.se",
+"last_updated": "2026-03"
 },
 "geometry": {
 "type": "Point",
-"coordinates": [15.2762,56.2097]
+"coordinates": [15.27618,56.20972]
 }
 },
 
 {
 "type": "Feature",
 "properties": {
+"id": "karlshamns-golfklubb",
 "name": "Karlshamns Golfklubb",
 "municipality": "Karlshamn",
 "region": "Blekinge",
 "holes": 18,
 "pay_and_play": true,
-"website": "https://karlshamnsgk.se"
+"verified": true,
+"website": "https://karlshamnsgk.se",
+"last_updated": "2026-03"
 },
 "geometry": {
 "type": "Point",
-"coordinates": [14.8613,56.1753]
+"coordinates": [14.86132,56.17529]
 }
 },
 
 {
 "type": "Feature",
 "properties": {
+"id": "solvesborgs-golfklubb",
 "name": "Sölvesborgs Golfklubb",
 "municipality": "Sölvesborg",
 "region": "Blekinge",
 "holes": 18,
 "pay_and_play": true,
-"website": "https://solvesborgsgk.se"
+"verified": true,
+"website": "https://solvesborgsgk.se",
+"last_updated": "2026-03"
 },
 "geometry": {
 "type": "Point",
-"coordinates": [14.5872,56.0503]
+"coordinates": [14.58719,56.05032]
 }
 }
 
