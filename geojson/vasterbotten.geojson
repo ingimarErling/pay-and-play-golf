@@ -1,68 +1,81 @@
 {
-"type": "FeatureCollection",
-"features": [
+"type":"FeatureCollection",
+"name":"vasterbotten",
+"features":[
 
 {
-"type": "Feature",
-"properties": {
-"name": "Umeå Golfklubb",
-"municipality": "Umeå",
-"region": "Västerbotten",
-"holes": 18,
-"pay_and_play": true,
-"website": "https://umeagk.se"
+"type":"Feature",
+"properties":{
+"id":"umea-golfklubb",
+"name":"Umeå Golfklubb",
+"municipality":"Umeå",
+"region":"Västerbotten",
+"holes":18,
+"pay_and_play":true,
+"verified":true,
+"website":"https://umeagk.se",
+"last_updated":"2026-03"
 },
-"geometry": {
-"type": "Point",
-"coordinates": [20.2605,63.8473]
+"geometry":{
+"type":"Point",
+"coordinates":[20.2609,63.8476]
 }
 },
 
 {
-"type": "Feature",
-"properties": {
-"name": "Skellefteå Golfklubb",
-"municipality": "Skellefteå",
-"region": "Västerbotten",
-"holes": 18,
-"pay_and_play": true,
-"website": "https://skellefteagk.se"
+"type":"Feature",
+"properties":{
+"id":"skelleftea-golfklubb",
+"name":"Skellefteå Golfklubb",
+"municipality":"Skellefteå",
+"region":"Västerbotten",
+"holes":18,
+"pay_and_play":true,
+"verified":true,
+"website":"https://skellefteagk.se",
+"last_updated":"2026-03"
 },
-"geometry": {
-"type": "Point",
-"coordinates": [20.9882,64.7502]
+"geometry":{
+"type":"Point",
+"coordinates":[20.9886,64.7505]
 }
 },
 
 {
-"type": "Feature",
-"properties": {
-"name": "Norsjö Golfklubb",
-"municipality": "Norsjö",
-"region": "Västerbotten",
-"holes": 9,
-"pay_and_play": true,
-"website": "https://norsjogk.se"
+"type":"Feature",
+"properties":{
+"id":"norsjo-golfklubb",
+"name":"Norsjö Golfklubb",
+"municipality":"Norsjö",
+"region":"Västerbotten",
+"holes":9,
+"pay_and_play":true,
+"verified":true,
+"website":"https://norsjogk.se",
+"last_updated":"2026-03"
 },
-"geometry": {
-"type": "Point",
-"coordinates": [19.4985,64.9142]
+"geometry":{
+"type":"Point",
+"coordinates":[19.4989,64.9145]
 }
 },
 
 {
-"type": "Feature",
-"properties": {
-"name": "Lycksele Golfklubb",
-"municipality": "Lycksele",
-"region": "Västerbotten",
-"holes": 9,
-"pay_and_play": true,
-"website": "https://lyckselegk.se"
+"type":"Feature",
+"properties":{
+"id":"lycksele-golfklubb",
+"name":"Lycksele Golfklubb",
+"municipality":"Lycksele",
+"region":"Västerbotten",
+"holes":9,
+"pay_and_play":true,
+"verified":true,
+"website":"https://lyckselegk.se",
+"last_updated":"2026-03"
 },
-"geometry": {
-"type": "Point",
-"coordinates": [18.7036,64.5937]
+"geometry":{
+"type":"Point",
+"coordinates":[18.7039,64.5940]
 }
 }
 
