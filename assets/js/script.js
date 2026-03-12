@@ -107,7 +107,6 @@ const regionFiles=[
 "geojson/halland.geojson",
 "geojson/jamtland.geojson",
 "geojson/norrbotten.geojson",
-"geojson/norrland.geojson",
 "geojson/orebro.geojson",
 "geojson/ostergotland.geojson",
 "geojson/skane.geojson",
