@@ -506,8 +506,10 @@
 },
 "geometry":{
 "type":"Point",
-"coordinates":[14.3013,56.1407]
-}
+"coordinates":[14.3013,56.1407 ]
+      }
+    }
+  ]
 }
 
    
