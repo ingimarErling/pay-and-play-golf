@@ -2,7 +2,7 @@
 // CONFIG
 // ===============================
 
-const SWEDEN_CENTER = [62,15]
+const SWEDEN_CENTER = [62.5,16]
 const SWEDEN_ZOOM = 5
 
 let map
@@ -15,7 +15,7 @@ let allFeatures=[]
 // INIT MAP
 // ===============================
 
-map = L.map("map").setView(SWEDEN_CENTER, SWEDEN_ZOOM)
+map = L.map("map")
 
 L.tileLayer(
 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
@@ -197,7 +197,7 @@ return marker
 markerCluster.addLayer(geoLayer)
 
 if(fitBounds && features.length){
-map.fitBounds(geoLayer.getBounds())
+map.fitBounds(geoLayer.getBounds(),{padding:[30,30]})
 }
 
 }
@@ -264,8 +264,6 @@ selectedMarker=null
 
 renderGeoJSON(allFeatures,true)
 
-map.setView(SWEDEN_CENTER,SWEDEN_ZOOM)
-
 updateCounter(allFeatures.length)
 
 document.getElementById("infoPanel").innerHTML=`
@@ -284,8 +282,14 @@ document.getElementById("infoPanel").innerHTML=`
 
 function updateCounter(count){
 
-document.getElementById("resultCounter").innerHTML=
-`<strong>Antal träffar: ${count}</strong>`
+const el=document.getElementById("resultCounter")
+
+if(!document.body.classList.contains("dev")){
+el.style.display="none"
+return
+}
+
+el.innerHTML=`<strong>Antal träffar: ${count}</strong>`
 
 }
 
@@ -313,28 +317,7 @@ Besök hemsida
 </a>
 </p>`:""}
 
-<div class="ad-container">
-
-<p>Annons</p>
-
-<ins class="adsbygoogle"
-style="display:block"
-data-ad-client="ca-pub-6036839968490609"
-data-ad-slot="7765842047"
-data-ad-format="auto"
-data-full-width-responsive="true"></ins>
-
-</div>
-
 `
-
-setTimeout(()=>{
-
-try{
-(adsbygoogle=window.adsbygoogle||[]).push({})
-}catch(e){}
-
-},300)
 
 }
 
