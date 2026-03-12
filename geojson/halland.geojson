@@ -1,179 +1,234 @@
 {
-  "type": "FeatureCollection",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Halmstad Golfarena (Pay & Play)",
-        "municipality": "Halmstad",
-        "region": "Halland",
-        "holes": 9,
-        "pay_and_play": true,
-        "verified": true,
-        "website": "https://www.golfarenan.se/",
-        "source": "Officiell Pay & Play info",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [12.8385, 56.6876] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Holms Golfklubb (9-håls)",
-        "municipality": "Halmstad",
-        "region": "Halland",
-        "holes": 9,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://holmsgk.se",
-        "source": "Öppen greenfee",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [12.7712, 56.7324] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Falkenbergs Golfklubb (Pay & Play)",
-        "municipality": "Falkenberg",
-        "region": "Halland",
-        "holes": 9,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://falkenbergsgk.se",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [12.5093, 56.9001] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Åkulla Golf & Country Club",
-        "municipality": "Varberg",
-        "region": "Halland",
-        "holes": 9,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://www.akullaresort.se/",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [12.3895, 57.1613] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Ringenäs Golfklubb (Pay & Play)",
-        "municipality": "Halmstad",
-        "region": "Halland",
-        "holes": 9,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://ringenas.com/",
-        "source": "Öppen greenfee",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [12.6948, 56.7009] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Tönnersjö Golfklubb (9-håls)",
-        "municipality": "Halmstad",
-        "region": "Halland",
-        "holes": 9,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://tonnersjogk.se",
-        "source": "Klubbwebb",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [12.7456, 56.6753] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Haverdals Golfklubb",
-        "municipality": "Halmstad",
-        "region": "Halland",
-        "holes": 9,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://haverdalsgk.se",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [12.7084, 56.7150] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Björnhults GK",
-        "municipality": "Falkenberg",
-        "region": "Halland",
-        "holes": 9,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://bjornhultsgk.se/",
-        "source": "Bildlista 2026-02",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [12.5078, 56.9005] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Flygstaden GK",
-        "municipality": "Halmstad",
-        "region": "Halland",
-        "holes": 9,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://flygstadensgolfklubb.se",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [12.8557, 56.6653] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Strandtorps GK",
-        "municipality": "Halmstad",
-        "region": "Halland",
-        "holes": 9,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://strandtorpgolf.com/",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [12.9284, 56.6829] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Ullared Flädje GK",
-        "municipality": "Falkenberg",
-        "region": "Halland",
-        "holes": 18,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://fladjegolf.se",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [12.6843, 56.9109] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Vinbergs GK",
-        "municipality": "Falkenberg",
-        "region": "Halland",
-        "holes": 18,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://www.vinbergsgolfklubb.se",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [12.55451, 56.96123] }
-    }
+"type": "FeatureCollection",
+"features": [
 
-  ]
+{
+"type": "Feature",
+"properties": {
+"id": "halmstad-golfarena",
+"name": "Halmstad Golfarena",
+"municipality": "Halmstad",
+"region": "Halland",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://www.golfarenan.se/",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [12.8383,56.6879]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "holms-golfklubb",
+"name": "Holms Golfklubb",
+"municipality": "Halmstad",
+"region": "Halland",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://holmsgk.se",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [12.7714,56.7326]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "falkenbergs-golfklubb",
+"name": "Falkenbergs Golfklubb",
+"municipality": "Falkenberg",
+"region": "Halland",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://falkenbergsgk.se",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [12.5094,56.9000]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "akulla-golf-country-club",
+"name": "Åkulla Golf & Country Club",
+"municipality": "Varberg",
+"region": "Halland",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://www.akullaresort.se/",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [12.3897,57.1614]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "ringenas-golfklubb",
+"name": "Ringenäs Golfklubb",
+"municipality": "Halmstad",
+"region": "Halland",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://ringenas.com/",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [12.6949,56.7012]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "tonnersjo-golfklubb",
+"name": "Tönnersjö Golfklubb",
+"municipality": "Halmstad",
+"region": "Halland",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://tonnersjogk.se",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [12.7458,56.6754]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "haverdals-golfklubb",
+"name": "Haverdals Golfklubb",
+"municipality": "Halmstad",
+"region": "Halland",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://haverdalsgk.se",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [12.7085,56.7152]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "bjornhults-golfklubb",
+"name": "Björnhults GK",
+"municipality": "Falkenberg",
+"region": "Halland",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://bjornhultsgk.se/",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [12.5422,56.9136]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "flygstadens-golfklubb",
+"name": "Flygstadens GK",
+"municipality": "Halmstad",
+"region": "Halland",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://flygstadensgolfklubb.se",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [12.8559,56.6656]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "strandtorps-golfklubb",
+"name": "Strandtorps GK",
+"municipality": "Halmstad",
+"region": "Halland",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://strandtorpgolf.com/",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [12.9282,56.6831]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "ullared-fladje-golfklubb",
+"name": "Ullared Flädje GK",
+"municipality": "Falkenberg",
+"region": "Halland",
+"holes": 18,
+"pay_and_play": true,
+"verified": true,
+"website": "https://fladjegolf.se",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [12.6846,56.9111]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "vinbergs-golfklubb",
+"name": "Vinbergs GK",
+"municipality": "Falkenberg",
+"region": "Halland",
+"holes": 18,
+"pay_and_play": true,
+"verified": true,
+"website": "https://www.vinbergsgolfklubb.se",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [12.5545,56.9612]
+}
+}
+
+]
 }
