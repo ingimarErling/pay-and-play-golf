@@ -5,48 +5,57 @@
 {
 "type": "Feature",
 "properties": {
+"id": "visby-golfklubb",
 "name": "Visby Golfklubb",
 "municipality": "Gotland",
 "region": "Gotland",
 "holes": 18,
 "pay_and_play": true,
-"website": "https://www.visbygk.com"
+"verified": true,
+"website": "https://www.visbygk.com",
+"last_updated": "2026-03"
 },
 "geometry": {
 "type": "Point",
-"coordinates": [18.1186,57.6615]
+"coordinates": [18.11861,57.66148]
 }
 },
 
 {
 "type": "Feature",
 "properties": {
+"id": "gumbalde-golfklubb",
 "name": "Gumbalde Golfklubb",
 "municipality": "Gotland",
 "region": "Gotland",
 "holes": 18,
 "pay_and_play": true,
-"website": "https://gumbalde.se"
+"verified": true,
+"website": "https://gumbalde.se",
+"last_updated": "2026-03"
 },
 "geometry": {
 "type": "Point",
-"coordinates": [18.4148,57.4304]
+"coordinates": [18.41482,57.43039]
 }
 },
 
 {
 "type": "Feature",
 "properties": {
+"id": "nar-golfklubb",
 "name": "När Golfklubb",
 "municipality": "Gotland",
 "region": "Gotland",
 "holes": 18,
 "pay_and_play": true,
-"website": "https://nargk.se"
+"verified": true,
+"website": "https://nargk.se",
+"last_updated": "2026-03"
 },
 "geometry": {
 "type": "Point",
-"coordinates": [18.7067,57.2072]
+"coordinates": [18.70671,57.20719]
 }
 }
 
