@@ -1,6 +1,7 @@
 {
 "type": "FeatureCollection",
 "features": [
+
 {
 "type": "Feature",
 "properties": {
@@ -10,15 +11,14 @@
 "holes": 9,
 "pay_and_play": true,
 "verified": true,
-"website": "https://agestagk.se",
-"source": "Golfklubbswebb + lokal info",
-"last_updated": "2026-02"
+"website": "https://agestagk.se"
 },
 "geometry": {
 "type": "Point",
-"coordinates": [18.082572, 59.223350]
+"coordinates": [18.082572,59.223350]
 }
 },
+
 {
 "type": "Feature",
 "properties": {
@@ -28,15 +28,14 @@
 "holes": 9,
 "pay_and_play": true,
 "verified": true,
-"website": "https://salemsgk.se",
-"source": "Golfklubbswebb + öppen greenfee",
-"last_updated": "2026-02"
+"website": "https://salemsgk.se"
 },
 "geometry": {
 "type": "Point",
-"coordinates": [17.765600, 59.196300]
+"coordinates": [17.765600,59.196300]
 }
 },
+
 {
 "type": "Feature",
 "properties": {
@@ -46,13 +45,96 @@
 "holes": 9,
 "pay_and_play": true,
 "verified": true,
-"website": "https://hasselbygolfklubb.se/",
-"source": "Golfklubbswebb",
-"last_updated": "2026-02"
+"website": "https://hasselbygolfklubb.se"
 },
 "geometry": {
 "type": "Point",
-"coordinates": [17.831300, 59.386200]
+"coordinates": [17.831300,59.386200]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Arninge Golfklubb Pay & Play",
+"municipality": "Täby",
+"region": "Stockholm",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://arningegk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [18.1475,59.4592]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Sigtuna Golfklubb Pay & Play",
+"municipality": "Sigtuna",
+"region": "Stockholm",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://sigtunagk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [17.7232,59.6173]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Sundbybergs Golfklubb",
+"municipality": "Sundbyberg",
+"region": "Stockholm",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://sundbybergsgk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [17.9706,59.3817]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Gripsholms Golfklubb Par-3",
+"municipality": "Mariefred",
+"region": "Södermanland",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://gripsholmsgk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [17.2147,59.2604]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"name": "Kallfors Golfklubb Korthålsbana",
+"municipality": "Södertälje",
+"region": "Stockholm",
+"holes": 9,
+"pay_and_play": true,
+"verified": false,
+"website": "https://kallfors.com"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [17.6102,59.1810]
 }
 }
 
