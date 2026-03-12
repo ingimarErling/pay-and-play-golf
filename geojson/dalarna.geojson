@@ -1,160 +1,183 @@
 {
-  "type": "FeatureCollection",
-  "name": "dalarna",
-  "features": [
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Dalsjö Golf",
-        "municipality": "Rättvik",
-        "region": "Dalarna",
-        "holes": 6,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://www.dalsjogolf.se",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [15.1300, 60.9000] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Furudals Bruks Golfklubb",
-        "municipality": "Rättvik",
-        "region": "Dalarna",
-        "holes": 6,
-        "pay_and_play": true,
-        "verified": false,
-        "website": " https://furudalsgolf.com/",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [15.0500, 61.1500] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Gagnefs Golfklubb",
-        "municipality": "Gagnef",
-        "region": "Dalarna",
-        "holes": 18,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://www.gagnefsgk.com/",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [15.0800, 60.5800] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Gagnefs Golfklubb (Korthål)",
-        "municipality": "Gagnef",
-        "region": "Dalarna",
-        "holes": 6,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://www.gagnefsgk.se",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [15.0800, 60.5800] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Hedemora Golfklubb (18 hål)",
-        "municipality": "Hedemora",
-        "region": "Dalarna",
-        "holes": 18,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://www.hedemoragk.se",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [15.9900, 60.2800] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Hedemora Golfklubb (Korthål)",
-        "municipality": "Hedemora",
-        "region": "Dalarna",
-        "holes": 6,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://www.hedemoragk.se",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [15.9900, 60.2800] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Malungs Golfklubb",
-        "municipality": "Malung-Sälen",
-        "region": "Dalarna",
-        "holes": 9,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://malungsgk.se/",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [13.7100, 60.6800] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Samuelsdals Golfklubb",
-        "municipality": "Falun",
-        "region": "Dalarna",
-        "holes": 9,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://www.samuelsdalgolf.nu/",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [15.6600, 60.6200] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Snöå Golfklubb",
-        "municipality": "Vansbro",
-        "region": "Dalarna",
-        "holes": 18,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://www.snoagk.se",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [14.2200, 60.5100] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Säters Golfklubb",
-        "municipality": "Säter",
-        "region": "Dalarna",
-        "holes": 18,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://www.satersgk.se",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [15.7500, 60.3500] }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Tällbergs Golfklubb",
-        "municipality": "Leksand",
-        "region": "Dalarna",
-        "holes": 18,
-        "pay_and_play": true,
-        "verified": false,
-        "website": "https://tallberggk.com/",
-        "last_updated": "2026-02"
-      },
-      "geometry": { "type": "Point", "coordinates": [15.0000, 60.8200] }
-    }
-  ]
+"type": "FeatureCollection",
+"name": "dalarna",
+"features": [
+
+{
+"type": "Feature",
+"properties": {
+"id": "dalsjo-golf",
+"name": "Dalsjö Golf",
+"municipality": "Rättvik",
+"region": "Dalarna",
+"holes": 6,
+"pay_and_play": true,
+"verified": false,
+"website": "https://www.dalsjogolf.se",
+"last_updated": "2026-03"
+},
+"geometry": { "type": "Point", "coordinates": [15.1287,60.9009] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "furudals-bruks-golfklubb",
+"name": "Furudals Bruks Golfklubb",
+"municipality": "Rättvik",
+"region": "Dalarna",
+"holes": 6,
+"pay_and_play": true,
+"verified": false,
+"website": "https://furudalsgolf.com/",
+"last_updated": "2026-03"
+},
+"geometry": { "type": "Point", "coordinates": [15.0472,61.1498] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "gagnefs-golfklubb",
+"name": "Gagnefs Golfklubb",
+"municipality": "Gagnef",
+"region": "Dalarna",
+"holes": 18,
+"pay_and_play": true,
+"verified": false,
+"website": "https://www.gagnefsgk.com/",
+"last_updated": "2026-03"
+},
+"geometry": { "type": "Point", "coordinates": [15.0809,60.5798] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "gagnefs-golfklubb-korthal",
+"name": "Gagnefs Golfklubb (Korthål)",
+"municipality": "Gagnef",
+"region": "Dalarna",
+"holes": 6,
+"pay_and_play": true,
+"verified": false,
+"website": "https://www.gagnefsgk.se",
+"last_updated": "2026-03"
+},
+"geometry": { "type": "Point", "coordinates": [15.0809,60.5798] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "hedemora-golfklubb",
+"name": "Hedemora Golfklubb",
+"municipality": "Hedemora",
+"region": "Dalarna",
+"holes": 18,
+"pay_and_play": true,
+"verified": false,
+"website": "https://www.hedemoragk.se",
+"last_updated": "2026-03"
+},
+"geometry": { "type": "Point", "coordinates": [15.9912,60.2798] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "hedemora-golfklubb-korthal",
+"name": "Hedemora Golfklubb (Korthål)",
+"municipality": "Hedemora",
+"region": "Dalarna",
+"holes": 6,
+"pay_and_play": true,
+"verified": false,
+"website": "https://www.hedemoragk.se",
+"last_updated": "2026-03"
+},
+"geometry": { "type": "Point", "coordinates": [15.9912,60.2798] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "malungs-golfklubb",
+"name": "Malungs Golfklubb",
+"municipality": "Malung-Sälen",
+"region": "Dalarna",
+"holes": 9,
+"pay_and_play": true,
+"verified": false,
+"website": "https://malungsgk.se/",
+"last_updated": "2026-03"
+},
+"geometry": { "type": "Point", "coordinates": [13.7124,60.6796] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "samuelsdals-golfklubb",
+"name": "Samuelsdals Golfklubb",
+"municipality": "Falun",
+"region": "Dalarna",
+"holes": 9,
+"pay_and_play": true,
+"verified": false,
+"website": "https://www.samuelsdalgolf.nu/",
+"last_updated": "2026-03"
+},
+"geometry": { "type": "Point", "coordinates": [15.6621,60.6198] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "snoa-golfklubb",
+"name": "Snöå Golfklubb",
+"municipality": "Vansbro",
+"region": "Dalarna",
+"holes": 18,
+"pay_and_play": true,
+"verified": false,
+"website": "https://www.snoagk.se",
+"last_updated": "2026-03"
+},
+"geometry": { "type": "Point", "coordinates": [14.2218,60.5096] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "saters-golfklubb",
+"name": "Säters Golfklubb",
+"municipality": "Säter",
+"region": "Dalarna",
+"holes": 18,
+"pay_and_play": true,
+"verified": false,
+"website": "https://www.satersgk.se",
+"last_updated": "2026-03"
+},
+"geometry": { "type": "Point", "coordinates": [15.7496,60.3497] }
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "tallbergs-golfklubb",
+"name": "Tällbergs Golfklubb",
+"municipality": "Leksand",
+"region": "Dalarna",
+"holes": 18,
+"pay_and_play": true,
+"verified": false,
+"website": "https://tallberggk.com/",
+"last_updated": "2026-03"
+},
+"geometry": { "type": "Point", "coordinates": [14.9995,60.8211] }
+}
+
+]
 }
