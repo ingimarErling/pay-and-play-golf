@@ -3,6 +3,7 @@
   "features": [
     {
       "type": "Feature",
+      "id": "niitvalja-golf",
       "properties": {
         "name": "Niitvälja Golf",
         "municipality": "Lääne-Harju",
@@ -15,11 +16,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [24.2275, 59.3344]
+        "coordinates": [24.2218, 59.3362]
       }
     },
     {
       "type": "Feature",
+      "id": "estonian-golf-country-club",
       "properties": {
         "name": "Estonian Golf & Country Club",
         "municipality": "Jõelähtme",
@@ -32,11 +34,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [25.0217, 59.4689]
+        "coordinates": [25.0193, 59.4681]
       }
     },
     {
       "type": "Feature",
+      "id": "rae-golf",
       "properties": {
         "name": "Rae Golf",
         "municipality": "Rae",
@@ -49,11 +52,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [24.8343, 59.3746]
+        "coordinates": [24.8321, 59.3739]
       }
     },
     {
       "type": "Feature",
+      "id": "otepaa-golf-club",
       "properties": {
         "name": "Otepää Golf Club",
         "municipality": "Otepää",
@@ -66,11 +70,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [26.5183, 58.0522]
+        "coordinates": [26.5159, 58.0518]
       }
     },
     {
       "type": "Feature",
+      "id": "parnu-bay-golf-links",
       "properties": {
         "name": "Pärnu Bay Golf Links",
         "municipality": "Pärnu",
@@ -83,11 +88,12 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [24.4052, 58.3726]
+        "coordinates": [24.4031, 58.3738]
       }
     },
     {
       "type": "Feature",
+      "id": "saare-golf",
       "properties": {
         "name": "Saare Golf",
         "municipality": "Kuressaare",
@@ -100,7 +106,7 @@
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [22.4705, 58.2447]
+        "coordinates": [22.4687, 58.2456]
       }
     }
   ]
