@@ -5,10 +5,51 @@
 const SWEDEN_CENTER = [62.5,16]
 const SWEDEN_ZOOM = 5
 
+const LANG = navigator.language && navigator.language.startsWith("sv") ? "sv" : "en"
+
 let map
 let geoLayer
-let selectedMarker=null
-let allFeatures=[]
+let selectedMarker = null
+let allFeatures = []
+
+
+// ===============================
+// TEXT DICTIONARY
+// ===============================
+
+const TEXT = {
+
+sv: {
+title: "Pay & Play Golf i Sverige",
+subtitle: "Hitta golfbanor utan grönt kort i hela Sverige",
+searchPlaceholder: "Sök stad eller klubb...",
+allCourses: "Alla hål",
+search: "Sök",
+showAll: "Visa hela Sverige",
+selectClub: "Välj en klubb",
+clickMarker: "Klicka på en markering på kartan för mer information.",
+holes: "hål",
+results: "Antal träffar",
+visitWebsite: "Besök hemsida"
+},
+
+en: {
+title: "Pay & Play Golf in Sweden",
+subtitle: "Find golf courses open to everyone (no handicap required)",
+searchPlaceholder: "Search city or golf course...",
+allCourses: "All courses",
+search: "Search",
+showAll: "Show all Sweden",
+selectClub: "Select a course",
+clickMarker: "Click a marker on the map for more information.",
+holes: "holes",
+results: "Results",
+visitWebsite: "Visit website"
+}
+
+}
+
+const T = TEXT[LANG]
 
 
 // ===============================
@@ -53,6 +94,30 @@ iconSize:[32,32]
 
 
 // ===============================
+// APPLY LANGUAGE
+// ===============================
+
+function applyLanguage(){
+
+document.querySelector("h1").textContent = T.title
+document.querySelector(".subtitle").textContent = T.subtitle
+
+document.getElementById("searchInput").placeholder = T.searchPlaceholder
+
+document.querySelector("#holesFilter option[value='']").textContent = T.allCourses
+
+document.querySelector(".btn-primary").textContent = T.search
+document.querySelector(".btn-secondary").textContent = T.showAll
+
+document.querySelector("#infoPanel h2").textContent = T.selectClub
+document.querySelector("#infoPanel p").textContent = T.clickMarker
+
+document.getElementById("resultCounter").textContent = `${T.results}: 0`
+
+}
+
+
+// ===============================
 // TEXT NORMALIZATION
 // ===============================
 
@@ -75,7 +140,7 @@ return text
 // SYNONYMS
 // ===============================
 
-const synonyms={
+const synonyms = {
 
 "sormland":"sodermanland",
 "sodermanland":"sodermanland",
@@ -97,7 +162,7 @@ const synonyms={
 // GEOJSON FILES
 // ===============================
 
-const regionFiles=[
+const regionFiles = [
 
 "geojson/blekinge.geojson",
 "geojson/dalarna.geojson",
@@ -129,19 +194,19 @@ const regionFiles=[
 
 Promise.all(
 
-regionFiles.map(file=>
+regionFiles.map(file =>
 
 fetch(file)
-.then(res=>res.json())
-.catch(()=>({features:[]}))
+.then(res => res.json())
+.catch(() => ({features:[]}))
 
 )
 
-).then(dataSets=>{
+).then(dataSets => {
 
-allFeatures=dataSets
-.flatMap(d=>d.features)
-.filter(f=>f?.properties?.name)
+allFeatures = dataSets
+.flatMap(d => d.features)
+.filter(f => f?.properties?.name)
 
 renderGeoJSON(allFeatures,true)
 updateCounter(allFeatures.length)
@@ -157,20 +222,20 @@ function renderGeoJSON(features,fitBounds=true){
 
 markerCluster.clearLayers()
 
-geoLayer=L.geoJSON(features,{
+geoLayer = L.geoJSON(features,{
 
 pointToLayer:function(feature,latlng){
 
-const p=feature.properties
-const holes=p.holes||9
-const icon=holes==18?icon18:icon9
+const p = feature.properties
+const holes = p.holes || 9
+const icon = holes == 18 ? icon18 : icon9
 
-const marker=L.marker(latlng,{icon})
+const marker = L.marker(latlng,{icon})
 
 marker.bindTooltip(
 `<strong>${p.name}</strong><br>
 ${p.municipality||""}<br>
-⛳ ${holes} hål`,
+⛳ ${holes} ${T.holes}`,
 {direction:"top"}
 )
 
@@ -183,7 +248,7 @@ selectedMarker.setOpacity(1)
 }
 
 marker.setOpacity(0.6)
-selectedMarker=marker
+selectedMarker = marker
 
 })
 
@@ -208,37 +273,37 @@ map.fitBounds(geoLayer.getBounds(),{padding:[30,30]})
 
 function applyFilters(){
 
-let search=document
+let search = document
 .getElementById("searchInput")
 .value
 
-search=normalizeText(search)
+search = normalizeText(search)
 
-const holes=document
+const holes = document
 .getElementById("holesFilter")
 .value
 
 if(synonyms[search]){
-search=synonyms[search]
+search = synonyms[search]
 }
 
-const filtered=allFeatures.filter(f=>{
+const filtered = allFeatures.filter(f => {
 
-const p=f.properties
+const p = f.properties
 
-const name=normalizeText(p.name)
-const municipality=normalizeText(p.municipality)
-const region=normalizeText(p.region)
+const name = normalizeText(p.name)
+const municipality = normalizeText(p.municipality)
+const region = normalizeText(p.region)
 
-const matchSearch=
+const matchSearch =
 
 !search ||
 name.includes(search) ||
 municipality.includes(search) ||
 region.includes(search)
 
-const matchHoles=
-!holes || p.holes==holes
+const matchHoles =
+!holes || p.holes == holes
 
 return matchSearch && matchHoles
 
@@ -267,8 +332,8 @@ updateCounter(allFeatures.length)
 
 document.getElementById("infoPanel").innerHTML=`
 
-<h2>Välj en klubb</h2>
-<p>Klicka på en markering på kartan för mer information.</p>
+<h2>${T.selectClub}</h2>
+<p>${T.clickMarker}</p>
 
 `
 
@@ -288,7 +353,7 @@ el.style.display="none"
 return
 }
 
-el.innerHTML=`<strong>Antal träffar: ${count}</strong>`
+el.innerHTML=`<strong>${T.results}: ${count}</strong>`
 
 }
 
@@ -307,12 +372,12 @@ panel.innerHTML=`
 
 <p>📍 ${club.municipality||""}</p>
 
-<p>⛳ ${club.holes||"?"} hål</p>
+<p>⛳ ${club.holes||"?"} ${T.holes}</p>
 
 ${club.website?
 `<p>
 <a href="${club.website}" target="_blank">
-Besök hemsida
+${T.visitWebsite}
 </a>
 </p>`:""}
 
@@ -332,7 +397,14 @@ document.getElementById("cookieBanner").style.display="none"
 
 }
 
-window.addEventListener("load",()=>{
+
+// ===============================
+// PAGE INIT
+// ===============================
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+applyLanguage()
 
 if(!localStorage.getItem("cookiesAccepted")){
 document.getElementById("cookieBanner").style.display="block"
