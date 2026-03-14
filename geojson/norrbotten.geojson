@@ -12,7 +12,7 @@
 "holes": 18,
 "pay_and_play": true,
 "verified": true,
-"website": "https://luleagk.se",
+"website": "https://www.luleagolf.se/",
 "last_updated": "2026-03"
 },
 "geometry": {
@@ -25,13 +25,13 @@
 "type": "Feature",
 "properties": {
 "id": "boden-golfklubb",
-"name": "Boden Golfklubb",
+"name": "Bodens Golfklubb",
 "municipality": "Boden",
 "region": "Norrbotten",
 "holes": 18,
 "pay_and_play": true,
 "verified": true,
-"website": "https://bodengolfklubb.se",
+"website": "https://bodensgk.se/",
 "last_updated": "2026-03"
 },
 "geometry": {
@@ -69,7 +69,7 @@
 "holes": 9,
 "pay_and_play": true,
 "verified": true,
-"website": "https://kirunagk.se",
+"website": "https://www.kirunagolfklubb.com/",
 "last_updated": "2026-03"
 },
 "geometry": {
