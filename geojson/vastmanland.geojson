@@ -183,13 +183,13 @@
 "type": "Feature",
 "properties": {
 "id": "kopings-golfklubb",
-"name": "Köppings Golfklubb",
+"name": "Köpings Golfklubb",
 "municipality": "Köping",
 "region": "Västmanland",
 "holes": 18,
 "pay_and_play": true,
 "verified": false,
-"website": "https://kopingsgk.se",
+"website": "https://kopingsgk.nu/",
 "last_updated": "2026-03"
 },
 "geometry": { "type": "Point", "coordinates": [15.9344, 59.5310] }
