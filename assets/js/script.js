@@ -184,7 +184,6 @@ const regionFiles = [
 "geojson/vasternorrland.geojson",
 "geojson/vastmanland.geojson",
 "geojson/vastra-gotaland.geojson"
-
 ]
 
 
@@ -249,6 +248,18 @@ selectedMarker.setOpacity(1)
 
 marker.setOpacity(0.6)
 selectedMarker = marker
+
+// ===============================
+// GOOGLE ANALYTICS EVENT
+// ===============================
+
+if(typeof gtag==="function"){
+gtag('event','club_click',{
+club_name:p.name,
+region:p.region,
+holes:p.holes
+})
+}
 
 })
 
@@ -387,13 +398,34 @@ ${T.visitWebsite}
 
 
 // ===============================
+// ANALYTICS START
+// ===============================
+
+function startAnalytics(){
+
+if(typeof gtag==="function"){
+gtag('config','G-024867SX49',{
+anonymize_ip:true
+})
+}
+
+}
+
+
+// ===============================
 // COOKIE BANNER
 // ===============================
 
 function acceptCookies(){
 
 localStorage.setItem("cookiesAccepted","true")
-document.getElementById("cookieBanner").style.display="none"
+
+const banner=document.getElementById("cookieBanner")
+if(banner){
+banner.style.display="none"
+}
+
+startAnalytics()
 
 }
 
@@ -406,8 +438,14 @@ document.addEventListener("DOMContentLoaded",()=>{
 
 applyLanguage()
 
-if(!localStorage.getItem("cookiesAccepted")){
-document.getElementById("cookieBanner").style.display="block"
+const banner=document.getElementById("cookieBanner")
+
+if(localStorage.getItem("cookiesAccepted")){
+startAnalytics()
+}else{
+if(banner){
+banner.style.display="block"
+}
 }
 
 })
