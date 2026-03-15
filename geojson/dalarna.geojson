@@ -54,22 +54,6 @@
 {
 "type": "Feature",
 "properties": {
-"id": "gagnefs-golfklubb-korthal",
-"name": "Gagnefs Golfklubb (Korthål)",
-"municipality": "Gagnef",
-"region": "Dalarna",
-"holes": 6,
-"pay_and_play": true,
-"verified": false,
-"website": "https://www.gagnefsgk.se",
-"last_updated": "2026-03"
-},
-"geometry": { "type": "Point", "coordinates": [15.0809,60.5798] }
-},
-
-{
-"type": "Feature",
-"properties": {
 "id": "hedemora-golfklubb",
 "name": "Hedemora Golfklubb",
 "municipality": "Hedemora",
