@@ -10,21 +10,27 @@ layout: null
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Pay & Play Golf i Sverige – Spela utan grönt kort</title>
+<title>Pay & Play Golf i Sverige – Golf utan grönt kort</title>
 
 <meta name="description"
-content="Hitta alla Pay & Play golfbanor i Sverige. Spela golf utan grönt kort i Stockholm, Skåne, Göteborg och hela landet.">
+content="Hitta Pay & Play golfbanor i Sverige. Spela golf utan grönt kort i Stockholm, Skåne, Göteborg och hela landet.">
 
 <meta name="author" content="Erlingsson">
 <meta name="robots" content="index, follow">
 
+<meta name="keywords"
+content="pay and play golf sverige, golf utan grönt kort, pay and play stockholm, pay and play skåne, pay and play göteborg">
+
+<link rel="canonical" href="https://pay-and-play.org/">
+
 <meta property="og:title" content="Pay & Play Golf i Sverige">
-<meta property="og:description" content="Sveriges karta över golfbanor utan grönt kort.">
+<meta property="og:description" content="Sveriges karta över Pay & Play golfbanor där du kan spela utan grönt kort.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://pay-and-play.org/">
 <meta property="og:locale" content="sv_SE">
+<meta property="og:site_name" content="Pay & Play Golf Sverige">
 
-<link rel="canonical" href="https://pay-and-play.org/">
+<meta name="theme-color" content="#2e7d32">
 
 <link rel="stylesheet" href="/assets/css/style.css">
 
@@ -33,6 +39,31 @@ content="Hitta alla Pay & Play golfbanor i Sverige. Spela golf utan grönt kort 
 <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">
 
 <link rel="icon" href="/favicon.ico">
+
+
+<!-- STRUCTURED DATA (SEO) -->
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "WebSite",
+"name": "Pay & Play Golf Sverige",
+"url": "https://pay-and-play.org/",
+"description": "Karta över Pay & Play golfbanor i Sverige där du kan spela golf utan grönt kort.",
+"inLanguage": "sv-SE",
+"publisher": {
+"@type": "Organization",
+"name": "Pay & Play Golf Sverige",
+"url": "https://pay-and-play.org/"
+},
+"potentialAction": {
+"@type": "SearchAction",
+"target": "https://pay-and-play.org/?search={search_term_string}",
+"query-input": "required name=search_term_string"
+}
+}
+</script>
+
 
 <script async
 src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6036839968490609"
@@ -165,13 +196,11 @@ Klicka på en markering på kartan för mer information.
 
 </div>
 
-
 <div class="dev-build">
 Build: {{ site.time | date: "%Y-%m-%d %H:%M:%S" }}
 </div>
 
 </footer>
-
 
 
 
@@ -188,13 +217,9 @@ Denna webbplats använder cookies och Google AdSense.
 
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
 <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
-
 <script src="/assets/js/script.js"></script>
 
 
-
 </body>
-
 </html>
