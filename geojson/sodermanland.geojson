@@ -150,22 +150,6 @@
 {
 "type":"Feature",
 "properties":{
-"id":"aby-golfklubb",
-"name":"Åby Golfklubb",
-"municipality":"Nyköping",
-"region":"Södermanland",
-"holes":9,
-"pay_and_play":true,
-"verified":true,
-"website":"https://www.abygk.se",
-"last_updated":"2026-03"
-},
-"geometry":{"type":"Point","coordinates":[16.9216,58.7536]}
-},
-
-{
-"type":"Feature",
-"properties":{
 "id":"trosa-golfklubb",
 "name":"Trosa Golfklubb",
 "municipality":"Trosa",
