@@ -1,0 +1,44 @@
+{
+"type": "FeatureCollection",
+"features": [
+
+{
+"type": "Feature",
+"properties": {
+"id": "eckero-golf",
+"name": "Eckerö Golf",
+"municipality": "Eckerö",
+"region": "Åland",
+"holes": 18,
+"pay_and_play": true,
+"verified": true,
+"website": "https://eckerogolf.ax/",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [19.5535,60.2176]
+}
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "alands-golfklubb-prinsessan",
+"name": "Ålands Golfklubb – Prinsessan",
+"municipality": "Sund",
+"region": "Åland",
+"holes": 6,
+"pay_and_play": true,
+"verified": true,
+"website": "https://www.agk.ax/",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [20.1086,60.2237]
+}
+}
+
+]
+}
