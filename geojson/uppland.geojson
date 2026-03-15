@@ -61,7 +61,7 @@
 "holes":9,
 "pay_and_play":true,
 "verified":true,
-"website":"https://vgk.nu/",
+"website":"www.vaddogolf.se/",
 "last_updated":"2026-03"
 },
 "geometry":{"type":"Point","coordinates":[18.8249,59.9824]}
@@ -134,14 +134,14 @@
 {
 "type":"Feature",
 "properties":{
-"id":"golfstar-sigtuna",
-"name":"GolfStar Sigtuna",
+"id":"Sigtuna Golfklubb",
+"name":"Sigtuna Golfklub",
 "municipality":"Sigtuna",
 "region":"Uppland",
 "holes":18,
 "pay_and_play":true,
 "verified":true,
-"website":"https://golfstar.se/sigtuna",
+"website":"https://sigtunagk.se/",
 "last_updated":"2026-03"
 },
 "geometry":{"type":"Point","coordinates":[17.6519,59.6355]}
