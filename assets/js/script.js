@@ -163,7 +163,7 @@ const synonyms = {
 // ===============================
 
 const regionFiles = [
-
+"geojson/aland.geojson",
 "geojson/blekinge.geojson",
 "geojson/dalarna.geojson",
 "geojson/estland.geojson",
