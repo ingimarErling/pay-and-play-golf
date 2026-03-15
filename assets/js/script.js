@@ -153,27 +153,7 @@ const synonyms = {
 "vast gotaland":"vastra gotaland",
 "vastergotland":"vastra gotaland",
 
-"goteborg":"vastra gotaland",
-
-"aland":"aland",
-"åland":"aland"
-
-}
-
-
-// ===============================
-// REGION ZOOM CENTERS
-// ===============================
-
-const regionCenters = {
-
-aland: { center:[60.17,19.94], zoom:10 },
-
-stockholm: { center:[59.33,18.06], zoom:9 },
-
-skane: { center:[55.99,13.55], zoom:9 },
-
-"vastra gotaland": { center:[57.7,12.0], zoom:8 }
+"goteborg":"vastra gotaland"
 
 }
 
@@ -269,6 +249,10 @@ selectedMarker.setOpacity(1)
 marker.setOpacity(0.6)
 selectedMarker = marker
 
+// ===============================
+// GOOGLE ANALYTICS EVENT
+// ===============================
+
 if(typeof gtag==="function"){
 gtag('event','club_click',{
 club_name:p.name,
@@ -339,12 +323,129 @@ return matchSearch && matchHoles
 renderGeoJSON(filtered,true)
 updateCounter(filtered.length)
 
-if(regionCenters[search]){
+}
 
-const r = regionCenters[search]
 
-map.setView(r.center,r.zoom)
+// ===============================
+// RESET
+// ===============================
+
+function resetMap(){
+
+document.getElementById("searchInput").value=""
+document.getElementById("holesFilter").value=""
+
+selectedMarker=null
+
+renderGeoJSON(allFeatures,true)
+
+updateCounter(allFeatures.length)
+
+document.getElementById("infoPanel").innerHTML=`
+
+<h2>${T.selectClub}</h2>
+<p>${T.clickMarker}</p>
+
+`
 
 }
 
+
+// ===============================
+// COUNTER
+// ===============================
+
+function updateCounter(count){
+
+const el=document.getElementById("resultCounter")
+
+if(!document.body.classList.contains("dev")){
+el.style.display="none"
+return
 }
+
+el.innerHTML=`<strong>${T.results}: ${count}</strong>`
+
+}
+
+
+// ===============================
+// CLUB INFO
+// ===============================
+
+function showClubInfo(club){
+
+const panel=document.getElementById("infoPanel")
+
+panel.innerHTML=`
+
+<h2>${club.name}</h2>
+
+<p>📍 ${club.municipality||""}</p>
+
+<p>⛳ ${club.holes||"?"} ${T.holes}</p>
+
+${club.website?
+`<p>
+<a href="${club.website}" target="_blank">
+${T.visitWebsite}
+</a>
+</p>`:""}
+
+`
+
+}
+
+
+// ===============================
+// ANALYTICS START
+// ===============================
+
+function startAnalytics(){
+
+if(typeof gtag==="function"){
+gtag('config','G-024867SX49',{
+anonymize_ip:true
+})
+}
+
+}
+
+
+// ===============================
+// COOKIE BANNER
+// ===============================
+
+function acceptCookies(){
+
+localStorage.setItem("cookiesAccepted","true")
+
+const banner=document.getElementById("cookieBanner")
+if(banner){
+banner.style.display="none"
+}
+
+startAnalytics()
+
+}
+
+
+// ===============================
+// PAGE INIT
+// ===============================
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+applyLanguage()
+
+const banner=document.getElementById("cookieBanner")
+
+if(localStorage.getItem("cookiesAccepted")){
+startAnalytics()
+}else{
+if(banner){
+banner.style.display="block"
+}
+}
+
+})
