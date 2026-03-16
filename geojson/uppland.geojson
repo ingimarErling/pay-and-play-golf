@@ -134,22 +134,6 @@
 {
 "type":"Feature",
 "properties":{
-"id":"Sigtuna Golfklubb",
-"name":"Sigtuna Golfklub",
-"municipality":"Sigtuna",
-"region":"Uppland",
-"holes":18,
-"pay_and_play":true,
-"verified":true,
-"website":"https://sigtunagk.se/",
-"last_updated":"2026-03"
-},
-"geometry":{"type":"Point","coordinates":[17.6519,59.6355]}
-},
-
-{
-"type":"Feature",
-"properties":{
 "id":"wattholma-golfklubb",
 "name":"Wattholma Golfklubb",
 "municipality":"Uppsala",
