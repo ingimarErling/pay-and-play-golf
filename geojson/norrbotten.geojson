@@ -76,6 +76,25 @@
 "type": "Point",
 "coordinates": [20.2558,67.8561]
 }
+},
+
+{
+"type": "Feature",
+"properties": {
+"id": "bjorklidens-golfklubb",
+"name": "Björklidens Golfklubb",
+"municipality": "Kiruna",
+"region": "Norrbotten",
+"holes": 9,
+"pay_and_play": true,
+"verified": true,
+"website": "https://www.bjorklidensgolfklubb.se/",
+"last_updated": "2026-03"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [18.6933,68.4080]
+}
 }
 
 ]
