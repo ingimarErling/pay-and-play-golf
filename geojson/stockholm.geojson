@@ -135,8 +135,21 @@
 "geometry": {
 "type": "Point",
 "coordinates": [17.6102,59.1810]
-}
-}
+},
 
-]
+{
+"type": "Feature",
+"properties": {
+"name": "Fors Golf",
+"municipality": "Haninge",
+"region": "Stockholm",
+"holes": 18,
+"pay_and_play": true,
+"verified": true,
+"website": "https://forsgolf.se/"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [18.1258425,59.0999769]
+}
 }
