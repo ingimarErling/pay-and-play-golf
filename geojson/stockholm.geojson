@@ -73,17 +73,17 @@
 {
 "type": "Feature",
 "properties": {
-"name": "Sigtuna Golfklubb Pay & Play",
+"name": "Sigtuna Golfklubb",
 "municipality": "Sigtuna",
 "region": "Stockholm",
-"holes": 9,
+"holes": 6,
 "pay_and_play": true,
 "verified": true,
 "website": "https://sigtunagk.se"
 },
 "geometry": {
 "type": "Point",
-"coordinates": [17.7232,59.6173]
+"coordinates": [17.7334, 59.6427]
 }
 },
 
