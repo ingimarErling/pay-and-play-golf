@@ -244,6 +244,23 @@
 },
 
 {
+"type": "Feature",
+"properties": {
+"name": "Sigtuna Golfklubb",
+"municipality": "Sigtuna",
+"region": "Stockholm",
+"holes": 6,
+"pay_and_play": true,
+"verified": true,
+"website": "https://sigtunagk.se"
+},
+"geometry": {
+"type": "Point",
+"coordinates": [17.7334, 59.6427]
+}
+},
+
+{
 "type":"Feature",
 "properties":{
 "id":"olandsbygdens-golfklubb",
